@@ -1,0 +1,204 @@
+Intent first everything else last..
+
+
+quick summary
+
+1. loyalty towards project, that means respect architecture.
+2. keep things simple if intent is to apply.
+3. tolerate uncertainty... remnember project is team process, and we are not 
+responsible for failure or success..
+4. kids hate constraints adults like constraints.
+
+
+
+
+when we have uncertainty.... it means.
+
+1. willingness to write a small program to clarify the concept or syntax
+is a must..
+
+
+
+
+
+when somebody tells http..
+
+you should start
+with request......
+and end with response..
+
+on any technical topic before reading from the freaky place, read from the official
+place first.. and then go to the freaky place..
+
+1. all of us are 20+ age now... 
+2. so it is important to know thru data what is our style of learning
+in case we have not.. we should find out... urgently....if possible
+as part of this training..
+3. Trust begins with thinking disappears..
+4. stupidity can last for very long time....
+
+
+web ... think of http..
+browser.. request, response...
+web page.. html, css, javascript... to do some logic.. other things also...
+
+
+
+
+telescope --zoom out
+microscope  --zoom in
+misery always comes because a person has got busy doing zoom in, without doing
+zoom out..
+
+
+you should know drawback of doing something... what is its plus ok.. how about its minus...
+ideally  you want to do everything, but we cannot do everything...
+
+before building the website
+decide which are your target devices and browsers..
+what resolution youi want to support..
+
+box elemeents and inline elements
+
+inline elements dont introduce new line..
+box elemenets introduce new line... and they can be filled with margsins, padding...
+
+html decides the structure of hte page....
+what is meaning of structure..
+
+practically speaking only with html you cannot do anything..
+you need minimum html + css to get some decent looking page.... to get dynamic behavior
+you need javascript also into the party...
+
+user friendly website..
+1. no scrolling..
+2. number of clicks to do anything should not be more than 3.
+3. consistency...
+
+
+<form action="where is form information processed" method="http mode of request">
+
+get, post are not html terminologies..these  are http related terminology.
+
+get .. information is sent as part of he header in http...
+post, information is sent as part of the body....
+
+
+
+https://www.cleartrip.com/flights/results
+
+
+
+https://www.random.org/integers/?num=100&min=1&max=100&col=5&base=10&format=html&rnd=new
+
+
+take  break and we will join by 3.50PM 
+
+
+
+1. https://github.com/noteonbg/a01aXessacademy
+
+
+what to do.
+
+1. do the assignment given in page 30 of html,css and bootstrap.pdf.
+2. understand the programs given 
+in https://github.com/noteonbg/a01aXessacademy/tree/main/rg/a02html/sampleprograms
+
+
+
+
+
+
+
+
+
+
+fight in IT industry between product vs standard..
+
+old html story
+
+divide your page into sections, how by using Div and span tag...
+
+in todays world we use html semantic tags..
+waht are html semantic tags..
+
+having strong opinions without data is kind of stupidness.
+be super careful with respect adjective usage if we are technical person...
+
+what is something?
+first find out what the official tries to tell and use his vocabulary..
+
+
+very difficult to fight with myths.. lies are easy to deal with...
+
+people tell if i write the programs only then I will know it....
+
+3 programs you write
+7 programs you understand written by other person, this is better way of learning..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+summary of today session
+
+1. intent first everything else next...
+2. project is first, that means we respect architecture...
+how many pieces of code, why....
+every architecture comes with plus and minus, it is important
+to now the minus along with the plus
+3. tolerate uncertainty.... because in a system, single person
+cannot be success factor or failure factor.. so lower the cost
+of failure...
+4. if possible .... generalize your learning.. that is way
+to avoid syntax misery...if you do this, you can remember less
+and still be useful in any technology world..
+
+if you dont generalize, kids favourite word will appear.
+"unique, different".... all nursery kid words...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
