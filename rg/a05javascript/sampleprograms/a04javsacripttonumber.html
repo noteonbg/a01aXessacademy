@@ -42,7 +42,7 @@
 
   // 2. Using parseInt()
   console.log("2. parseInt('456.78'):", parseInt(strNum1)); // 456 (drops decimal part)
-  console.log("2. parseInt('100px'):", parseInt(strNum2)); // 100 (stops parsing at first non-digit)
+  console.log("2. parseInt(''100px):", parseInt(strNum2)); // 100 (stops parsing at first non-digit)
   console.log("2. parseInt('   789   '):", parseInt(strNum3));
   console.log("2. parseInt('0xF'):", parseInt(strNum4)); // 0, because parseInt defaults to base 10 unless specified
 

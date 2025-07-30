@@ -1,0 +1,280 @@
+quick summary.
+
+expectation 
+
+1. all will do the assignments. ( company enforced)
+2. go thru the sample programs given atleast some..  ( my preferenece
+3. go thru the pdf also... (company enforced)
+
+
+
+
+yesterday story.
+
+1. show your loyalty towards project and not technology.. respect architecture
+first...
+2. http... only then web is there..
+3. http..
+request
+response...
+4. request and you get a web page... that means your boss is the browser.
+5. challenges are knowing your zoom outs.. which browser, which devices
+what resolution.....
+6. html.. structure of the page.... semantic tags, main, nav, aside.. section..
+form related tags...
+7. in terms of "what I should do as a participant"
+write some code.
+understand other person code.
+8. basics will keep on killing us, what to do we have to live with it.
+example when we have a html page, good zoom point is to know which part
+changes, which part does not change..
+9. read from official sources and then come to the freaky place
+mdn is the place for web...
+
+
+page no 9...
+1. semantic html web page...
+what is reality...
+you cannot make any html look decent without using CSS.
+css.. what does it do. it does "decoration" for the page...
+
+I am good at everything... is this a great statement or a stpuid statmenet
+real life means unequal effort..
+
+what is reality
+we should be good at our thing and know a little bit altest about other 
+thigns... doing this is called as 
+"respecting the system" we should good at we do and know what other entities
+do little bit atleast.
+
+
+CSS is pacific ocean.. our job is to drink two spoons of water and feel happy
+about it...
+
+what is hard thing about CSS ... is making the layouts of the page...
+
+concept is not a function of time
+syntax is..
+
+quick summary
+
+1. css is used to decorate
+2. you can have different kind of decorations depending on devices, screens.
+3. syntax is selector, what decoration
+4. where to write it.
+at the element level
+at the html file level.
+separately and link to different files..
+5. css box what goes into the properties.
+5. display property key... to making good layouts.
+
+
+
+
+
+slide no 35... a01basic.html...
+
+standard myth problem... I want practicals and no theory
+unlimited misery will come because of this...
+science it means getting theory right...
+
+I can keep doing practicals for 300 years and be zero in the subject..
+respect theory...
+
+
+what to do now.
+
+1. open the pdf.. look at css content.
+2. \a01aXessacademy\rg\a03css\sampleprograms
+look at the programs.
+3. page 9. try to think how the semantic web page...
+a01semenaticweb.html  -- priority
+a02sementicweb.html -- CSS to it...needs lot of exploration...
+
+so in terms of assignments.
+
+
+high priority
+0. ensure you go thru the pdf. without fail....
+1. form assignment of the pdf .. page..30
+2. html, css assignment of page 9 of the pdf.
+2.1 one file only with html. without any CSS.
+2.2 two files or one file with html and css.
+
+moderate priority
+3. problemstatement.txt file present in the 
+a01aXessacademy\rg\a03css\sampleprograms folder.
+4. a01html-handbook.pdf present in a01aXessacademy\rg\a02html\sampleprograms
+folder.
+
+
+
+
+
+
+
+
+
+
+
+
+
+BootStrap...
+what is it...  everything involves selling.. so as  technical person
+stay away from the sales pitch and see what does it offer technically
+to you...
+
+Bootstrap is a css library... we instead of writing our own css which
+we have to write... here we get ready made makeupset.. which we can consider
+using...
+
+
+selector
+
+what is fundamental difference
+
+p { some makeup }
+#x  { some makeup }
+.pqr { some makeup }
+
+in this interesting this class selector why... 
+
+1. it does not get applied automatically you must apply the class.
+
+<p class="pqr"
+
+I am bootstrap most of times means we are going to use classes of the boot
+strap library...
+
+if you have a feature X in language 
+if you have a feature X given by the framework, which you should prefer
+usually means... prefer X in the language so that you can cut down
+dependency on an external thing..
+
+bootstrap is a css library...for all practical purposes..
+using boot strap means using classes of bootstrap
+what is  benefit we get.
+
+device independence
+more stylish makeup if you ok... English...
+
+in todays world you got lot of options..
+tailwind
+
+what is moral. doing zoom in, without zoom out will guarantee misery....
+
+
+we are in web technology..
+everything has to get downloaded from server.. browser..
+if you are referring to something from a cdn.
+there are many sites which will using the same, hence possibility
+of file present in our system itself earlier is high..
+
+to use bootstrap...
+
+1. include the css file
+2. include the javascript files given by the bootstrap guys..
+what are those files.. we can learn it as when it needed..
+
+using bootstrap means using bootstrap classes for our element...
+
+
+
+anything we write only our code and not look other people code
+our understanding will be poor.
+
+if it is not a fact , it must be a OPINION
+
+science person should be scared about opinions being potrayed as facts..
+bootstrap is an opinion..
+tailwind is another opionion..
+so dont hang on .. as a "fan" of anything..
+
+inside the html page, i would have used classes of bootstrap
+
+
+bootstrap
+1. screens according to devices, you get css classes which can you consider to use
+2. we columns ...
+3. what kind of tags... you get tags to format tables..
+4.
+
+
+moral of the story.
+1. bootstrap is ajust a css framework.
+2. why we should use it.. device independence and hopefully better decoration..
+3. using bootstrap means using classes of bootstrap.
+4. bootstrap categorize your tags in to layout tags... layout...
+various of forms, buttons, table related tags...
+
+bootstrap..
+do the following
+1.read the pdf.
+2. bootstrap folder you got sample programs
+3. understand it...	document each class what it does..
+<!--  -->
+/*  */
+4. if interested remove one class and see what is effect, then add the class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
