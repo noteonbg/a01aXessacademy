@@ -8,6 +8,7 @@
 
   <div id="container">
     <p>This is the container.</p>
+    
   </div>
 
   <button id="addBtn">Add Element</button>
@@ -20,6 +21,7 @@
 
     // Add new paragraph element on button click
     addBtn.onclick = function() {
+      
       const newPara = document.createElement("p");
       newPara.textContent = "New paragraph added!";
       container.appendChild(newPara);

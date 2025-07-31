@@ -1,0 +1,486 @@
+what is Path.
+
+Path is a variable used by the OS to locate executable files..
+c:\goldenversion you are telling the os, hey look at these places when I give you a file to execute.
+
+in system thinking.. we cannot be 5/5 in everything, but we should 5/5in something
+and other parts we should try at least 1/5 and not zero.
+
+
+quick summary.
+
+0. intent first everything else last..
+
+what should be our intent, to solve customer problem or improve our technical skills
+at customer cost..
+
+Explain history in computer science in one word....   Abstraction
+
+amount of things you need to cook should reduce...
+
+assembly and C .. abstraction
+c and C++ abstraction
+c++ and java abstraction
+language and framework abstraction...
+
+if use bootstrap, amount of cooking we need to do will reduce.. that means we can do things
+faster for the customer... hence .. generalize.. framework is a way thru which we increase
+the abstraction. so that we can focus on customers problems..
+
+
+1. css , html does different roles..
+2. selectors... tonnes of css properties, we may know we may know the properties
+we have the ablity to learn it on need basis..
+3. class selector in css.. that is key... why.. it does not get applied automatically
+we have to apply it..
+4. css box model.. margin padding...
+5. most important thing.. display property.. layouts..
+6. bootstrap library...it involves lot of classes 
+classes can do layout  ( ...device responsiveness) , ui, classes can do table design..
+7. javascript...
+5/5 in functions and variables.
+
+function
+1. function definition
+2. calling
+3. assingment != calling..
+we define a function, we assign it and somebody else will call it
+== Event handling == Call backs..
+
+variable
+data type
+scope.
+
+I "know/no" the programming language...
+
+1. documentation standard (1/5)
+2. variable data type scope casting rules (5/5)
+3. runtime time error handling and quantifying (5/5)
+4. string handling and date handling (2/5)
+5. using datastructures like linkedlist and dictionaries(2/5)
+never take a person who tells I like datastructures seriously just laugh and go away..
+6. how to use tools, ides, unit tesing, profiling, library usage ( 0.00001/5)
+
+
+what to do..
+1. go thru the javascript pdf 22 slides.
+2. go thru the sample programs till  a06javascriptscope.html
+3. observe ...
+function calling
+function definition
+function assignment
+4. problem statement given slide no 22.
+5. in case you complete these go back to bootstrap sample programs and start
+documenting what each class does... in comments. (this is boring but important please do this also)
+
+
+
+quality of decision will always be measured by time factor you considered..
+
+in any project.. in any program..
+
+1. logic
+2. display part.
+
+common sense is always separate the presentation and logic. this is dinosaur stuff.
+
+//logic part
+function getfibonaccinumbers()
+{
+const Fibonacci =[];
+..logic.
+console.log
+return fibonacci
+
+
+}
+
+kids favourite word .. one way of doing things.
+in real life, things are non deterministic..
+
+
+//ui  part
+function printingfunction()
+{
+console.log(getfibonacci());
+
+
+}
+
+
+function get8table()
+{
+
+
+}
+
+logic part and ui part separate in any programming language...
+
+
+
+how do you know a function is complex function or a simple function?
+count the number of conditions in the function... ensure it is around 3 or less than 3..
+
+cyclomatic complexity...
+
+moral of the story.
+1. loyalty towards project respect architecture, it means dont mix logic and ui..presentation.
+2. in terms of our assingments.
+
+one function which returns... the Fibonacci numbers
+one function which returns the multiplication string or objects..
+single console.log to print both
+
+console.log(f1(), f2());
+
+
+
+
+Array.
+heterogenous , homogenous are all kids world terminologies no use in real life..
+array has to be contiguous... and usually it has a fixed size, but in javascript array size is dynamic and it can grow..
+
+let x=[];
+let x =new Array();
+why so many styles.. languages evolve.. they have to make new versions sometimes brain does not work only thing
+left is add a new way of doing the old thing...
+
+group of things called with the same name... and it is a linear datastructure, if you want to search
+start from first element and reach till the last element..
+
+with array what all things we should know..
+
+1. how to create an array
+2. how to add elements.
+3. how to access each element of the array ( iterate thru the array)
+4. how to search in the array
+5. how to sort the array.
+6. in case we are in a bad mood.
+6.1 modify the element in the array
+6.2 remove the element from the array
+
+typically in real life (in a project).. what will an array contain most probably..
+some objects..
+
+what is most important thing needed for sorting?
+comparing among the two elements which one is big, which one is small and whether are both are equal
+
+when you use sort function in any programming alngauge open documentation and read it..
+
+
+
+
+
+
+
+
+
+who is calling forEach .. 
+x) we are calling or the 
+y) owner of the forEach function is calling display
+
+
+forEach is a ready made function provided with the array.
+this foreach input argument must be a function which takes two input arguments and returns
+nothing..
+if you pass that function(x)  to forEach
+what forEach will do, take each element from the array and its index, call your x function
+by passing array element and index, what you do inside is your job... and not that for each..
+
+1, fuction calling
+2. function definition
+3. function assignment.
+
+function assignment you will see.
+
+1. function calling of somebody else function
+2. we define a function and pass it as an input argument to some other person function.
+3. so we must know what some other function expects from our function.
+
+
+whenever we write
+
+
+f1(f2);
+be 100% sure f1 we will not be the ownwer we will be caller.
+f2 we will be owner and we will defining it and we will not call it.
+how f2 will be defined will be known to use only if you open documentation of f1.
+
+f1=filter, map, find, ....
+
+let x ="HI";
+x.toLowerCase();
+console.log(x);
+
+object real life data type...
+which is not present in the language so we create it..
+
+data type = content + operations
+object == variables present in the object + functions present will be the operations.
+
+
+Circle
+{
+int radius  --content
+behavior
+getRAdius operations
+getPerimeter
+getArea.
+
+
+
+}
+
+
+welcome to deaddiction center.. for what
+get deaddicted from it, welcome to objects in real life...
+int will  not do anything fo rus in real life, it is always objects 
+
+
+
+if you tell I am calling. the function
+
+f1();
+---------------------------------------
+what to do 
+look at programs ... a07... to a09.. only in JavaScript don't go beyond..
+and copy paste some programs on
+
+these are super useful things in react so high priority
+for-each
+filter
+find
+map
+do the page 31 assignment..
+
+be conscious about
+1. function calling
+2. function definition
+3. function assigning..
+
+each person individual assignment will be checked start from today ... evening...
+==================================================================================
+
+
+1.  html assignment with you form validation.
+2. css  page page 9
+3. bootstrap page .. 58 html pdf.. keep it pending...
+4. page  56 .. 59 keep the ui ready using bootstrap, this has to be bootstrap..
+
+
+
+what do you mean event/
+event means change in a variable value and somebody should be intimated about it.
+
+better technical language.
+event means change in state and somebody should be notified about it.
+
+let i =3;
+i =4;
+//i value had 3 earlier now it is 4.. has i value changed, yes... is it an event no.
+why after this change we did not notify anybody of this change... 
+
+
+Event Source--X
+1. change in state , change in variable value.
+2. notification mechanism... to interested listeners..
+
+Person interested in the Event ... EVent LIstener. --Y  --Most of times we are this..
+1. it should register with the event source for the event..  ( define a function and assign it.... wait.. one day
+when the event occurs the function will get called )
+2. it should define a function..... this function will get called by Event source when the event occurs
+
+so what do we do.
+define a function and assign it and relax. one day .. event will occur then the function will get called.
+
+
+define a function and assign a function means system will be calling the function under some circumstance.
+
+anybody who tells we called the function,next question show me where in the code?
+
+
+so moral of the story, entire event hanlding you will see assignment of functions..
+that is we write a function we assign it.. then who is going to call it, one day event will occur
+when it occurs event source will call our function...
+
+Event typically are one way communication from Event Source to Event listener..
+that means within event hanlding functions you wont see this word return "something"
+
+"We are calling it.." .. you should show ..  f1(); without any quotes...
+
+
+
+
+
+
+
+
+
+
+
+simple thing especially IT industry people...
+expansion of something is not knowing the thing...
+
+expand http.
+HyperText Transfer protocol
+
+what is http?
+find out...
+
+
+
+
+Dom and form manipulation
+expand DOM.. Document Object Model
+what is DOM.. memory representation of all elements of the html is called as DOM.
+
+why we should know DOM only thru DOM knowing we can change sections of the html page
+.. 
+change.. read it or change it..
+
+there are various objcts present in the browser.
+one such object is called document which refers to the page which is being currently rendered.
+this object has got lot of functions..
+
+
+access sections of the html page.. and with whatever you get 
+can 1. read it or change it..
+
+
+<p title="mytitle" style="color:blue;backgroundcolor:green">changed paragraph values.. <p>
+dynamically changing the html..
+
+access the html page
+change its content.
+you cannot until you know how to do dom manipulation..
+for doing dom manipulation you should be conscious about what element you are getting..
+P, textbox, radiobutton, link...
+
+
+symptoms of a fragile programmer
+when variale name changes, his concept goes out of the window..
+
+
+with javascript
+1. validation
+2. access parts of html page and change it... (see is this)
+
+
+<p> </p>
+
+<table>
+<tr> <td> 1 </td> <td>2 </td> </tr>
+<tr> <td> 1 </td> <td>2 </td> </tr>  //via javascript..
+
+<table>
+
+
+one important is to recognize style of coding, that is important different ways to code ..
+
+
+
+
+event handling can be done in different styles..
+
+
+
+let f1 =function()
+{
+console.log("freak");
+}
+
+f1();
+
+
+
+<button> ok</button>
+
+<input type="button" value="ok"/>
+
+
+people who are busy writing their own code and dont look at other people code
+can never learn any technology.
+
+ratio 3:7
+3 is my own code.
+7 is other people code.
+
+
+
+4:6
+
+WHAT TO DO..
+
+1. go thru the pdf till slide 42.
+2. go thru programs... a10... to a15.... in JavaScript
+3. then try the assignment in slide 42.
+4. please go thru slides 56 to 59 and you have to make bootstrap pages for the same...
+5. those who are comfortable can start page 58 in html,css, bootstrap.pdf using bootstrap..
+
+assignment list.
+1. html page form validation
+2. html page CSS. 2 pages .. with an addition css file... if you made it.
+3. boot strap home page. page 58 in html css.pdf
+4. JavaScript assignments ...  2+1+2
+5. bootstrap pages for the javascript assingments given in page 56 to 59 of javascript.pdf
+
+I think it is better that on each assignment on the top
+you write a comment.
+
+1. which page no of  which pdf.
+2. big comment what will you explain if they ask how you did it..
+3. do write comments line by line what each line does without fail...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -201,20 +201,280 @@ bootstrap
 
 
 moral of the story.
-1. bootstrap is ajust a css framework.
+1. bootstrap is a css framework.
 2. why we should use it.. device independence and hopefully better decoration..
 3. using bootstrap means using classes of bootstrap.
-4. bootstrap categorize your tags in to layout tags... layout...
+4. bootstrap categorize your classes in to  layout...
 various of forms, buttons, table related tags...
 
-bootstrap..
+bootstrap.. mismatch between syntax present in slides and current version..
 do the following
-1.read the pdf.
+1. read the pdf.
 2. bootstrap folder you got sample programs
-3. understand it...	document each class what it does..
+3. understand it...	document each class what it does..(do it for 2 programs)
 <!--  -->
 /*  */
-4. if interested remove one class and see what is effect, then add the class.
+4. pg58 in the pdf , assignment try to find out how to do it with only bootstrap
+and document each of the classes being used..
+
+
+
+
+
+
+
+Bootstrap is a product or a standard?
+product... 
+
+all products secretly tell get Addicted to the product
+how to get addiction have an opinion and tell this is only way to do things..
+which is pathetic anyway...
+always telescope ... is more important and then we can think of microscope..
+
+we have "heard about bootstrap" and not be in position to code page 58..
+for that we need to spend time on bootstrap grid system systematically
+
+
+
+JavaScript...
+
+we are formally going to a programming language.... so we have to 
+get some basics... first..
+
+a programmer who is not 5/5 in variables and functions should not call
+himself a programmer.. who is this nearly 90% of people in the industry...
+
+kids are afraid of attending interviews
+adults are afraid of conducting interviews..
+
+what is meaning of being good at variables and functions
+
+function (5/5)
+1define a function
+
+1.1. who is going to call it. I dont know ok then dont define the function.
+1.2. focus how are you going to tell the caller you succeeded you failed...
+return type and inputs...
+
+2call a function
+2.1 usually we call a function written by other person... so dont assume
+open documentation... and read it.. those who dont do will do astrology
+on the code...
+
+
+3. assign a function.. (this is super important concept... ) != calling a function. to pass a function as input argument to another function.
+"callback"  ==  "Eve nt"
+
+
+
+
+
+
+variable(5/5)
+data type
+scope 
+
+why we should know data type...
+becuasd only then we can decide what operations you can do...
+
+string i ="3";
+i = i *2;
+
+String s = "Hello"-"o";
+this is a compilation error... minus operation is not defined on a string.
+
+X is a programming language even after 100 years
+programmer must be 5/5 in functions and variables..  --microscope
+telescope == respect architecture...
+
+JavaScript...respect everylangauge for what it is... and learn in separately
+dont assume...
+
+javascript assume we are zero and learn it like a new language...
+
+
+let x =3;
+let y = x-1;
+
+client side scripting..
+
+1. from the server you got some file.. entire content of file is processed
+on the client.
+
+2. you reach the server, server processes and generates some dadta
+and that data is given to the client... server side processing...
+
+
+
+we have a html page..
+we want to write javsacript into it why....
+
+
+dyanamic behavior.
+1. validation.. do some validation
+2. change parts of the page ( in our html we should have used id ,, hopefully)
+3. contact the server pass some data and get some processed data from the server.
+
+
+runtime identification of the data type associated with the variable.
+type of
+
+
+object real world entity... why did i create an object answer is simple
+my project demanded it..
+
+
+
+one tragedy of college life is "dedication to only one data type called int"
+
+
+
+
+IO functions will always be slow... IO operations are slow in any 
+
+10 times printf.
+if i call it time..
+
+let i =3;
+let j=4;
+i =j;
+i=55;
+console.log(i);
+
+let j =4
+f1(i);
+i=55;
+
+function f1(i)
+{
+
+}
+
+
+
+
+
+let i=[];
+let j =i;
+i[0]=23;
+console.log(j[0]);
+
+in every programming language dont take assignment operation lightly
+understand what it is going to do... language can differ.
+
+
+give an example of assignment happening without using =
+when we pass input arguments and return from functions..
+
+why strings are important..?
+becaue we human beings like giving a name to everything...
+hence strings are important
+
+caution cuation
+javascript and java have nothing in common other htan java word.
+
+
+let i ="HELLO";
+i.toLowerCase();
+console.log(i);
+
+
+in college most of times we commit this sin of calling functions
+and not seeing their documentation as to what it does.. this is a big time
+sin in a project.
+
+let i =3.14;
+
+I see a function call, open documentation what is meaning.
+
+1. see what is purpose of function
+2. what does input mean
+3. what does it return.
+4. how do i know function failed...
+
+one key thing which results in technical disaster in programming
+is the letter called "I"
+
+we dont value collaboration..
+
+function definition is done by X.
+function calling is done by by Y at a particular circumstance...
+so that means X should assign his function to a variable given by Y.
+
+zoom out not knowing that functions can be passed to another functions
+as variable is a big technical issue in any programming language..
+
+
+Scope of a variable
+1. local -- function...
+2.global -- across a set of functions... anybody whose passes global
+variable as input argument or return type from a function deserves a noble
+prize..
+
+
+const i =3;
+i =4;//this wont work.. i is being reassigned..
+
+
+let i =[];
+i[0]=23;
+
+
+cosnt i =[];
+i[0]=23;
+
+javascript summary
+1. respect it a new language dont assume...
+1. respect it a new language dont assume...
+1. respect it a new language dont assume...
+1. respect it a new language dont assume...
+1. respect it a new language dont assume...
+1. respect it a new language dont assume...
+
+2. be conscious about functiosn and variables (5/5)
+3. what javascript can do.
+3.1 validate
+3.2 change sections of the page.
+3.3 contact server send some data and get some data...
+
+3. syntax.... 
+javascript is dynamically typed... you must know its type as a programmer
+but you dont need to mention it in the code..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+while being busy in some framework knowing function and variable..
+
+
+
+
 
 
 

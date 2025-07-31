@@ -10,11 +10,13 @@
   <img id="carImage" src="https://via.placeholder.com/150" alt="Car Image" />
   <div id="content">This is the original content.</div>
 
-  <button onclick="changeDOM()">Change DOM</button>
+  <!-- we crated a button and we have registered for the event onClick-->
+  <button onclick="dontchangeDOM()">Change DOM</button>
 
   <script>
-    function changeDOM() {
-      const heading = document.getElementById("heading");
+    function dontchangeDOM() {
+      const heading = document.getElementById("heading");//getting aparticular region in
+      //the html page
       const image = document.getElementById("carImage");
       const content = document.getElementById("content");
 
