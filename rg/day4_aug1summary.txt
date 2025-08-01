@@ -237,8 +237,277 @@ project specific settings of git.
 
 
 
+checklist.
+
+1. accessible..
+2. cloning the repository..
+3. dont push anything into the repository .. not urgent we will
+keep this on Monday...  (dont touch this)
+4. you plan what you will do the azure boards.
+topic
+assignment list..
+
+we cannot amplify misery by being disorganized..
 
 
+week1 story.
+
+1. once you clone
+2  you will create a branch
+3. you are going to push the branch to the repo.
+
+folder ..
+   html
+   css
+   bootstrap
+   javascript
+	1.
+	2.
+	3. html +css+  javscrip
+
+
+
+
+
+
+
+phase 1
+
+1. clone the repository ie you get repository from remote place.
+2. you are going to create a branch.
+3. you are going to push this branch to the remote place.
+4. with that it stops..
+
+phase 2...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+arrow function.. a  way to create a functions without a name.
+becuae many a times in javascript we need to create a function
+and assign it to some other function..
+
+
+when should a function need a name.?
+when we want to call it.
+
+if you are going to use a function which is going to called
+by somebody else.. the name does not matter, so an arrao function is sufficienct.
+
+lot of callback functions using arrow in javascript..
+
+mnore in depth, it is better to understand what is "this" in javascript
+
+
+
+imagine two people X and Y
+
+X is owner of the class, he defines the class.
+Y is user of the class, ie he is using the class how by creating object.
+X can tell Y hey look this is way you should create the object
+of the class by writing constructors..
+
+how do you create an object of a class.
+answer is open documentation and look for constructors and pick one..
+
+if you design with an intent called X
+and then do lot of fancy things on X and call it Y.
+and tell people it is Y. then also X will be screaming so Y will
+be screaming I am X.
+
+javascript boss is object and function.
+we can create a classes to make it look fancy.. but finally it will
+boil down to object and functions...
+
+Destructuring... important topic we want work on react without this..
+so wwe will try to spend time..
+if you can object.. and you want push the object properties into
+individual varibles.. consider destructuring..
+
+destructuring means..pushing objects values into individual variables
+in a shortcut syntax..
+
+
+promise... it wont happen now.
+promise we usually use to indicate something is happening that takes time..
+jargon asynchronous communication..
+
+many a times.. not valuing collaboration , creates misery....
+
+
+a promise needs a function which takes two arguments..
+
+people who hate function assignment will be miserable in javascript.
+
+
+promise needs a function which takes two arguments
+these two arguments are also functions.
+
+new Promise(f1);
+
+function f1(x,y)
+{
+
+}
+
+function x()
+{
+
+}
+
+function y()
+{
+}
+
+
+
+
+a promise does something, it takes input
+as a function which takes two functions let us call it as x and y.
+inside the promise, if you feel you succeeded you will call x
+if you feel you failed you must call y.
+
+
+how to show I am stupid person there are many ways. one way
+is to tell who created the promise I, who is using the promise I..
+
+promise is used to indicate something we are doing is taking 
+time , after it is done we need feedback.. promise tells give
+me two functions one function to call if I succeed and one
+function to call if I call fail.
+
+recognize a stupid program
+1. creating the promise
+2. using the promise
+is done by the same person...
+
+if will see a promise based program.
+observe two things..
+
+1. who has created the promise
+2. who is using the promise
+it will always be different person... nO it is same person
+program will look stupid..
+
+
+
+fetch(contactsomeserver).then(functionx).catch(functiony);
+
+this will work because fetch internally uses a promise...
+function x will get called if you  it is success
+function y will get called if it is a failure..
+
+in http how do you know things succeeded or failed..
+technical answer..
+always responses comes with status codes...
+status code is 2xx it means it success.
+status code comes with 4xx, it means misery because of caller..
+status code comes with 5xx, it means server has created some entertainment.
+
+people who tell I dont like theory will create misery for themselves
+by being life long busy with practicals...
+
+
+
+JSOn
+expand JSON -- JavaScript Object Notation.
+
+what is json?
+json is a standard to represent a variable..
+
+let i ={a:3}
+i want to represent any variable in a standard taht every programming
+language agrees to that standard would be a json...
+
+you can contact the server and pass things and get some data...
+via javascript the way to do it by using fetch
+fetchn internallyuses promise.. that means you will not get data 
+immediately eventually you get data.. 
+
+eventually you get data is called as asynchronous..
+
+1. javascript you an write a class.
+2. style of coding which is important in projects destructuring and ..
+3. promise... creation should be done by X and usage should be done by y
+4. fetch is a promise... 
+5. json is a standard for representing variables.
+if you have a variable represented in json format, it can be converted
+into variable of any language...
+6. fancy dress for fetch usage.. make asynchronous thing look 
+as though it is sycnrhous..
+
+1. promise, then comes await.. async
+
+in any programming language, if we dont know how to write things
+in multiple files and link them we dont know programming language
+we should know modules..
+
+trying to use module in the html while you are referring to js
+files which use other js files
+
+dont expect your project to refer to one js file
+that js file could inturn refer to multiple js files..
+that means we need to know what is module.
+
+
+1. you focus on writing azure boards..
+2. clone the repository.
+3. create the branch in the repository with the name.
+4. change to that folder..
+5. create a new branch... with naming convention
+6. switch to that branch..
+4. copy all your assignment files into the folder
+5. please dont push this to azure thing, we will review it..
+6. we can push it.. we will be pushing the branch to that repo
+and raising a pull request.. (hey Ihave done the job see whether
+you want to integrate with the main thing...)
+
+
+telescope is... we are heading towards a world
+where all of us need to be good code reviewers..
+code is generated from multiple sources
+ownership is ours..
+
+
+
+1. you have cloned it
+2. you have created a branch switched to that branch
+3. you have dumped your assingments there..
+4. dont push dont push, we will review first..
+
+for most important assingments i want to listen from view
+the answer for the question how did you approach this program...
+
+by Monday if you completed the azure boards, great going..
+
+ summary
+1. ensure bootstrap ui is ready for javascript assingments.
+2. azuare board..
+3. you have cloned the ado repository created and dumped your
+existing asisngments..
+
+git we  will reach 3/5 in terms of coverage eventually within next week
+so relax..
+
+what we need practically.
+
+1 . clone
+2. create a branch
+3. push the branch
+4. pull request.
+5. find out approved and not approved.
+6. next phase..
 
 
 

@@ -46,7 +46,7 @@ bash
 git switch -c feature-addition
 echo "function add(a, b) { return a + b; }" >> calculator.js
 git commit -am "Add addition. Implements AB#123"
-git push -u origin feature-addition
+git push -u origin feature-addition  #dont do this.. we will review.
 
 
 >Commits like `Fixes AB#123` or `Implements AB#123` create traceability.
