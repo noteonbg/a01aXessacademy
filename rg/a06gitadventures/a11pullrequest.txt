@@ -70,7 +70,7 @@ git branch -d feature-api   Delete local branch if merged
 
 ---
 
-  3. Bonus: See Which Branches Are Safe to Delete
+  3.  See Which Branches Are Safe to Delete
 
  Find merged branches
 
@@ -89,7 +89,7 @@ git branch -r --merged origin/main
 
 ---
 
- 🚫 Find unmerged branches
+  Find unmerged branches
 
 bash
 git branch --no-merged main
@@ -108,12 +108,11 @@ git branch --no-merged main
 | See merged remote branches             | `git branch -r --merged origin/main`   |
 | Push new branch and create PR (GitHub) | `git push -u origin feature-xyz`       |
 
----
+
 
 ------------------------------------------------------------------------------------------
 
 Cleaning up stale branches (both local and remote) is an important Git hygiene task — it helps keep your repository tidy and easier to manage.
-
 Let’s go through how to identify and safely remove stale branches, step by step.
 
 ---
@@ -132,7 +131,7 @@ bash
 git fetch -p
 
 
-> 🧹 This removes references like `origin/feature-old` if they no longer exist on the remote.
+ This removes references like `origin/feature-old` if they no longer exist on the remote.
 
 ---
 
@@ -175,19 +174,16 @@ done
 
 > This script deletes all merged branches except the current, `main`, or `dev`.
 
----
 
- Step 4: Delete Unused Remote Branches (manually)
 
+Step 4: Delete Unused Remote Branches (manually)
 You can't automatically detect if a remote branch is *stale* (i.e. unused and unmerged) unless you have policies or logs.
-
 But to delete one manually:
 
 bash
 git push origin --delete feature-unused
 
 
----
 
  Optional: View all Local/Remote Branches Side-by-Side
 
@@ -218,6 +214,3 @@ Output example:
 | See stale tracking branches      | `git branch -vv`                                |
 
 ---
-
-
-
