@@ -23,7 +23,7 @@ git init
  2. Create a new file
 
 bash
-echo "Hello Git" > hello.txt
+echo "Hello Git" >> hello.txt
 
 
 ---

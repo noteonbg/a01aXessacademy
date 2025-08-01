@@ -1,0 +1,273 @@
+1. intent.. loyal to the project.
+
+funeral begins in the project very early.. project tells in advance
+I am about to die, and it is for team to decide what to do.. it is never
+sudden..
+
+successful project.
+1. how many people are using it
+2. how long..
+when nothing is working in the project we can think of name of the project.
+
+intent... we should never need a hero... in any project...
+
+project success = process * technology * tools * culture
+
+anything which is repetitive we better automate..
+
+git... git is one such tool in the project process..
+
+world largest manufactured thing == ideas..
+
+simple rule in quality is aim for consistency than averages..
+
+Those who hate this process, enjoy the project funeral early...
+
+
+what is equivalent word in English
+for three people working together and completeing  job == miracle.
+
+all projects == unequal effort.. it is ok
+everybody should do their job.. and not look 
+
+people who use the words "creative, unique, challenging" are all kids
+if they cant detail the process which leads to it..
+
+any tool, you figure out in the project process where does it fit in..
+git fits in change control.
+
+git is a change control tool. (Shakespeare English --version control tool)
+==ceo English === Software Configuration(change)  Management.
+
+IT industry very liberal in using words, pathetic from a science perspective.
+
+
+Cloud.
+availability of resource on demand.
+resource
+hardware
+software.
+
+with respect to any tool... we should never go to google to find out...
+tool usage..
+
+1. imiate and then you can improve..
+find out in the company how they are using it... I can have 100 brilliant
+ideas pause it... let me collect context...
+
+git setup how it is done in the company find out...
+
+what I am expecting you to do.
+1. dont byheart any commands.. relax and listen.. we should this
+repeatedly.. and then get the commands... 
+
+git  -- protocol...
+
+server... GitHub, bitbucket or azure cloud provider.. server which
+understands git protocol..
+
+In open source.. process is the boss.
+and nobody can keep gun at people head and tell I will shoot it
+does not work..
+
+hopefully people remember what is meaning of project process
+Git is a tool to manage change in the project..
+Git is distributed change control tool.
+you can have single system without any network
+and do all the change control in that system alone..
+but it you want to share it with others you need some server.. which understands git mechanism...
+
+tell my project must use git.. ==technical jargon for this.
+is initialize your project with the git == my project
+now is a git repository... lot of ui options available..
+but in our program we want to demonstrate git thru console..
+we have to use lot of commands.. these commands
+you should practice and not byheart..
+
+
+you have to tell username and email..
+this you can do it
+system level.
+user level
+project level.
+how to do it, you got various commands..
+what command..
+
+any programmer who cannot explain his project folder
+structure is a dead programmer.
+
+1. create a folder  --demo( or anything but dont use spaces
+between folder name that is a sin.. most of times in real life)
+2. git bash in that folder.
+3. git --version.
+4. for whom it is working open the git-ado.pdf and go thru it...
+
+how did you tell your project is going to use git for change control
+git init.
+
+
+
+
+
+c:\users\id\goldenversions\ have only softwares and not youir
+programs or my programs...
+c:\users\id\yourwork\html
+		     javascript
+		     sharedcode.
+		     gitpoc
+			git --version
+			git init
+			gitpoc folder is formally a git repository now.
+			a project which can think of using git related 				features.
+
+I hate folders and files stored in downloads or in desktop
+because desktop is palce to keep shortcuts and not files.
+
+dont trust me ask the academic 
+I hate all these things ok enjoy your desktop...
+
+
+
+1. we intalled git.
+2. we checked git works.
+3. we have a folder and ensured that this folder is a git repository
+4. check what is settings used in git system, userlevel, projectlevel.
+we can talk about project level settings also because we know
+100% that our folder is a git repository.
+
+are you in a folder which is a git repository.
+before you start, please have a look at your settings...
+how...
+git config --list --show-origin
+
+
+
+
+
+
+when there are multiple steps you want to trust your
+memory my answer s no.. operate thru checklists..
+this is true for git, this is true for react, this istrue for spring
+this is true for deploying on cloud,....
+
+
+
+before you start dealing with files and git protocol.
+
+checklist 1 
+1. did you check git software is working..
+git --version..
+2. we have a project folder, enable it for using it..
+how did we do it, git init.
+3. we wanted to check what all settings are done
+with git currently...
+so we used the git config --list --show-origin.
+
+moral of the story is... show show patience
+and see all the settings needed is done or not
+before you start adding files into git...
+
+
+in the git project folder create a file called a.txt
+and add some content called hello.
+
+welcome to system thinking... we need 5/5 in something
+in other things we need be 1/5 atleast
+
+once upon a time there is something DOS.
+
+Linux should leanr how to write scripts.
+those who in are dos should learn how to write batch files..
+
+
+
+
+
+
+important but freaky point
+when you see a message on a screen if we dont understand
+read the message completely.. 
+
+
+relax dont bother too much...commands
+11.25 AM
+
+
+
+
+create one more file called b.txt and add it to staging
+area and look at the git status.
+
+
+
+
+
+
+1. project is using git
+2. you can create a file.
+3. you can add a file.
+4. you can commit.
+5. git status, git log (showed a history of commits...)
+6. number code.. to identify each commit
+7. .gitignore file..  here you can mention
+which all files, folders git should track or should not
+go into the repository, this will typically will editor related
+files or somethings which is not related to the project.
+
+
+what to do.
+a02start.txt .. whatever it is telling do it and see whether
+it works in a new project folder.
+
+checklist.
+1. add
+2. commit
+3. status
+4. log
+5. .gitignore
+
+those who have completed... check the a01setting.txt read it
+and find out what commands to issue to check
+only 
+system settings of git
+user settngs of git
+project specific settings of git.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
