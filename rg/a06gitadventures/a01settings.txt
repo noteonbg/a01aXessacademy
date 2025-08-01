@@ -1,10 +1,6 @@
-
-
-
 Basic Git Configuration
 
 These are typically set globally (once per machine or user account):
-
 
 # Set your name
 git config --global user.name "John Doe"
@@ -103,7 +99,6 @@ SETLOCAL
 
 REM === Set variables ===
 SET REPO_DIR=/f/a01aXessacademy/rg/a06gitadventures/temp/poc_project
-
 REM === System-level config (requires admin command prompt) ===
 echo Setting system-level Git config...
 git config --system user.email "system@example.com"
@@ -125,15 +120,25 @@ echo Git configuration completed successfully.
 ENDLOCAL
 pause
 
+------------------------------
 
+commands to see...
 
+System-level settings
+git config --system --list
 
+User level settings
+git config --global --list
 
+Project specific repository level, 
+settings
+first be inside the repository folder...
+git config --local --list
 
+View all settings and where they come from
+git config --list --show-origin
 
-
-
-
+------
 
 
 

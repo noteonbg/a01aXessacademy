@@ -1,0 +1,162 @@
+
+
+* ✅ Fast-forward merge
+* ✅ True merge (non-fast-forward)
+* ✅ Aborting a merge
+* ✅ Resolving merge conflicts manually
+
+---
+
+ Setup: New Git Project
+
+bash
+mkdir merge-poc
+cd merge-poc
+git init
+echo "Line 1" > file.txt
+git add file.txt
+git commit -m "Initial commit"
+
+
+---
+
+ 1. Fast-forward merge
+
+#  Create a new branch and make a change:
+
+bash
+git switch -c feature-ff
+echo "Line 2 from feature-ff" >> file.txt
+git commit -am "Add line 2 in feature-ff"
+
+
+#  Switch back and merge:
+
+bash
+git switch main
+git merge feature-ff
+
+
+>  Since `main` hasn't changed since the branch was created, Git performs a fast-forward merge (no merge commit created).
+
+---
+
+ ✅ 2. True Merge (Non-Fast-Forward)
+
+#  Create two branches from the same base:
+
+bash
+git switch -c feature-a
+echo "Feature A changes" >> file.txt
+git commit -am "Feature A changes"
+
+
+#  Switch back and make another change:
+
+bash
+git switch main
+echo "Main branch changes" >> file.txt
+git commit -am "Main changes"
+
+
+Now both `main` and `feature-a` have diverged.
+
+#  Merge the feature branch:
+
+bash
+git merge feature-a
+
+
+>  Git performs a true merge, creating a merge commit to combine changes from both branches.
+
+---
+
+ ✅ 3. Abort a Merge
+
+Let’s force a merge conflict first.
+
+#  Create conflict:
+
+bash
+git switch -c conflict-branch
+echo "CONFLICT from new branch" > file.txt
+git commit -am "Conflicting change"
+
+
+Switch back to `main` and make a conflicting change:
+
+bash
+git switch main
+echo "CONFLICT from main" > file.txt
+git commit -am "Conflicting change from main"
+
+
+Now try to merge:
+
+bash
+git merge conflict-branch
+
+
+> ❌ You'll get a merge conflict!
+
+---
+
+#  Abort the merge:
+
+bash
+git merge --abort
+
+
+> 🔁 This reverts your working tree to the state before the merge attempt.
+
+---
+
+ ✅ 4. Manually Resolve a Merge Conflict
+
+Repeat the conflicting merge:
+
+bash
+git merge conflict-branch
+
+
+Now check conflict markers in `file.txt`:
+
+txt
+<<<<<<< HEAD
+CONFLICT from main
+=======
+CONFLICT from new branch
+>>>>>>> conflict-branch
+
+
+#  Edit `file.txt` manually:
+
+Choose one version or combine them:
+
+txt
+CONFLICT resolved manually
+
+
+#  Then stage and commit:
+
+bash
+git add file.txt
+git commit -m "Resolved merge conflict manually"
+
+
+---
+
+ 
+
+| Action                | Command                                 |
+| --------------------- | --------------------------------------- |
+| Fast-forward merge    | `git merge branch-name` (no divergence) |
+| True (non-FF) merge   | `git merge branch-name` (diverged)      |
+| Abort a merge         | `git merge --abort`                     |
+| View conflict markers | Open conflicted files                   |
+| Mark as resolved      | `git add conflicted-file`               |
+| Finalize merge        | `git commit`                            |
+
+---
+
+

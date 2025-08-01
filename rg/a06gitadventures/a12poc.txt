@@ -1,0 +1,148 @@
+`calculator-app` 
+
+## 🧪 **Step-by-Step Git Workflow with JavaScript**
+
+### ✅ 1. Initialize the repo
+
+```bash
+mkdir calculator-app
+cd calculator-app
+git init
+```
+
+---
+
+### ✅ 2. Create and commit the initial file
+
+```bash
+echo "console.log('Calculator v1');" > calculator.js
+git add calculator.js
+git commit -m "Initial commit: basic calculator"
+```
+
+---
+
+### ✅ 3. Add a `.gitignore`
+
+```bash
+echo "*.log" > .gitignore
+git add .gitignore
+git commit -m "Add .gitignore to ignore log files"
+```
+
+---
+
+### ✅ 4. Create and switch to a feature branch (`addition`)
+
+```bash
+git switch -c feature-addition
+echo "function add(a, b) { return a + b; }" >> calculator.js
+git commit -am "Add addition function"
+```
+
+---
+
+### ✅ 5. Merge the branch (fast-forward)
+
+```bash
+git switch main
+git merge feature-addition   # Fast-forward merge
+```
+
+---
+
+### ✅ 6. Create conflicting changes
+
+```bash
+git switch -c feature-subtraction
+echo "function subtract(a, b) { return a - b; }" >> calculator.js
+git commit -am "Add subtraction function"
+```
+
+Then on `main`:
+
+```bash
+git switch main
+echo "// Calculator version 2" | cat - calculator.js > temp && mv temp calculator.js
+git commit -am "Add version header"
+```
+
+Now merge (will cause a conflict):
+
+```bash
+git merge feature-subtraction
+```
+
+---
+
+### ✅ 7. Resolve the merge conflict manually
+
+Open `calculator.js` and edit conflict markers:
+
+```javascript
+// Calculator version 2
+console.log('Calculator v1');
+function add(a, b) { return a + b; }
+function subtract(a, b) { return a - b; }
+```
+
+Then:
+
+```bash
+git add calculator.js
+git commit -m "Resolve merge conflict and merge subtraction feature"
+```
+
+---
+
+### ✅ 8. Tag the release
+
+```bash
+git tag -a v1.0 -m "First JavaScript release with addition and subtraction"
+```
+
+---
+
+### ✅ 9. View and navigate the commit history
+
+```bash
+git log --oneline --graph --all
+git show v1.0
+git checkout HEAD~2
+git switch main
+```
+
+---
+
+### ✅ 10. Clean up merged branches
+
+```bash
+git branch --merged main
+git branch -d feature-addition
+git branch -d feature-subtraction
+```
+
+---
+
+### ✅ 11. Simulate stale remote cleanup (optional)
+
+```bash
+git remote add origin fake-url.git
+git fetch --prune
+```
+
+---
+
+## ✅ Summary
+
+we have done
+
+* Git init, add, commit
+* Branching, merging, resolving conflicts
+* Tagging releases
+* History navigation
+* Cleanup and pruning
+
+
+
+

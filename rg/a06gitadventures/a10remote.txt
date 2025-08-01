@@ -1,0 +1,152 @@
+
+
+
+
+  1. What is `origin`?
+
+In Git, `origin` is the **default name** for the **remote repository** when you clone one.
+
+bash
+git clone https://github.com/user/repo.git
+
+
+This sets up:
+
+* A remote named `origin`
+* A local branch (e.g., `main`) that **tracks** `origin/main`
+
+You can view the remote like this:
+
+bash
+git remote -v
+
+
+---
+
+  2. Listing remote branches
+
+To list **remote branches**:
+
+bash
+git branch -r
+
+
+Example output:
+
+
+origin/HEAD -> origin/main
+origin/main
+origin/feature-login
+
+
+To list **both local and remote**:
+
+bash
+git branch -a
+
+
+Example output:
+
+
+* main
+  feature-x
+  remotes/origin/main
+  remotes/origin/feature-login
+
+
+---
+
+  3. Tracking vs Non-tracking Branches
+
+#  **Tracking Branch**
+
+A **tracking branch** is a local branch linked to a remote branch (like `main` tracking `origin/main`). Changes can be pushed/pulled easily.
+
+To check if a branch is tracking a remote branch:
+
+bash
+git branch -vv
+
+
+Example:
+
+
+* main     abc1234 [origin/main] Your commit message
+
+
+Here, `main` is tracking `origin/main`.
+
+# Create a tracking branch
+
+If the remote has a branch `origin/feature-x`, create a local tracking branch like this:
+
+bash
+git checkout --track origin/feature-x
+
+
+Or shorthand:
+
+bash
+git switch -t origin/feature-x
+
+
+---
+
+# ❌ **Non-tracking Branch**
+
+A **non-tracking branch** has no link to a remote branch — you have to manually push/pull with full refs.
+
+To create one:
+
+bash
+git checkout -b feature-local
+> This branch is not associated with a remote by default.
+
+If you try to `git pull` or `git push`, you’ll get errors like:
+fatal: The current branch feature-local has no upstream branch.
+
+
+To set the upstream (make it tracking):
+
+bash
+git push -u origin feature-local
+
+
+---
+
+  View and Manage Remotes
+
+* View remotes:
+
+  bash
+  git remote -v
+  
+
+* Add a remote:
+
+  bash
+  git remote add upstream https://github.com/other/repo.git
+  
+
+* Remove a remote:
+  bash
+  git remote remove origin
+  
+
+---
+
+  Summary
+
+| Task                        | Command                            |
+| --------------------------- | ---------------------------------- |
+| List remotes                | `git remote -v`                    |
+| List remote branches        | `git branch -r`                    |
+| List all branches           | `git branch -a`                    |
+| Show tracking info          | `git branch -vv`                   |
+| Create tracking branch      | `git switch -t origin/branch-name` |
+| Create non-tracking branch  | `git checkout -b my-local-branch`  |
+| Set upstream after creation | `git push -u origin branch-name`   |
+
+---
+
+Let me know if you'd like to see how to **delete remote branches**, or how GitHub pull requests relate to tracking branches.

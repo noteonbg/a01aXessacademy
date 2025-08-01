@@ -1,0 +1,224 @@
+
+how does git store things.
+
+Every commit is a snapshot of your project at that point in time.
+Git doesn't store entire files again if they haven’t changed — it just points to the previously stored versions (objects).
+Git is fast because it works with its local object database — no need for a central server to do version control.
+Inside your repo, there's a hidden .git/ folder that contains everything Git needs:
+
+your-project/
+├── .git/
+│   ├── objects/
+│   ├── refs/
+│   ├── HEAD
+│   ├── config
+│   └── ...more
+
+Git uses 4 types of objects in its internal database
+
+Object Type	Description	Stored In
+
+Blob	File contents	.git/objects/
+Tree	Folder structure (points to blobs/trees)	Used to											build 											a 				snapshot
+Commit	Points to a tree and has metadata	Author, timestamp, message
+
+Tag	A named reference to a commit (optional)	Lightweight or annotated tags
+
+
+You commit a change to index.html. Git:
+Compresses and stores the content of index.html as a blob.
+Creates a tree object that references this blob (plus other blobs for unchanged files).
+Creates a commit object that references this tree and links to the parent commit.
+
+
+A commit points to:
+
+A tree object (snapshot of the project)
+Parent commit(s) (except for the first commit)
+Author, date, and message
+
+
+commit 3f6e1c8...
+Tree: d1e8f3...
+Parent: 7a9b2e...
+Author: John Doe <john@example.com>
+Date:   Wed Jul 31 14:10 2025
+
+    Add homepage content
+
+
+Every commit points back to the previous commit (its parent), forming a commit history chain
+A → B → C → D
+
+| Concept           | How Git Handles It                                |
+| -- | - |
+| File changes      | Stored as compressed blobs                        |
+| Directory changes | Stored as tree objects                            |
+| Commits           | Reference a tree, parent, author, message         |
+| Efficiency        | Only stores new/changed files (content-addressed) |
+| Storage           | All data is stored in `.git/objects/`             |
+
+
+
+
+Every object in Git—commits, trees, blobs, and tags—is identified by a SHA-1 hash.
+
+SHA-1 (Secure Hash Algorithm 1) is a cryptographic hash function.
+
+It generates a 40-character hexadecimal string from any input.
+
+The string "hello world" → 
+SHA-1 = 2aae6c35c94fcfb415dbe95f408b9ce91ee846ed
+
+Git uses SHA-1 to name and reference objects in its database:
+
+
+| Git Object | What It Stores             | How SHA-1 Is Computed                          |
+| - | -- | - |
+| Blob   | File content               | SHA-1 of `blob <length>\0<content>`            |
+| Tree   | Directory structure        | SHA-1 of tree content (names + modes + hashes) |
+| Commit | Metadata + pointer to tree | SHA-1 of all commit data                       |
+| Tag    | Annotated tags             | SHA-1 of tag data    
+
+
+
+
+ SHA-1 hashes are core to how Git works under the hood. Every object in Git—commits, trees, blobs, and tags—is identified by a SHA-1 hash.
+
+
+
+
+
+  What is a SHA-1 Hash?
+
+ SHA-1 (Secure Hash Algorithm 1) is a cryptographic hash function.
+ It generates a 40-character hexadecimal string from any input.
+ Example:
+
+
+  The string "hello world" → 
+  SHA-1 = 2aae6c35c94fcfb415dbe95f408b9ce91ee846ed
+
+
+
+
+ How Git Uses SHA-1
+
+Git uses SHA-1 to name and reference objects in its database:
+
+| Git Object | What It Stores             | How SHA-1 Is Computed                          |
+| - | -- | - |
+| Blob   | File content               | SHA-1 of `blob <length>\0<content>`            |
+| Tree   | Directory structure        | SHA-1 of tree content (names + modes + hashes) |
+| Commit | Metadata + pointer to tree | SHA-1 of all commit data                       |
+| Tag    | Annotated tags             | SHA-1 of tag data                              |
+
+
+
+  Example: Git Commit Hash
+
+When you make a commit, Git creates a commit object, which includes:
+
+ The SHA-1 of the tree
+ The SHA-1 of the parent commit
+ The author and date
+ The commit message
+
+Git then hashes the entire object (including those references),
+ and the result is the commit hash you see with `git log`.
+
+
+commit 1f7a7a472abf3b7e4e0463f0e59ad2054c2f8f94
+Author: Alice <alice@example.com>
+Date:   ...
+
+    Initial commit
+```
+
+This `1f7a7a...` is a SHA-1 hash.
+
+
+
+How Git Stores Objects Using SHA-1
+
+Inside `.git/objects/`, Git stores each object in a file named after its SHA-1:
+
+
+.git/objects/
+└── 1f/
+    └── 7a7a472abf3b7e4e0463f0e59ad2054c2f8f94  ← Commit object
+
+
+
+
+ Why SHA-1 is Powerful in Git
+
+Content-addressed
+
+ Each piece of content is stored only once — based on its hash.
+ If two files have the same content, Git stores them only once (deduplication).
+
+Immutable History
+
+Any change in content leads to a completely different SHA-1.
+This makes Git commits tamper-evident.
+
+Fast Comparison
+Git can compare files and objects quickly using hashes rather than byte-by-byte diffing.
+
+Is SHA-1 Still Secure?
+SHA-1 has known cryptographic weaknesses (collision vulnerabilities).
+Git started transitioning to SHA-256 for better security.
+Modern Git supports SHA-256, but SHA-1 is still the default in most setups for compatibility.
+
+
+
+
+# Create a file
+echo "hello world" > hello.txt
+
+# See its hash in Git
+git hash-object hello.txt
+
+
+📤 Output:
+
+```
+2aae6c35c94fcfb415dbe95f408b9ce91ee846ed
+```
+
+That’s the SHA-1 hash of the blob object Git would store.
+
+
+         SHA-1: c3f1a9e...  ← Commit C
+         ┌─────────────────────────────┐
+         │ Commit C                    │
+         │                             │
+         │ parent → b2d4e8f...         │ ──▶ Commit B
+         │ tree   → 91a2c88...         │ ──▶ Tree C
+         │ message: "Update homepage"  │
+         └─────────────────────────────┘
+
+                   ▲
+                   │
+         SHA-1: b2d4e8f...  ← Commit B
+         ┌─────────────────────────────┐
+         │ Commit B                    │
+         │                             │
+         │ parent → a1b7c2d...         │ ──▶ Commit A
+         │ tree   → 73d1a64...         │ ──▶ Tree B
+         │ message: "Add about page"   │
+         └─────────────────────────────┘
+
+                   ▲
+                   │
+         SHA-1: a1b7c2d...  ← Commit A (initial)
+         ┌─────────────────────────────┐
+         │ Commit A                    │
+         │                             │
+         │ parent → (none)             │
+         │ tree   → 4c56b91...         │ ──▶ Tree A
+         │ message: "Initial commit"   │
+         └─────────────────────────────┘
+
+

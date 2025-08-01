@@ -1,0 +1,123 @@
+
+
+
+
+  Git Tagging Example
+
+Assume you're in a Git repo with at least one commit. If not, you can initialize a quick one like this:
+
+bash
+mkdir tag-poc
+cd tag-poc
+git init
+echo "Version 1" > version.txt
+git add version.txt
+git commit -m "Initial version"
+
+
+---
+
+  1. Create a lightweight tag
+
+bash
+git tag v1.0
+
+
+ ✅ This just marks the current commit with a tag — no metadata or message.
+ Equivalent to a bookmark.
+
+---
+
+  2. Create an annotated tag
+
+bash
+git tag -a v1.0.1 -m "Annotated release tag v1.0.1"
+
+ Stores metadata: tagger's name, email, date, and message.
+ Considered more official for releases.
+
+---
+
+  3. List all tags
+
+bash
+git tag
+
+
+> Output:
+
+
+v1.0
+v1.0.1
+
+
+---
+
+  4. View details of an annotated tag
+
+bash
+git show v1.0.1
+
+
+> Shows the commit, tag message, and metadata.
+
+---
+
+  5. Tag a specific commit
+
+First, get a commit hash:
+
+bash
+git log --oneline
+
+
+Now tag an earlier commit:
+
+bash
+git tag -a v0.9 <commit-hash> -m "Tagging an earlier commit as v0.9"
+
+
+---
+
+  6. Push tags to remote
+
+If you're using Git with a remote (e.g., GitHub):
+
+bash
+git push origin v1.0.1         Push one tag
+git push origin --tags         Push all tags
+
+
+---
+
+  7. Delete a tag
+
+bash
+git tag -d v1.0
+
+
+> To delete from remote too:
+
+bash
+git push origin --delete v1.0
+
+
+---
+
+ ✅ Summary: Tag Commands
+
+| Action                 | Command                          |
+| ---------------------- | -------------------------------- |
+| Create lightweight tag | `git tag v1.0`                   |
+| Create annotated tag   | `git tag -a v1.0.1 -m "message"` |
+| List all tags          | `git tag`                        |
+| Show tag details       | `git show v1.0.1`                |
+| Tag specific commit    | `git tag -a v0.9 <commit>`       |
+| Push single tag        | `git push origin v1.0.1`         |
+| Push all tags          | `git push origin --tags`         |
+| Delete local tag       | `git tag -d v1.0`                |
+| Delete remote tag      | `git push origin --delete v1.0`  |
+
+---
+
+Let me know if you want to link tags to GitHub releases or use them in CI/CD pipelines!

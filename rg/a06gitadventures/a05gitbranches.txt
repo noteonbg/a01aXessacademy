@@ -1,0 +1,119 @@
+
+
+---
+
+ Git Branch Operations: Step-by-Step Example
+
+Assume you're in a Git repo (e.g., `git-poc`) and on the default `main` branch.
+
+---
+
+ 1. Create a new branch
+
+bash
+git branch feature-login
+
+
+This creates a branch named `feature-login` from your current branch (e.g., `main`).
+
+---
+
+ 2. Switch to the new branch
+
+bash
+git switch feature-login
+
+
+> You're now working on `feature-login`.
+
+Alternatively, you can combine creation and switch:
+
+bash
+git switch -c feature-login
+
+
+---
+
+ 3. Show all branches
+bash
+git branch
+
+> The current branch is marked with `*`
+
+---
+
+ 4. View HEAD pointers of all branches
+
+bash
+git show-ref
+
+This shows all references (branches and tags) and their commit hashes.
+
+> Or to see the commit each branch points to:
+
+bash
+git branch -v
+
+
+---
+
+ 5. Compare tips of two branches
+To compare `main` and `feature-login`:
+
+bash
+git log main..feature-login
+
+
+> Shows commits in `feature-login` that are not in `main`.
+
+
+
+bash
+git diff main..feature-login
+
+
+> Shows file-level differences between the two branch tips.
+
+---
+
+ 6. Switch back to `main`
+
+bash
+git switch main
+
+
+---
+
+ 7. Delete a branch
+
+bash
+git branch -d feature-login
+
+
+> Deletes the branch safely (only if it’s fully merged into current branch).
+
+If the branch is not merged and you still want to delete it:
+
+bash
+git branch -D feature-login
+
+
+---
+
+ 
+
+| Task                         | Command                           |
+| ---------------------------- | --------------------------------- |
+| Create a branch              | `git branch new-branch`           |
+| Create & switch              | `git switch -c new-branch`        |
+| Switch to a branch           | `git switch branch-name`          |
+| List all branches            | `git branch`                      |
+| Show commit pointers         | `git branch -v` or `git show-ref` |
+| Compare commits              | `git log branch1..branch2`        |
+| Compare file diffs           | `git diff branch1..branch2`       |
+| Delete merged branch         | `git branch -d branch-name`       |
+| Force delete unmerged branch | `git branch -D branch-name`       |
+
+---
+
+

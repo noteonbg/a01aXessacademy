@@ -1,0 +1,168 @@
+1.  Reference specific commits
+2.  Navigate the commit tree (parents, ancestors)
+3.  Use commit logs effectively
+
+
+
+---
+
+ Setup: Simple Git History
+
+Start with a sample repo if you don't have one:
+
+bash
+mkdir log-poc
+cd log-poc
+git init
+echo "Line 1" > file.txt
+git commit -am "Commit 1: Initial"
+echo "Line 2" >> file.txt
+git commit -am "Commit 2: Add line 2"
+echo "Line 3" >> file.txt
+git commit -am "Commit 3: Add line 3"
+
+
+Now your commit history looks like:
+
+
+Commit 3 (HEAD)
+Commit 2
+Commit 1
+
+
+---
+
+ 1. Referencing commits
+
+# Using commit hashes
+
+Get the log:
+
+bash
+git log --oneline
+
+
+Example output:
+
+
+e3a1f6a (HEAD -> main) Commit 3: Add line 3
+a1c2d3b Commit 2: Add line 2
+9b8f7g6 Commit 1: Initial
+
+
+Use any commit hash to reference it:
+
+bash
+git checkout a1c2d3b      # Go to Commit 2
+
+
+# Using `HEAD`, `HEAD^`, `HEAD~N`
+
+* `HEAD` = current commit
+* `HEAD^` = parent
+* `HEAD~2` = 2 steps back from HEAD
+
+bash
+git checkout HEAD^        # Go to parent (Commit 2)
+git checkout HEAD~2       # Go to grandparent (Commit 1)
+
+
+---
+
+ 2. Navigating the commit tree
+
+# View the tree with `--graph`
+
+bash
+git log --oneline --graph --all
+
+
+This visually shows branches and commits in a tree format.
+
+---
+
+# Show full commit details
+
+bash
+git log
+
+
+Or just last N commits:
+
+bash
+git log -n 2
+
+
+Or filter by author/message/date:
+
+bash
+git log --author="Your Name"
+git log --since="2 days ago"
+git log --grep="line 2"
+
+
+---
+
+ 3. Other Useful Navigation Tricks
+
+# Show specific file history
+
+bash
+git log -- file.txt
+
+
+> Shows commits that changed `file.txt`
+
+---
+
+# Show commit content
+
+bash
+git show a1c2d3b
+
+
+> Shows diff + metadata for that commit
+
+---
+
+# Diff between commits
+
+bash
+git diff HEAD~1 HEAD       # Compare last two commits
+
+
+Or:
+
+bash
+git diff a1c2d3b e3a1f6a    # Compare two specific commits
+
+
+---
+
+# Shortcuts for common navigation
+
+| Shortcut   | Meaning                    |
+| ---------- | -------------------------- |
+| `HEAD`     | Current commit             |
+| `HEAD^`    | First parent               |
+| `HEAD^^`   | Grandparent                |
+| `HEAD~2`   | Two steps back             |
+| `commit^2` | Second parent (in a merge) |
+
+---
+
+ Summary
+
+| Task                     | Command Example                   |
+| ------------------------ | --------------------------------- |
+| Show short log           | `git log --oneline`               |
+| Full log with graph      | `git log --graph --oneline --all` |
+| Reference commit by hash | `git checkout <hash>`             |
+| Go back one commit       | `git checkout HEAD^`              |
+| View changes in commit   | `git show <commit>`               |
+| Compare two commits      | `git diff A B`                    |
+| Log changes to one file  | `git log -- file.txt`             |
+
+---
+
+

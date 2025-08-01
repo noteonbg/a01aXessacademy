@@ -1,0 +1,145 @@
+
+
+#check status
+
+git status
+
+Stage & commit:
+
+git add about.txt
+git commit -m "Update content in about.txt"
+
+Delete a File
+
+git rm old-file.txt
+git commit -m "Remove old-file.txt"
+git rm removes the file from both your working directory and staging area.
+
+
+ Rename a File
+ git mv contact.txt contact-us.txt
+   git commit -m "Rename contact.txt to contact-us.txt"
+
+ 
+ 4. Undo Changes (Various Cases)
+
+ Undo uncommitted changes to a file
+ git restore about.txt
+ This resets about.txt to the last committed version.
+
+
+b. Unstage a file
+git restore --staged about.txt
+Moves it out of the staging area, but keeps the changes in the working directory
+
+
+c. Undo a commit (keep changes locally)
+      git reset --soft HEAD~1                    |
+Uncommits the last commit, but keeps your changes staged.
+
+
+Undo a commit and discard changes
+git reset --hard HEAD~1
+DANGEROUS: This deletes the last commit and all uncommitted changes.
+
+
+| Action                  | Git Command                                |
+| ----------------------- | ------------------------------------------ |
+| Edit a file             | *Edit normally, then* git add + commit |
+| Delete a file           | git rm filename                          |
+| Rename a file           | git mv old new                           |
+| Discard changes         | git restore filename                     |
+| Unstage a file          | git restore --staged filename            |
+| Undo last commit (keep) | git reset --soft HEAD~1                  |
+| Undo last commit (nuke) | git reset --hard HEAD~1                  |
+
+
+
+1. git checkout
+
+# What It Does:
+
+Used to:
+
+* Switch between branches
+* Or restore files from commits
+
+#Basic usage:
+
+bash
+git checkout branch-name
+Switches to the specified branch.
+
+bash
+git checkout filename
+
+
+Restores the file to its last committed version (from HEAD).
+
+
+
+2. git reset HEAD
+What It Does:
+**Unstages files** that were added with git add, but keeps changes in the working directory.
+
+#📌 Example:
+
+bash
+git add file.txt
+git reset HEAD file.txt
+
+Now, file.txt is no longer staged, but your edits are still in place.
+
+---
+
+3. git commit --amend
+What It Does:
+Allows you to **modify the last commit**, either:
+* Edit the commit message
+* Add more changes to it
+
+bash
+# Oops! Forgot a file
+git add missed-file.txt
+git commit --amend -m "Updated with the correct message"
+
+
+The last commit is updated to include the staged file and the new message.
+Don’t amend commits that were already pushed to shared repos.
+
+
+ 4. git checkout <SHA> -- <filename>
+
+Restores a specific file from a **past commit** (by SHA hash) into your working directory.
+
+#📌 Example:
+
+bash
+git checkout 7f3a9d2 -- index.html
+
+
+This takes index.html as it existed in commit 7f3a9d2 and copies it into your current working dir (not a full checkout).
+You can now choose to commit it again or inspect it.
+
+
+5. git revert <SHA>
+Creates a **new commit that undoes** the changes introduced by a specific commit.
+
+#📌 Example:
+
+bash
+git revert 3a9d1a7
+Git will generate a new commit that reverses the changes from 3a9d1a7.
+This is the **safe way to undo a commit** in a shared history — because it preserves history (does not rewrite).
+
+
+
+ Quick Summary Table
+
+| Command                        | Purpose                                                           |
+| ------------------------------ | ----------------------------------------------------------------- |
+| git checkout                 | Switch branches or restore file to last commit                    |
+| git reset HEAD               | Unstage a file (keep working changes)                             |
+| git commit --amend           | Modify the last commit (message or content)                       |
+| git checkout <SHA> -- <file> | Restore a file from a past commit                                 |
+| git revert <SHA>             | Undo a commit by creating a reverse commit (safe in shared repos) |

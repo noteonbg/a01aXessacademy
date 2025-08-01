@@ -1,0 +1,256 @@
+remember some Concept
+ HEAD is a pointer that represents your current position in the commit history — usually the latest commit on the current branch.
+This is where you are now
+
+
+
+
+
+
+
+ 1. Initialize a new Git repository
+
+bash
+mkdir git-poc
+cd git-poc
+git init
+
+
+> Output: `Initialized empty Git repository in ...`
+
+---
+
+ 2. Create a new file
+
+bash
+echo "Hello Git" > hello.txt
+
+
+---
+
+ 3. Check status
+bash
+git status
+
+
+> Shows `hello.txt` as an untracked file (in red).
+
+---
+
+ 4. Add file to staging
+
+bash
+git add hello.txt
+
+
+---
+
+ 5. Check status again
+
+bash
+git status
+
+
+> Now `hello.txt` is in the staging area (green).
+
+---
+
+ 6. Commit the change
+
+bash
+git commit -m "Initial commit with hello.txt"
+
+
+---
+
+ 7. View commit history
+
+bash
+git log
+
+
+> Shows commit hash, author, date, and message.
+
+---
+
+ Make Another Change
+
+bash
+echo "Another line" >> hello.txt
+git status            Shows modified file
+git add hello.txt     Stage the change
+git commit -m "Added another line to hello.txt"
+git log               Shows both commits
+
+
+
+
+------------------------------------------------------
+
+adding a gitignore file.
+
+
+
+---
+
+  PoC: Using a `.gitignore` File
+
+Let’s assume you’re continuing from the previous `git-poc` directory.
+
+---
+
+  1. Create some dummy files/folders to ignore
+
+bash
+mkdir temp
+touch temp/debug.log
+touch secrets.txt
+
+
+Now your structure looks like:
+
+
+git-poc/
+├── hello.txt
+├── secrets.txt
+└── temp/
+    └── debug.log
+
+
+---
+
+  2. Create a `.gitignore` file
+
+bash
+touch .gitignore
+
+
+Then edit the file (use any editor, or echo into it):
+
+bash
+echo "temp/" >> .gitignore
+echo "secrets.txt" >> .gitignore
+
+
+---
+
+  3. Check status before adding `.gitignore`
+
+bash
+git status
+
+
+> You’ll see `secrets.txt`, `temp/`, and `.gitignore` as untracked.
+
+---
+
+  4. Add only `.gitignore` and commit it
+
+bash
+git add .gitignore
+git commit -m "Add .gitignore to exclude temp/ and secrets.txt"
+
+
+---
+
+  5. Verify ignored files
+
+Now run:
+
+bash
+git status
+
+
+>  You should no longer see `secrets.txt` or anything inside `temp/` in the output — Git is ignoring them!
+
+---
+
+  Optional: Test It
+
+Create another file that matches the ignore rules:
+
+bash
+echo "test" > temp/test.log
+git status
+
+
+> `temp/test.log` won't appear — it's ignored.
+
+
+If a file is already being tracked by Git 
+
+
+
+ To stop tracking a file that's already tracked:
+
+
+
+1. Remove the file from Git (but not from your disk)
+
+Use this command:
+
+bash
+git rm --cached filename
+
+
+For example:
+
+bash
+git rm --cached secrets.txt
+
+
+This tells Git to stop tracking the file without deleting it locally.
+
+---
+
+2. Add the file to `.gitignore`
+
+If you haven't already:
+
+bash
+echo "secrets.txt" >> .gitignore
+
+
+---
+
+ 3. Commit the change
+
+bash
+git add .gitignore
+git commit -m "Stop tracking secrets.txt and update .gitignore"
+
+
+
+Summary: How to stop tracking a file
+bash
+git rm --cached path/to/file
+echo "path/to/file" >> .gitignore
+git commit -am "Stop tracking file and ignore it going forward"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

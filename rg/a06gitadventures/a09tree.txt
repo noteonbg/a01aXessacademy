@@ -1,0 +1,156 @@
+
+
+---
+
+  What Is the Git Tree?
+
+In Git, commits form a directed acyclic graph (DAG) — think of it like a tree of snapshots. Each commit points to its parent(s).
+
+---
+
+  Common Tree Navigation Tools
+
+| Tool                     | Purpose                             |
+| ------------------------ | ----------------------------------- |
+| `HEAD`, `HEAD^`, `HEAD~` | Move relative to current commit     |
+| `git log`                | Show commit history                 |
+| `git show`               | View a specific commit              |
+| `git checkout`           | Move to a commit or branch          |
+| `git diff`               | Compare points in the tree          |
+| `gitk`, `tig`            | Visual history explorers (optional) |
+
+---
+
+  Examples of Tree Navigation
+
+#  1. View the full commit tree as a graph
+
+bash
+git log --oneline --graph --all
+
+
+Example output:
+
+
+* e3a1f6a (HEAD -> main) Commit 3
+* a1c2d3b Commit 2
+* 9b8f7g6 Commit 1
+
+
+---
+
+#  2. Move around with `HEAD`, `HEAD^`, `HEAD~N`
+
+* `HEAD` = current commit
+* `HEAD^` = parent
+* `HEAD~2` = two commits before HEAD
+
+bash
+git checkout HEAD^       # Move to the parent of current commit
+git checkout HEAD~2      # Go back two commits
+
+
+> To return to your branch:
+
+bash
+git switch main
+
+
+---
+
+#  3. Explore ancestry (linear)
+
+Get commit hashes first:
+
+bash
+git log --oneline
+
+
+Then:
+
+bash
+git show <commit-hash>        # Shows content + metadata of that commit
+
+
+---
+
+#  4. Navigate merge commits
+
+A merge commit has two parents:
+
+bash
+git log --merges
+
+
+To reference the second parent of a merge commit:
+
+bash
+git show <merge-hash>^2
+
+
+---
+
+#  5. Follow file history through tree
+
+bash
+git log -- file.txt            # Show commits affecting file.txt
+
+
+To track renames:
+
+bash
+git log --follow file.txt
+
+
+---
+
+#  6. Use `reflog` to view all HEAD movements
+
+bash
+git reflog
+
+
+> Shows every state HEAD pointed to, even detached or reset commits.
+
+Example:
+
+
+e3a1f6a HEAD@{0}: checkout: moving from main to HEAD^
+a1c2d3b HEAD@{1}: commit: Add line 2
+
+
+---
+
+#  7. Visual Tools (Optional but Helpful)
+
+* Gitk (native):
+
+  bash
+  gitk --all
+  
+
+* Tig (terminal-based viewer):
+
+  bash
+  tig
+  
+
+---
+
+ 🧭 Summary of Git Tree Navigation
+
+| Task                     | Command                           |
+| ------------------------ | --------------------------------- |
+| View tree as graph       | `git log --oneline --graph --all` |
+| Go to parent             | `git checkout HEAD^`              |
+| Go back N commits        | `git checkout HEAD~N`             |
+| Show a commit            | `git show <commit>`               |
+| Compare tree points      | `git diff A B`                    |
+| Explore merges           | `git log --merges`                |
+| Second parent of a merge | `<merge-commit>^2`                |
+| File history             | `git log -- file.txt`             |
+| View reflog              | `git reflog`                      |
+
+---
+
+Let me know if you'd like a diagram of the commit tree, or how to manipulate it (e.g., with rebase or cherry-pick)!

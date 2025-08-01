@@ -1,0 +1,202 @@
+
+
+
+
+
+
+
+
+ Prerequisites
+
+ You have a GitHub account
+ You created a new empty repo on GitHub named `calculator-app`
+  (e.g., `https://github.com/your-username/calculator-app.git`)
+
+
+
+
+
+  Initialize local repo and connect to GitHub remote
+
+bash
+mkdir calculator-app
+cd calculator-app
+git init
+
+
+Add your GitHub remote:
+
+bash
+git remote add origin https://github.com/your-username/calculator-app.git
+
+
+---
+
+ 2️⃣ Create initial commit and push
+
+Create `calculator.js`:
+
+bash
+echo "console.log('Calculator v1');" > calculator.js
+git add calculator.js
+git commit -m "Initial commit: basic calculator"
+
+
+Push to GitHub `main` branch (set upstream):
+
+bash
+git push -u origin main
+
+
+---
+
+ 3️⃣ Add `.gitignore` and push
+
+bash
+echo ".log" > .gitignore
+git add .gitignore
+git commit -m "Add .gitignore to ignore log files"
+git push
+
+
+---
+
+ 4️⃣ Create feature branch `feature-addition`, add code, push
+
+bash
+git switch -c feature-addition
+echo "function add(a, b) { return a + b; }" >> calculator.js
+git commit -am "Add addition function"
+git push -u origin feature-addition
+
+
+---
+
+ 5️⃣ Create a Pull Request (PR) on GitHub
+
+ Go to your GitHub repo page
+ You should see a prompt: Compare & pull request for `feature-addition`
+ Click it and create the PR targeting `main` branch
+
+---
+
+ 6️⃣ Merge PR on GitHub
+
+ After review, click Merge pull request on GitHub
+ Then Delete branch on GitHub (optional)
+
+---
+
+ 7️⃣ Sync your local repo with GitHub
+
+bash
+git switch main
+git pull origin main
+
+
+Delete the local merged branch:
+
+bash
+git branch -d feature-addition
+
+
+---
+
+ 8️⃣ Simulate merge conflict with a new feature
+
+Create conflicting changes on two branches:
+
+bash
+git switch -c feature-subtraction
+echo "function subtract(a, b) { return a - b; }" >> calculator.js
+git commit -am "Add subtraction function"
+git push -u origin feature-subtraction
+
+
+Meanwhile, modify `main`:
+
+bash
+git switch main
+echo "// Calculator version 2" | cat - calculator.js > temp && mv temp calculator.js
+git commit -am "Add version header"
+git push
+
+
+Try to merge `feature-subtraction` locally (simulate conflict):
+
+bash
+git merge feature-subtraction
+
+
+---
+
+ Resolve merge conflict
+
+Edit `calculator.js` to fix conflict:
+
+javascript
+// Calculator version 2
+console.log('Calculator v1');
+function add(a, b) { return a + b; }
+function subtract(a, b) { return a - b; }
+
+
+Stage and commit resolution:
+
+bash
+git add calculator.js
+git commit -m "Resolve merge conflict and merge subtraction feature"
+git push
+
+
+---
+
+ 🔟 Tag your release and push tags
+
+bash
+git tag -a v1.0 -m "Release with addition and subtraction"
+git push origin v1.0
+
+
+---
+
+ 1️⃣1️⃣ Cleanup branches locally and remotely
+
+ List merged branches:
+
+bash
+git branch --merged main
+
+
+ Delete merged local branches:
+
+bash
+git branch -d feature-subtraction
+
+
+ Delete remote branch (simulate stale branch cleanup):
+
+bash
+git push origin --delete feature-subtraction
+
+
+
+
+ Summary of the Full GitHub Workflow
+
+| Task                           | Command or Action                                   |
+| ------------------------------ | --------------------------------------------------- |
+| Initialize and add remote      | `git init` + `git remote add origin URL`            |
+| Commit and push initial code   | `git add`, `git commit`, `git push -u origin main`  |
+| Create feature branch and push | `git switch -c branch`, code changes, `git push -u` |
+| Create PR on GitHub            | Web UI → Create pull request                        |
+| Merge PR on GitHub             | Web UI → Merge and delete branch                    |
+| Sync local repo                | `git pull origin main`                              |
+| Delete merged local branch     | `git branch -d branch`                              |
+| Resolve conflicts locally      | Edit files, `git add`, `git commit`, `git push`     |
+| Tag and push releases          | `git tag -a v1.0 -m "msg"` + `git push origin v1.0` |
+| Delete remote branch           | `git push origin --delete branch`                   |
+
+---
+
+
