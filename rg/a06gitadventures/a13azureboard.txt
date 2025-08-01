@@ -1,0 +1,106 @@
+To adapt the full Git + GitHub JavaScript project workflow to work with **Azure Repos and Azure Boards**, we’ll:
+
+
+
+We’ll build a small JavaScript project (`calculator-app`) and manage its lifecycle using:
+
+* Git (local)
+* Azure Repos (remote Git)
+* Azure Boards (work tracking)
+* Optional: Azure Pipelines (CI/CD)
+
+
+1. Clone Azure Repo (or push an existing local repo)
+
+bash
+git clone https://dev.azure.com/{org}/{project}/_git/calculator-app
+
+
+Or, from local project:
+
+bash
+git remote add origin https://dev.azure.com/{org}/{project}/_git/calculator-app
+git push -u origin main
+
+
+---
+
+3. Connect a commit to an Azure Boards Work Item
+
+1. Create a **work item** (e.g., User Story or Task)
+   → Let's say its ID is `#123`
+
+2. Link it in your commit message:
+
+bash
+git commit -m "Add addition function. Fixes AB#123"
+
+
+This automatically links the commit to Azure Boards.
+
+---
+
+ 4. Feature Branch Workflow
+
+bash
+git switch -c feature-addition
+echo "function add(a, b) { return a + b; }" >> calculator.js
+git commit -am "Add addition. Implements AB#123"
+git push -u origin feature-addition
+
+
+>Commits like `Fixes AB#123` or `Implements AB#123` create traceability.
+
+---
+
+ 5. Create Pull Request in Azure Repos
+
+1. Go to Azure DevOps → Repos → Branches
+2. Click “Create pull request” from `feature-addition` to `main`
+3. Review, approve, and complete the PR
+
+Azure Boards will automatically update the work item (`#123`) as **Resolved** or **Completed** based on keywords (`Fixes`, `Closes`, etc.)
+
+
+
+6. Merge, Tag, and Release
+
+bash
+git switch main
+git pull origin main
+git tag -a v1.0 -m "First release: addition feature"
+git push origin v1.0
+
+
+
+7. Clean Up Branches
+
+bash
+git branch -d feature-addition
+git push origin --delete feature-addition
+
+
+Azure Boards Work Item Linking Keywords
+
+| Keyword             | Effect                                     |
+| ------------------- | ------------------------------------------ |
+| `Fixes AB#123`      | Closes work item 123 when pushed to remote |
+| `Closes AB#123`     | Same as above                              |
+| `Implements AB#123` | Links the work item, but doesn’t close it  |
+| `Related AB#123`    | Adds a non-closing link                    |
+
+
+
+ Summary
+
+| Task                      | Command / Action                                           |
+| ------------------------- | ---------------------------------------------------------- |
+| Clone/push to Azure Repos | `git clone` or `git push` to Azure DevOps remote           |
+| Create branch             | `git switch -c feature-x`                                  |
+| Link to work item         | `git commit -m "Fixes AB#123"`                             |
+| Push to remote            | `git push -u origin feature-x`                             |
+| Create PR                 | Azure DevOps Web UI → Repos → Pull Requests                |
+| Complete PR               | Approve + merge in DevOps                                  |
+| Tag a release             | `git tag -a v1.0 -m "Release"` → `git push origin v1.0`    |
+| Delete branch             | `git branch -d branch` + `git push origin --delete branch` |
+

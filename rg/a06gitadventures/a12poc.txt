@@ -1,139 +1,134 @@
-`calculator-app` 
+Initialize the repo
 
-## 🧪 **Step-by-Step Git Workflow with JavaScript**
-
-### ✅ 1. Initialize the repo
-
-```bash
+bash
 mkdir calculator-app
 cd calculator-app
 git init
-```
+
 
 ---
 
-### ✅ 2. Create and commit the initial file
+ 2. Create and commit the initial file
 
-```bash
+bash
 echo "console.log('Calculator v1');" > calculator.js
 git add calculator.js
 git commit -m "Initial commit: basic calculator"
-```
+
 
 ---
 
-### ✅ 3. Add a `.gitignore`
+3. Add a `.gitignore`
 
-```bash
+bash
 echo "*.log" > .gitignore
 git add .gitignore
 git commit -m "Add .gitignore to ignore log files"
-```
+
 
 ---
 
-### ✅ 4. Create and switch to a feature branch (`addition`)
+ 4. Create and switch to a feature branch (`addition`)
 
-```bash
+bash
 git switch -c feature-addition
 echo "function add(a, b) { return a + b; }" >> calculator.js
 git commit -am "Add addition function"
-```
+
 
 ---
 
-### ✅ 5. Merge the branch (fast-forward)
+ 5. Merge the branch (fast-forward)
 
-```bash
+bash
 git switch main
 git merge feature-addition   # Fast-forward merge
-```
+
 
 ---
 
-### ✅ 6. Create conflicting changes
+ 6. Create conflicting changes
 
-```bash
+bash
 git switch -c feature-subtraction
 echo "function subtract(a, b) { return a - b; }" >> calculator.js
 git commit -am "Add subtraction function"
-```
+
 
 Then on `main`:
 
-```bash
+bash
 git switch main
 echo "// Calculator version 2" | cat - calculator.js > temp && mv temp calculator.js
 git commit -am "Add version header"
-```
+
 
 Now merge (will cause a conflict):
 
-```bash
+bash
 git merge feature-subtraction
-```
 
----
 
-### ✅ 7. Resolve the merge conflict manually
+
+
+7. Resolve the merge conflict manually
 
 Open `calculator.js` and edit conflict markers:
 
-```javascript
+javascript
 // Calculator version 2
 console.log('Calculator v1');
 function add(a, b) { return a + b; }
 function subtract(a, b) { return a - b; }
-```
+
 
 Then:
 
-```bash
+bash
 git add calculator.js
 git commit -m "Resolve merge conflict and merge subtraction feature"
-```
+
 
 ---
 
-### ✅ 8. Tag the release
+  8. Tag the release
 
-```bash
+bash
 git tag -a v1.0 -m "First JavaScript release with addition and subtraction"
-```
+
 
 ---
 
-### ✅ 9. View and navigate the commit history
+  9. View and navigate the commit history
 
-```bash
+bash
 git log --oneline --graph --all
 git show v1.0
 git checkout HEAD~2
 git switch main
-```
+
 
 ---
+ 10. Clean up merged branches
 
-### ✅ 10. Clean up merged branches
-
-```bash
+bash
 git branch --merged main
 git branch -d feature-addition
 git branch -d feature-subtraction
-```
+
 
 ---
 
-### ✅ 11. Simulate stale remote cleanup (optional)
+  11. Simulate stale remote cleanup (optional)
 
-```bash
+bash
 git remote add origin fake-url.git
 git fetch --prune
-```
 
----
 
-## ✅ Summary
+
+
+Summary
 
 we have done
 
