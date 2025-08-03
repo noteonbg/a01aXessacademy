@@ -24,14 +24,39 @@ in case npm --version is not working, then please check
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 
 
+
+
+
+
 Installing node_modules
 npm install bootstrap
+
+
 
 updating..
 npm outdated.
 
 
 npm uninstall <package>
+
+
+proxy settings
+Set Proxy in .npmrc File
+proxy=http://proxy.example.com:8080
+https-proxy=http://proxy.example.com:8080
+
+location of the File
+Global .npmrc is typically located at:
+Windows: %USERPROFILE%\.npmrc
+
+To View Current Proxy Settings
+npm config get proxy
+npm config get https-proxy
+
+try with verbose command to get more details
+npm install bootstrap --verbose
+
+
 
 
 

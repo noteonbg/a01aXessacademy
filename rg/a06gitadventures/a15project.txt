@@ -1,0 +1,69 @@
+0. all settings have been done
+
+1. Clone the Azure DevOps Repository
+
+2. git clone https://dev.azure.com/yourOrg/yourProject/_git/yourRepo
+cd yourRepo
+
+3.  Create a New Branch Locally
+git checkout -b feature/my-new-feature
+
+
+4. Make Changes and Commit
+git add .
+git commit -m "Add new feature XYZ"
+
+
+5.  Push the Branch to Azure DevOps
+git push --set-upstream origin feature/my-new-feature
+
+
+6.
+Create a Pull Request (PR) in Azure DevOps
+Go to your Azure DevOps project in the browser.
+Navigate to Repos > Pull Requests.
+You should see a prompt to create a PR for your pushed branch.
+Click New Pull Request.
+Fill in title, description, reviewers, and target branch (usually main or master).
+Submit the PR.
+
+
+7. Review & Complete the Pull Request
+Reviewers get notified and review the code.
+They may request changes or approve.
+Once approved, the PR can be completed/merged via the Azure DevOps UI.
+You can configure PR completion options, like squash merge or delete branch.
+
+8. Update Your Local Repository
+git checkout main
+git pull origin main
+
+9.Optionally, delete your feature branch locally:
+git branch -d feature/my-new-feature
+
+
+
+summary of commands used
+
+ Clone repo
+git clone https://dev.azure.com/yourOrg/yourProject/_git/yourRepo
+cd yourRepo
+
+ Create and switch to new branch
+git checkout -b feature/my-new-feature
+
+ Make changes and commit
+git add .
+git commit -m "Add new feature XYZ"
+
+ Push branch to Azure DevOps
+git push --set-upstream origin feature/my-new-feature
+
+ Create PR in Azure DevOps UI and get it reviewed/merged
+
+ After merge, update local main
+git checkout main
+git pull origin main
+
+ Delete local branch if desired
+git branch -d feature/my-new-feature
