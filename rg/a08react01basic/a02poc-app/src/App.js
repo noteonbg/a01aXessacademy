@@ -9,6 +9,7 @@ import MedicationAlert from './components/MedicationAlert'
 import DoctorGreeting from './components/DoctorGreeting';
 import PatientGreeting from './components/PatientGreeting';
 import PatientMonitor from './components/PatientMonitor';
+import VdPatientVitals from './components/VdPatientVitals';
 
 
 
@@ -26,6 +27,7 @@ function App() {
       <PatientGreeting name="Suresh" />
       <PatientMonitor name="mahesh" />
       <PatientMonitor /> {/* Uses default name */}
+      <VdPatientVitals/>
 
 
 

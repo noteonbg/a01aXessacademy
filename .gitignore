@@ -1,6 +1,2 @@
 rg/a06gitadventures/temp/notes.txt
-rg/a08react01basic\a02poc-app\node_modules
-rg/a07npm\a01basic_bootstrapnode\a01add-two-numbers\node_modules
-rg/a08react01basic\a01hello-world-app\node_modules
-rg/a08react01basic\a03listformcommu-app\node_modules
-rg\a07npm\a01basic_bootstrapnode\a01add-two-numbers\node_modules
+**/node_modules/
