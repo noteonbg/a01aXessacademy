@@ -1,0 +1,21 @@
+@echo off
+SETLOCAL
+
+REM === Set variables ===
+SET REPO_DIR=/f/a01aXessacademy/rg/a06gitadventures/temp/poc_project
+
+REM === System-level config (requires admin command prompt) ===
+echo Setting system-level Git config...
+git config --system user.email "system@example.com"
+git config --system core.editor "notepad"
+
+REM === Global (user-level) config ===
+echo Setting global Git config...
+git config --global user.email "global@example.com"
+git config --global core.editor "notepad++"
+
+REM === Local (project-level) config ===
+echo Setting local Git config in %REPO_DIR%...
+cd /d "%REPO_DIR%"
+git config --local user.email "project@example.com"
+git config --local core.editor "code --wait"

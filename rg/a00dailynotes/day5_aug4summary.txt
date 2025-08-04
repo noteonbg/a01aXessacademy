@@ -1,0 +1,648 @@
+0. relax..process we will get used to it
+
+what is important.. 
+bad intent cannot be fixed by the greatest
+process also.
+
+new  --npm, react
+active  --npm react
+resolved
+closed.  closed status.
+
+
+board usage has just started with many
+of them not adding tasks...
+board usage is currently a ritual kind
+of things.. we have to it match the intent..
+
+
+
+let us keep our "intent " clean what does it mean..
+
+1. while doing the project.
+
+we will follow the process.
+technical skills improved..
+it is a team effort... I like teams englishgood
+time to put that into practice..
+who is good technically in the team
+who is not good as of now in the team.
+project success is important..
+and unequal effort is the norm in eveyr project.
+
+
+1. project, ensure everybody in the team knows
+the details and know about themselves technically...
+
+2. getting struck at multiple places at normal
+what you do, are you willing to write a small program
+to clarify your concept..
+
+3. when there are multiple steps to do, are you 
+going to trust your "memory skills" or are you going
+to follow a process. my request follow a written process
+and not trust your memory... 
+
+whether good mood or bad mood I need to solve the problem
+correctly that means depend on process dont depend
+on this stupid thing.. called "instinct"
+
+question imagine I am the most stupid person in your team
+how do you ensure I also write some decent quality code..
+
+ok that ends my rant...
+
+
+
+I am tired of seeing "ghosts"
+
+ghosts people who have good intent but no details in terms
+how to do things..
+
+
+
+
+
+
+quick summary
+1. ensure you got details for the project.. that is what happen
+today at 4.00PM
+2. know your team, be realistic and collect data
+what is technical skills of each team member.
+3. show good intent while using the azure boards..
+story +tasks(description of the task make it detailed..)
+4. have written document as to what will happen
+in the process. entry to exit..
+
+
+
+technical things..
+all you know the Friday adventure... 5.00PM to 6.00PM
+
+those who dont respect javascript as  new languge 
+will get entertainment..
+
+currently your team is more of a mob than a team...
+informal teams have their own entertainment going on..
+
+
+
+
+
+javascript ... I dont have data how good or bad the batch
+is...this will be a real blocker for us in react...
+
+some concepts are very important, I will use random number
+to check things out..
+
+tell what all things you know event handling?
+tell me about function assignment.
+
+remember the first point we told in javascript
+we must know.. that javascript for usis a new language
+and respect it like that 
+
+why college people begin with C and think C is powerful....javascript is nothing like C it is totally
+different category of a language..
+
+There are javscript gaps which we need to fill up
+as we keep going thru... how to fill up
+simple dont need to write new code..
+
+on some topics,  copy paste atleast 5 examples
+from google ... and prove you understood..
+
+remember what is your "intent"
+solve customer problem or improve your technical skills..
+intent is always to solve customer problems ... as a process
+if my technical skill improves ok... 
+
+people who show bad "intent" with customer deserve
+misery and they will get it...
+
+
+
+
+
+in todays world everybody wants to create a platform
+and get people addicted to it... as a technical person
+we should use the platform and as far as possible
+not get addicted to it ,.. by generalizing our learning...
+
+google wants to use browser or chrome
+
+in this "noise" you should know.. that all these people
+are expressing "opinions" and not facts..
+
+remember what i told bootstrap... smae thing will apply
+in react, node.. all these are opinions...
+so learn them but dont get addicted to them..
+
+I am big react fan.. better ways to be stupid than this..
+
+what is not opinion.
+1. html
+2. css
+3. javascript..
+
+in the whole process of working on react, dont forget
+this is just an opinion.. today itself there are other
+opinions on hwo to do the same thing..
+
+all science believing people if any.. should "generalize"
+your learning... so that we can remember less.
+
+standard computer science ghost= "There are so many
+things to learn and things are changing past we shouldlearn"
+this is ghost speaking..
+
+how to upset the ghost.
+ask the ghost ok in computer science. tell me in last 50 years
+what all things have not changed.. let me learn that also..
+
+Tragedy is  "IT industry" ... we have lot of English vocabulary
+improvements.. those who want to be part of it. most welcome
+those those dont want.. stay away.. so that you can remember
+less.
+
+kids favourite word  "original"
+adults meaning of "original" copy the thing , change its
+name and call it "original"
+
+dont get carried away by opinions...
+generalize your learning..
+
+kids like arithmetic, adults like algebra..
+
+rant...
+
+
+ zero emotion on code.
+it is working so what , ok go the next thing
+it is not working so what... think what to know
+and change..
+
+
+javascript can be run outside the browser..
+
+nodejs is javasript platform which allows us
+to run javascript outside the browser.. so javascript
+today is a programming language.. 
+
+with time things are expected to improve...
+
+when you third party libraries we need installation
+in our system 
+we do we need find the libraries... and how to install
+mechanism in the nodejs world is use a conept called npm.
+
+nodejs owned by a company called X
+npm owned by a company called y
+
+if you want to install some app in android
+typical place is go for playstore..
+what is summary
+
+1. what is node js
+2. what is npm.. ( mechanism to deploy some node libraries
+on your system... registr.. you can discover. and downloand
+and deploy it...
+
+
+in todays world whether we need internet our softwares
+need internet.. so...
+it will have an opinion on how to do things. npm...
+
+how to use npm...there will be an opinion we will have
+learn it..
+
+folder.. how to tell it is download libraries thru npm 
+process
+
+npm init, it will ask some questions..
+it will create a file called package.json..
+that means project now can work with npm
+inside the project.json what libraires we downloaded
+and versions wil be maintained...
+
+copy change its name but tell it is original
+
+ensure node and npm is installed...
+update the path..
+open command prompt and check
+
+node --version
+npm --version.
+open a folder in visual code and open a terminal inside
+visual code and check node --version and npm --version.
+
+there are lot of technical places where we first
+need patience and then intelligence...
+
+what to do
+1. prove nodejs
+2. prove npm
+is working in command prompt and visual code.
+3. ensure proxy settings is enabled for npm... because
+it will connect to internet and download libraries...
+6. those who are done go thru the javascript pdf
+on module 7. destructuring, fetch and module system.
+
+we have node and npm working
+what is next step.
+create a project that uses npm and node..
+how do you tell it is a project. createa  folder.
+after you created a folder, you have to tell you plan
+to use npm here... 
+
+npm init -y
+
+create a folder
+npmpoc folder.
+npm init -y
+and see what files are created in the folder.
+
+
+package.json 
+
+
+
+come to the project  folder.
+you have done npm init -y
+npm install bootstrap..
+content of package.json
+
+
+
+
+
+
+
+please listen..
+
+1. too much of unnecessary is spent because people
+dont know which folder they should work on..
+2. visual code you dont need to open files and folders
+which are not used as of now..
+
+folder which is superset folder.. this is not a project
+this is just to open in vs code...
+
+inside this folder we have other folders...
+which may be project based.. or other things.
+please relax and get your folder structure in place..
+nothing should be stored c:\users\bankid.... follow
+your confluence page..
+
+0. keep your bp level normal and zero emotion on the code.
+1. agile boards.. let us make it a little detailed. in terms
+of tasks
+2. very hard but most important ,know your team
+remember being an Einstein in a stupid team is not a great
+thing...
+3. javascript gaps are there which wil kill up in react
+we need to patch..
+4. welcome to world of opinions so mistake them for facts..
+npm opinion, react opinion, spring opinion...
+5. setting up software.. is more of showing patience
+than intelligence. so ensure you have patience while
+setting up software. many company specific ways will 
+be there, so show patience and learn it..
+6. folder creation in a crazy way.. big sin deserves
+punishment big time..in our batch we will punish them.
+6.1 in visual code everytime telling open folder open folder..
+another flavor of the above sin...
+
+when we are installing packages(other people libraries)
+in our code.. we can install globally or locally
+wwhen in doubt install locally...  ie be conscious
+when you install some package globally ...
+
+I installed locally.. i need this library for this project
+alone..
+
+I need across projects ok globally installing is ok...
+
+welcome to system level thingking
+each and every part we should know atleast what it is doing
+we dont need to be 5/5 in that.
+
+It is understood all of us typically windows to build
+our software.. code our software, but finally deployment
+will happen on Linux based world, so knowing basic
+things
+about how software installation happens on windows and Linux
+both are good skills to have..
+5/5 not needed 1/5
+
+in any company software settings should be decied at the project team level and everybody should stick with it
+if each person in the project has to install software
+packages be sure very soon we will have a asylum in form
+of a team..
+
+
+
+
+
+npm basics..
+
+0. show patience to check whether software is installed
+or not... includes proxy settings for softwares which
+connect to internet.
+1.  how to tell a project folder will use npm.
+2. install packages locally or globally what does it mean..
+locally project specific
+globally across projects.
+3. know folder structure.... 
+a person who does not know his project folder structure
+is unfit to call himself a technical person..
+
+did we use bootstrap libraries last week hopefully
+yes. how did we get the boostrap libraries last week?
+
+
+npm install bootstrap
+bootstrap was downloaded to our system
+and in our html file now we are referring to that downloaded
+bootstrap file. we are not getting it from CDN..
+
+if you are getting from CDN how the link looks like
+if you are getting from yoru local system thru npm....
+then how it looks like.. you should be able to make it out..
+
+
+
+
+making our own code work ok... make other people code
+work in our project needs a little bit of "consciousness"
+
+every folder need not be a project.
+but project typically is a folder.
+
+a01add-two-numbers.
+look at folder structure look at the files
+look for projet specific files..
+like package.json..
+node_modules
+you get data probably this i a projet folder.
+
+let us your project folder is x.
+in my project a01-add-numbers, there are two files.
+index.html
+script.js
+how do you make this work in your project.
+
+there is a project X (which is done by Ramesh)
+thee are files a.html and a.js which is working in project x.
+
+you have project y (which is done by you)
+how do you ensure a.html and a.js works in your project.
+
+first step
+
+freaky point
+the way colleges teach ... any subject.. (any engineering)
+they dont teach how to make other people code work....
+that is most important in real life..
+
+
+1. step copy the files.
+2. look at his package.json and hisversion of bootstrap
+and open your package.json  and see the version..
+
+
+Favourite National Anthem of IT people.
+"It was working"
+so show patience... to check versions..
+
+
+
+a07npm..
+rg\a07npm\a01basic_bootstrapnode\a01add-two-numbers
+take the index.html ,script.js and make it work
+in your project.
+
+those people who completed.. go thru the nodejs andjson.pdf..
+dont waste time please...
+
+
+
+ghost.. full of intent without any details..
+ghost ..i like the project.. 
+what does it mean..
+
+1. know architecture what the project follows
+2. you know folder structure of hte project.
+3. you know what software and versions does it use
+4. you know what tools the project uses and why...
+
+just now.. you copied index.html and script. js
+and tried to make it work in your project..
+
+i will give a folder called a01-add-two-numbers
+how do you make it work in youir system...
+
+
+1. copy the folder where  in npm folder.. in folder
+the folder where you have other project files..
+visual code..
+
+after you copied the folder. what you should do...
+look at the folder structure.
+you can come to that folder..
+
+open index.html and run on server and see the output...
+
+what is moral of the story?
+1. now how to copy particular files of some other person
+project and make it work in your project.
+2. take some other person full project copy to your
+system and make the other person project work 
+in your system.
+
+
+take this folder a02-two-numbers and make it work
+in your system..
+
+
+there are lot of experied programmers to 5 to 100 years
+who have zero consciousness on the folder structure
+these people will be pathetic in the project
+and will create misery...
+
+
+a person who does not know folder structure is unfit
+to be computer person...
+
+normal folder.  is just 
+project folder... package.json. node_modules
+
+
+JSON.
+ok for bp kids... JavaScript Object NOtation...
+this means nothing... expansion is nothing, know what it is..
+
+
+what is JSON..
+
+json is a standard for representing a variable.
+the advantage with json is every programming language
+understands json...
+
+welcome to IT industry where lot of English professors
+run around acting as technical people... day in, day out
+chew people brain with language skills... ok...
+
+JSON is a string ... 
+
+
+
+how does it work...
+1. some software  gives JSON  --python
+this software could be written in java, python , javasript
+or .net..... any language.. but it is giving json..
+
+json is a string..
+
+2. you want to consume it some other software which
+uses a different language... .net...
+
+since json is a standard..
+we can convert the json string into an object of that language...
+
+
+language object ... json
+json strin ...  language object
+
+
+what is json
+practical answer is json is a standard for representing variables.
+
+what do i do with it..
+if i get a json string. I convert that into object 
+of the language i am using..
+I am using javascript so i get javascript, I am using python
+i get python object....
+
+
+I have javascript object or python object ... then how
+to process that into a json sdtring.. why I need to give somebody else.... he will use it in his language
+
+how will you know 
+
+let x =jsonthing is present here..
+how will you know x is a string..
+console.log(typeof x)
+
+all of keep bp level normal..
+join back at 1.30PM.
+
+
+so quick story .. know folder structure..super important.
+
+1. we have done zero node js code so far..
+2. we have used npm...
+3.folder structure with package.json.. that means
+that project folder is a project which can support
+npm...
+4. many a times you will see nodemodules absent in
+the folder but package.json
+npm install, that will go thru package json and
+install the libraries that are needed for that project.
+5. ability to use somebody code partially in our project
+and also ability to make some other person project
+completely work in our system both are important skills.
+6. json... dont be vague..it is a standard to represent variables..
+two practical things that you need to know in json
+
+somebody gives you json.. convert this into your language
+specific object.--x
+
+you have language specific object, convert this into a json
+string..-- y
+
+
+I have something with me , I dont know whether
+it is json string or javascript.. that means
+youi should tell get yourself admitted to a hospital
+you are in comma state..
+
+whether we are in java or python or javascript. who cares
+if you tell variable yu must know the data type and scope
+of it..
+
+in javascript in any language you will get two functions
+1. convert json string to javascript object.
+json.parse..
+
+2. to convert javascript object to json string
+json.stringify..   ready made functions..
+
+
+most important story keep intent clean and then
+everything else...in my language is the last thing...
+
+
+
+
+
+
+
+generalize your learning
+what is json
+two ready made functions to know..
+
+
+
+
+very important rule in project
+bad news which comes early is good news.
+
+practicals..
+1. your folder structure should be correct.
+nothing on desktop, nothing on the bankid folder..
+2. you have to prove your project is working with my html
+and my js 
+3. prove my project works in your system.
+rg\a07npm\a01basic_bootstrapnode\a01add-two-numbers
+4. prove my project works in your system
+and understand the code also this is important.
+rg\a07npm\a02jsonloader
+5. package 27 of node npm pdf .. ensure this assignment
+works.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+project...
