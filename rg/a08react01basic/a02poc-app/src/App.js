@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <HelloWorld />
-      <DoctorName name="Dr. ABC" />
+      <DoctorName name="Dr. ABC" freak="pqr" junk="abc"/>
       <AppointmentDetails date="2025-08-05" time="10:30 AM" />
       <PatientInfo name="Def" age={45} condition="terminology Attack" />
       <PatientVitals />

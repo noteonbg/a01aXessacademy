@@ -1,7 +1,7 @@
 import React from 'react';
 
-function DoctorName({ name }) {
-  return <h2>Doctor: {name}</h2>;
+function DoctorName( props) {
+  return <h2>Doctor: {props.name}  --- occupation { props.freak} </h2>;
 }
 
 export default DoctorName;

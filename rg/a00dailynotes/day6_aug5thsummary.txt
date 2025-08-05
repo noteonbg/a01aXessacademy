@@ -1,0 +1,481 @@
+observations about their expectations from you based
+on your interaction yesterday..
+
+1.scrum board updated.
+2. pushing of the code..
+
+
+
+
+today random number different..
+random number team wise..
+
+intent is not there, nothing is going to helpl.
+show good intent.
+
+1. every body knows nothing goes according
+to the plan , but planning is needed
+because planning is for direction and not
+for certainty..
+
+planning written format, details, order of doing things
+who is going to do..
+
+nobody gets killed by having over details.. but lot of people
+can get killed by underdetails..
+
+
+1. ui how it looks like .
+2. which part of the ui will change, will not change.
+3. what all events you want to react to.
+4. how the dynamic part comes to the page, from where...
+5. what is going be your css 
+6. what is going to be your git strategy...
+7. boards... description, add the pdf name and page no
+of the assignment.. which are you referring to...
+
+
+who is  programmer..
+programmer should have an abililty to convert English
+of other person into functions and variables fitting
+an architecture.
+
+ui, you consider doing wire frames...
+-----------------------------------------
+
+-----------------------
+
+feedback.. people are using code generating
+tools which is great nothing wrong with
+it but important are you understanding
+what is generating... and be sure careful
+about links... be consciouis b csoncious...
+
+yesterday summary
+0. to remember less, generalize your learning.
+1. welcome to world of opinions dont mistake
+them for facts..
+2. have an idea what nodejs... javascript runtime
+outside the browser.
+3. what is npm.. javascript package manager...
+1. assembling code.
+2. compiling code.
+3. packaging code.
+4. deploying code
+5. running the code..
+6. all of you are able to install bootstrap via
+npm...
+7. be conscious about the folder...
+8. everyday we will push the code to GitHub
+irrespective of whether things are comlete or not complete..
+
+
+Respect javascript as a new language.. we will
+be safe that way..
+
+secret unknown problem we have in our batch
+I dont have data about your javascript skills
+yet...
+
+JSON.
+1. standard for representing variables.
+2. every programming will give you two functions
+you have json with you, how to covnert that into
+an object of that language   -- json.parse.
+you have object with you, how to convert
+that into a json string... json.stringify
+
+
+
+
+
+
+React...
+what is React...
+1. javscript library for building UI.
+building UI for two things.
+1. web based. ( our course is going to talk bout it)
+2. native applications.. anything that talks
+directly to the os...
+
+caution.. IT and computer science people
+are good at renaming things and killing us
+with language skills..
+
+in REact you build components..
+what is a component
+a piece of code which has html, javascript and css.
+
+think of building your page, in sections...
+each section is responsible for its 
+structure
+dynamic behavior( dom manipoulation events)
+styling..
+
+
+what is basic for react.
+1. do you know everytime you write a react
+component which part changes, which part
+does not change.. what all events you
+want to react to...
+
+
+
+
+how to create a react application..
+
+there are manys to create a react application
+let us stick with the company is telling...
+
+people who are not conscious which
+part changes, which part does not change
+in the ui.. will be in comma state in react.
+
+welcome to todays IT world
+where 100's of things are free and everybody
+has an opinion and they will scream as though
+this is only way to do it.... so you
+should relax..
+
+not being sure about project folder
+structure the person is unfit to be
+in a aproject.
+
+when things are not working it is showing
+an error message first decency
+whether we understand or not read the error message.
+
+
+"opinion"
+"opinion"
+"opinion"
+"opinion"
+"opinion"
+"opinion"
+"opinion"
+"opinion"
+"opinion"
+"opinion"
+"opinion"
+"opinion"
+"opinion"
+"opinion"
+"opinion"
+
+
+
+
+
+
+
+in GitHub.. read.txt present in rg\a08react01basic
+1. create a folder called
+reactpocs normal older.
+inside folder... ensure create-react-app package
+is installed globally.
+
+2. create new react project called nrp
+3. come to the folder nrp.
+4. start the app npm start.
+5. see in the browser whether your app is working.
+
+every framework.
+1. which layer of the architecture it fits in.
+2. which language does it support.
+3. what is its opinion on doing things..
+
+react.
+1. web based presentation layer.
+2. javascript.
+3. create components identify them with a tag.. anything
+is dynamic in the web page let us get it thru props and 
+state.
+
+overall theme recognize opinion from facts..
+
+1. we are going to create a component... 
+which is a javascript function.. this function must begin
+with a capital letter.
+2. it will return opinionated javascript which mixes
+html and javascript together.. JSX, meaning of opionated..
+browswer does not understand this..
+ 
+generalize your learning that is what we do in physics..
+
+
+the function is called as component function...
+1. it will have representation in the html.
+2. the function will return combination of javascript + html ( jsx )
+jsx is not understandable by browser.. who will understand some
+react library..
+
+
+old fundamental theory..
+when you define a function, think who is going to call it
+I cant think then dont write the function.
+
+
+
+index.html... index.js.. index.js .. identified some section
+in index.html and there it put a the component whatever we told
+in index.js
+
+
+react opinion all components should begin with capital letter.
+
+
+if we have a class pqr in css
+
+in css
+
+<p class="pqr" > hello </p>
+
+in react we cannot write class="pqr" because class is reserved
+word in javascript we are writing javascript so you write
+classname="some css class
+
+you writing javscript in one file it needs to be accessible in other
+file also...
+so import.
+
+college misery .. IIT  ... NMIT
+colleges do a pathetic job in telling code in real life comes
+in multiple files..
+
+people who tell practicals matters who cares for theory
+are road side as far science goes..
+what we do in react is
+
+1. create a component
+2. use it in the app component typically.
+c
+App component will be the first component react wil show
+by default onc...
+
+where is app component 
+index.html
+how.. because of index.js.
+
+we are nesting components...
+
+each company wil claim theirs is the best..
+as a technical person our job is not become a fan of anything
+only fan .. fan of project...because customer pays...
+and not technology..
+
+
+name javscript is a sin.... standard is ESMA script 6..
+
+java and javascript are totally different..
+
+standard can keep telling 1000 things,, but our boss hates all the
+1000 things so use things in the standard which the boss likes..
+who is the boss? Boss is the browser.
+
+but good news is while you write react code.. react tells hey
+relax i will take care of the browser finally i will generate
+code which browser understands..
+
+nothing is changing in the page, means  a simple html
+would have solved the problem we dont need react for it..
+how component works..
+
+
+
+default.
+1. index.html, index.js public.
+2. src.. app.js ( one default component created by react)
+3. in src folder create a  new component.. follow reacts opinion..
+3.1 start with new file
+3.2 function with capital letter.
+3.3 return one tag with other contents inside it.
+3.4 export it..
+4. come to app.js.. refer to the function as a tag..
+
+
+create three components.
+
+1. Oheader  -- header at work
+2 Ofooter  --footer at work
+3. Obody component  --body at work.
+how many files.. 3 files.
+export it.. look App.js in src folder for inspiration.
+4. in app.js
+add the three components
+those who completed please go thru the 
+react.pdf  and javascript programs
+in last week, especially the last 5 programs which includes
+fetch, promise.
+
+folder structure is very important..
+react opinion...
+
+1. you write a javascript code
+2. you have to return a javscript object which contains html
+3. you must ensure this JavaScript function is available outside
+the file.. in other files..
+
+doing 1 to 3 is called writing a component.
+
+
+
+
+
+
+normal folder on a topic X
+subfolders will be topic specific project folders
+
+X=react
+reactpoc1 
+react forms2
+react state 3
+
+project folder 
+    project folder
+	package.json
+    package.json
+
+this is patheti
+
+
+a01hello-world-app is a project folder.
+make it work in your system... 
+
+1.a02poc-app make it work in your system..
+
+reactpoc. (not a project folder)
+    morningproject folder --this has package.json
+
+    a02poc ... this is a project folder.
+you have to show a02poc works.. in your system..
+
+  dont open too many terminals close it...
+
+those complete look at the code and look at react.pdf..
+
+dynamic things in the component..
+
+things which come from  a varible in the component.
+variable value can change, can be fixed.. how.. we will think..
+
+dynamic things in component
+1. changing parts
+2. event handling part..
+There is a uI component called textbox , there is a variable called i.
+and I want i to be related to the textbox this is called as data binding.
+
+
+
+UI to variable and vice versa is called as data binding..
+
+
+do you agree by default App component gets displayed.. true or false.
+
+now javascript adventure has began..
+
+passing properties to the component from the component where
+we are using that component..
+
+parent component
+child component
+
+function X()  //plarent
+{
+   <Y/>  //child component
+
+}
+pass infroamtion from parent component to child component
+we use this word called props.. in react...
+welcome to "opinion"
+
+react tells ... you pass properties to the component
+from the place where you are using the component.
+
+you get an object..
+let  x  ={ length:3, breadth:4 , height:5}
+let l = x.length;
+let y = x.breadth;
+let {length:l,breadth:y } =x; //destructuring
+means .. pushing object values into variables... very very commonly
+used in react... so we must learn it..
+
+
+javascript can crate entertainment just for a simple reason
+no decency to respect it a new language... we dont know..
+so learnit from beginning dont assume.
+
+
+how can a component get dynamic thing.
+1. props... parent component will pass some info to the child component.
+
+destructuring syntax..
+
+what is destructuring?
+1. you have an array.. group of things..
+pick one from it..
+
+let x=[2,3,4]
+let [y]=x;
+console.log(y);
+
+destructuring copy paste 10 programs 5 with arrays, 5 with objects
+and ensure you understand the code..
+
+what you do with you dont know... shows maturity..
+when I dont know something relax keep your bp levelnormal
+write a small program to clarify youir doubt on conept or syntax.
+
+
+what is moral.
+when you have a doubt are you willing to write a small program..
+no I wont write... ok enjoy English language skills then...
+
+
+in your project.
+
+can you create a component called Rect
+ensur you pass two properties to it length and breadth.
+and in that REct component return
+<h1> length is {...}, breadth is {...} </h1>
+
+create a rectangular component which can take two properties..
+look at DoctorName component written in a02poc project..
+for inspiration if you want...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
