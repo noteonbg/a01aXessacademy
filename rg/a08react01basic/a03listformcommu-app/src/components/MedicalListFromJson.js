@@ -5,7 +5,7 @@ function MedicalListFromJson() {
   const [medicalData, setMedicalData] = useState([]);
 
   useEffect(() => {
-    fetch('/medicalData.json')
+    fetch('/medicalData.json')  
       .then(response => {
         if (!response.ok) throw new Error('Failed to fetch data');
         return response.json();

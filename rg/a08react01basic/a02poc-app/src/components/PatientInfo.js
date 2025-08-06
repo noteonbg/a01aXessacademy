@@ -6,7 +6,7 @@ function PatientInfo({ name, age, condition }) {
     <div>
       <h3>Patient Info:</h3>
       <ol>
-        <li>Name: {name}</li>
+        <li>Name: {name}</li>  
         <li>Age: {age}</li>
         <li>Condition: {condition}</li>
       </ol>

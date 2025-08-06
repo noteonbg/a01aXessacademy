@@ -21,6 +21,10 @@ function PatientTableWithSortFilter() {
     patient.id.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  
+
+
+
   // Sorting
   const sortedPatients = [...filteredPatients].sort((a, b) => {
     const { key, direction } = sortConfig;

@@ -1,0 +1,422 @@
+if we tell science Trust has zero meaning..
+check..
+
+
+0. agreement gets zero marks.. if you disagree most welcome
+give data on the basis of which you have  taken a decision.
+
+1. talk about react.
+event handling in react.. intercomponent communication
+and fill javascript gaps whereever it is.
+
+2. some project related issues... how you plan to do it..
+
+quick summary.
+1. keep clean intent.
+2. tolerate technical uncertainty... when we you get struck
+are you willing  to keep your bp level normal and most important
+write a small program to clarify on what you have a doubt..
+3. react .. opinion.. the story is 
+you have to create each ui piece like a component
+component is a js file.. and it needs to available outside..
+so export..
+component gets eventually associated with a html like tag.
+each component... we should know which part is dynamic and which part is static..
+
+
+always as a programmer drill down your answer to functions and variables.
+dont leave it at the jargon level..
+
+respect javascript as a new language.
+respect javascript as a new language.
+respect javascript as a new language.
+respect javascript as a new language.
+respect javascript as a new language.
+respect javascript as a new language.
+respect javascript as a new language.
+respect javascript as a new language.
+
+nobody can do any decent technical job if they dont tolerate
+uncertainty...
+
+for all the people who tell I hate C javascript is a way thru which
+C is taking revenge on you...
+
+one more standard college disease, assignment means only =
+horrible.. passing inputs returning from function are assignments.
+hopefully people understand how javascript tells give me any
+thing, why.. we as a programmer must be "conscious"what we gave..
+else suffer misery..
+
+students are very bad at this.. irrespective of college.. IIT  or BIT
+welcome to real life, Other person design....
+when we work we should know other person design..
+
+react component, is it our opinion or react opinion..?
+a component will get props.. is our opinion or react opinion..
+
+everytime you see  of other person.. you ask yourself
+what is he trying to tell and what all thigns we pass 
+
+every react component will get props. that is react opinion
+using it or not is our opinion..
+
+function Freak(crops)
+{
+return (<h1>  </h1>);
+
+}
+
+
+who cares for variable names...
+data type of the variable.. 
+
+basics of variable
+1. do you know its data type
+2. do you know its scope.
+
+
+
+checklist..
+1. do you know how to create a component.
+and make it use its props.
+2. while using the component, supply the props its values.
+3. props is one way thru which you introduce dynamic thing
+into the component.
+
+people who dont know the folder structure
+are in comma state..
+
+
+what is props
+supply some dynamic values to a component from a place
+where we are using the component is called as props..
+
+
+talk to child component from parent component.. do it via props.
+
+
+learn to navigate the code in any editor..1/5 
+welcome to systems we need in something 5/5 but in many things
+atleast 1/5 and definitely not zero.
+
+vague understanding of important concepts will make us a poor
+technical person..
+
+what is event handling..
+1. change in state and notification mechanism..
+
+two things that are always involved in events.
+
+1. Event Source
+2. Event Listener.. 
+
+
+in react we are talking about state..
+
+we are event source.
+
+we will change a variable value and intimate react hey look things
+ot changed..
+
+react will the event listener..
+thank you for letting me know...
+
+
+
+<input type="button" onclick="f1()"/>
+
+
+
+
+change in state is a simple way to tell some variable has changed.
+
+
+
+
+
+
+how do we do event hanlding in the react component.
+how do you change the content of a reat component.. state..
+state .. dynamic part of the ocnponent wich changes..
+
+what am i trying to do now..
+"generalize youir learning.. dont succumb to syntax
+
+Event source
+1. some variable changes
+2. we have to notify somebody hey look change has happened.
+we do this in our component.. so our componenet is event source..
+
+Event Listener
+
+1. we register for event.
+2. somebody has to let us when change has occurred
+our component is also event listener for events like onclick, onfcu
+
+
+
+
+
+IT industry more than technology "English speaking professors
+acting like technical people sad reality"...
+hopefully let us not be this...
+
+
+const [heartRate, setHeartRate] = useState(72);
+
+1. useState function is called.
+2. we are passing some values to it.
+3. inbuiult function in react, open documentation to read it..
+if you open documentation and read it.. it will tell useState
+function can be used to indicate some dynamic part withint a component..
+ie which changes.. CEO word make react register for our event..
+
+4. useState returns an array.. where the first element is the variable
+second element is the function which is used by react to change the
+variable..
+
+let us sing our class anthem.
+when in doubt write a small piece of working program.
+
+
+kids are going to cry why.. because kids never learnt
+that function also is a variable..
+   function assignment..
+
+function assignment != function calling.
+
+good programmers need 5/5 in functions and variables.
+
+
+
+
+
+
+
+
+
+when you see = dont read left hand side first that is basic.
+
+x=y
+understand y and then talk about x
+those who talk about x directly great astrologers..
+
+
+
+
+
+
+function f1()
+{
+return 6; //dont read in terms of value, read in terms of data type
+}
+
+what does f1 function return tell it returns a numbe.
+
+all people who dont read code thru data types but read code
+thru variable names, variable values.. pretty sorry for them...
+
+moral of the story
+are you willing to write a small program on doubts you get...
+..
+
+any changing part in the code.. go thru state.. in react..
+
+in our component it will change, we tell tell react hey it has changed
+react wil try ok let me me do something...
+
+when ever you see state usage.. understand our component is event
+source....
+what did i do for the last 2 hours show you importance
+of understanding javascript properly....
+
+1. destructuring
+2. importance of function assignment..
+3. being clear about concept of event handling.
+4. 
+
+forget about complex things are you looking t ...function assignment
+function calling, functiond efinition...
+in most of cases you will see tonnes of
+
+1. function definition and function assignment...
+calling you wont see why.. we are not going to call ,react
+or somebody else will be calling it.
+
+
+<button onclick="f1()"/>
+
+you have one changing part...x.
+to change this x.. you will using function which setState gave you
+remember second argument of setState is a function...
+if you are changing x based on x. then for the function given
+by setState pass another function only.. dont change directly..
+
+
+1. we had a component, in which some variable changes within
+the component.. heartrate.. so we had to use useState..
+2. we get two things from useState..
+2.1 variable.
+2.2 function which will help you in changing 1.
+3. we are setting up event handling functions.
+4. inside that event handling functions we are calling 2.2functions..
+
+
+
+data
+1. how many react projects do you have with you as of now?
+2
+helloworld
+a02poc
+
+....
+what to do.
+1. a02poc-app project. you see the code PatientVitals component
+have a look at it and understand it..
+
+2. come to helloworld project.open the pdf page no 7.
+create a folder in your src called a01assingment1... 
+create all your components in this... and add that app.js
+and show it works..
+
+3. go thru the pdf..
+
+
+somebody uses a terminology called "X" and we dont know...
+then you should relax and tell the person hey all i know
+is just a function and variable..please tell me X in context
+of this...
+
+
+
+
+
+const [message, setMessage] = useState('');
+there is a changing part in my component called message
+whenever i want to use this variable called message
+i will depend on the function called setMessage
+default value for the message is ''.
+
+state means you are changing soem variable.. let us x..
+if x value is changed based on x.. then for state function
+learn to pass functions...
+
+if x value is going to changed so something which is not based
+on previous state.. then directly assing a value it is ok..
+but thru the function only..
+
+anything that changes within the component must appear as state
+and not as props..
+
+
+when you define a function ask who is going to call it.
+I dont know then dont define the function
+
+in most of cases now.. we are seeing.. we define function
+we dont call it framework ... will call it..
+
+interesting things should become boring that means process is working
+
+
+dynamic things
+
+1. props  from parent component
+2. state  within the component.
+you take a call how..
+
+
+function assignment is not equivalent to function calling.
+
+
+freak point..
+world greatest party is hardware guys and software people..
+
+software people will told by hardware people make things lsower
+and slower so that people can buy hardware continuously...
+
+before doing bad things.. tell good things..
+
+in your project ensure... you are not a ghost..
+ghost.. no details...
+
+if you tell page is identified you must tell me
+
+1. dynami parts in the page.. what will they contain.
+how will get it.. state or props
+2. what all events they will react to.
+
+
+a02poc-aop project.. if i ask somebody to explain some
+random component tomorrow hopefully people should be able to explain..
+
+instead of creating components under src.
+
+crate a folder in src called components.
+in that folder
+
+component\firstassingment
+components\postlogin
+
+
+how do you talk from child component to parent component..
+
+
+1. what is react component.
+2. dynamic things thru prop, state.
+3. event handling how to set up
+4. component communication.
+
+whenever you see function assignment you should think of two people.
+
+X will call Y function under some circumstance..
+X wrote a function called f1
+Y  will define the function and call a function of X and assign
+his function
+Y wrote a function f2. called f1 passed f2 and one day x will f2
+written by Y.
+
+secretly from a syntax point of view, most of you
+must have observed a very interesting thing in javascriptwhat is it.. function defined inside functions... that is concept which is
+important to observe..
+
+topic intercomponent communication.
+
+Map function in javscript..
+what does map do...
+1. map takes each element in the array and you can do whaterver
+it returns you new array..
+
+
+int does nothing in projects. project is all about objects..
+
+in yoru project discussion can you identify objects...
+
+learning, project working all are non deterministic..
+
+when to give a name for a function, if you call it..
+I dont call it ok why give a name to it..
+
+style of coding understand it.. different ..
+people who talk about performance should prove thru numbers
+and not thru "language"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

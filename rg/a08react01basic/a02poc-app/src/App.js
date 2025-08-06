@@ -28,7 +28,7 @@ function App() {
       <PatientMonitor name="mahesh" />
       <PatientMonitor /> {/* Uses default name */}
       <VdPatientVitals/>
-
+      <DoctorName name="Dr. PQR" freak="pqr" junk="abc"/>
 
 
     </div>

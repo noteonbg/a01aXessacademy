@@ -12,13 +12,13 @@ function App() {
   return (
     <div className="App">
 
-      {/*
-       <MedicalList/>
+      
+      {/*  <MedicalList/>
        <MedicalListFromJson/>
        <PatientTable/>
        <PatientTableWithSortFilter/>
 
-       */}
+       */} 
 
        {/* parent and child communication */}
        <PatientManager/>

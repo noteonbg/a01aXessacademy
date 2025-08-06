@@ -8,6 +8,7 @@ const medicalData = [
   { id: 4, name: 'John Doe', type: 'Patient', description: 'Age 45, diabetic' },
 ];
 
+//below line is an exmple of function assignment.
 const MedicalList = () => {
   return (
     <div className="container" style={{ maxWidth: '700px' }}>
