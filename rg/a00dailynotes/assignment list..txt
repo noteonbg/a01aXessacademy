@@ -1,0 +1,79 @@
+assignment list.
+
+1. html
+1.1 form.
+1.2 home page
+2. bootstrap
+1.1 home page
+1.2 form
+2. javascript
+1. tables.fibonacci
+2. validation.
+3. bootstrap and javascript... 
+
+------------------------------
+nodejs, json..
+1. have an existing program which uses
+bootstrap and javascript and html
+know it is using bootstrap via npm.
+
+2. assignment on json...
+json assignment pg 26 27..
+-------------------
+
+react page no 7 assignment.
+
+
+
+
+
+F:\a01aXessacademy\rg\a06gitadventures
+a15project.txt  messages tied to the story id..
+commit to the branch..
+
+
+1. clarity on the UI...
+2. what will change, what will not change in each of the UI pages..
+3. what event handling you want to react to..
+4. decide on your css style for the whole project..
+5. git strategy also... for the group...
+
+project fails because of lack of clarity.. that can be avoided
+if you do  1 to 5.
+
+technical people who use adjectives and adverbs freely
+are scrap people...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,181 @@
+Git ..
+project is going to suffer bad project management..
+
+
+what all things we have to do in
+what order.
+this must be in written format..
+and then comes who will do it..
+
+Gannt chart..
+
+Git...
+
+why...
+without git you will not be control the changes..
+what does that mean for my project..
+
+azure repo.
+1. branch 
+ui
+api
+develop
+feature.
+nobody has business changing feature or develop
+branch except the person who is controlling the repo.
+
+local system.
+day 1
+clone the repo. (folder) keep it fixed..
+checkout the feature branch..
+create a new branch called login.... based on feature..add all your code to this
+add files
+commit.
+push the branch to the repo
+pull request..
+what is thing... team should review code is ok
+or not okk.. if ok.. loginfeature branch
+ill be merged with the feature branch...
+delete your login-branch...
+
+day 2..
+get the files from repo...
+come to your branch feature.. branch..
+
+
+
+
+
+
+what all git command we need to work...
+
+-------------------------------------------
+check all the settings.
+System-level settings
+git config --system --list
+
+User level settings
+git config --global --list
+
+Project specific repository level, 
+settings
+first be inside the repository folder...
+git config --local --list
+
+View all settings and where they come from
+git config --list --show-origin
+-----------------------------------------
+
+for every command of yours in the company
+
+git -c http.sslverify=false .. and then the command example
+
+git -c http.sslverify=false  https://github.com/noteonbg/pocrepo.git 
+
+0. be conscious about the folder we are in
+F:\bootcamp
+
+
+1. clone 
+git clone https://github.com/noteonbg/pocrepo.git
+
+2. look at folder in windows explorer
+or dir you must see your repo folder.
+this will be your project folder
+dont change it.. please...
+come to your repo folder...
+in my case 
+F:\bootcamp\pocrepo
+
+2. how to check which branches we got.
+git branch -a
+you will see remote as well as local
+branches..
+
+
+3. how to switch to a branch.
+git checkout feature
+
+
+4. how to create a new branch..
+git checkout -b loginfeature
+
+5. how to add files
+5.1 files and folders are added, sample
+echo "login feature added" >> login.html
+git add .
+
+6. how to commit.
+git commit -m "login feature added"
+
+
+7. how to push the new  branch to the repo.
+git push -u origin loginfeature
+
+
+8. how to do a pull request..
+stop stop stop, look at the code just dont merge...
+go to github and ensure .. you see pull request...
+you will see the loginfeature branch, patiently select which branch you want to merge to.
+give a pull request. review the code if merge successful delete the loginfeature branch.
+
+
+9. how to delete our branch.
+check out to the feature branch
+git checkout feature
+git branch -d loginfeature
+
+10. how to ensure latest data from repo
+is available in our system..
+be in the feature branch
+git pull origin feature    
+look ltest files should be in the feature ...
+
+
+----------------------------------------------------------
+11. repeat 3, 4,5,6,7,9,...
+example .. we are in the feature branch... our branch has data that is in the repo..
+
+12. git checkout -b postloginfeature
+echo "postlogin features added" >> postlogin.html
+
+
+13. git add .
+
+14 git commit  -m  "#taskid message commited"
+
+15. push the postlogin branch to the remote repository.
+
+16. now do a pull request.. and ... normal stuff..
+
+17. ensure whichever branch you have , you have the same thing
+present in the repository before you add things..
+
+
+----------------------------------------
+
+git fetch --prune
+to ensure remote branches that no longer exist on remote..
+use it frequently...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const PatientForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
+    name: 'generalize',
     age: '',
     email: '',
     symptoms: '',
@@ -51,6 +51,8 @@ const PatientForm = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  
 
   return (
     <form onSubmit={handleSubmit} style={{ maxWidth: '400px', margin: 'auto' }}>

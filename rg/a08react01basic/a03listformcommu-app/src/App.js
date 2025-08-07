@@ -7,6 +7,13 @@ import PatientTableWithSortFilter from './components/PatientTableWithSortFilter'
 import PatientManager from './components/componentcommunication/PatientManager';
 import PatientForm from './components/validation/PatientForm';
 import AllEmp from './components/createviewall/AllEmp';
+import Hello from './components/renderinglogic/Hello';
+import Counter from './components/renderinglogic/Counter';
+import Propschange from './components/renderinglogic/Propschange';
+import SideEffect from './components/renderinglogic/SideEffect';
+import UseEffectExamples from './components/renderinglogic/UseEffectExamples';
+import ResourceManager from './components/crud/ResourceManager';
+import ResourceManagerComponent from './components/crudwithcompnents/ResourceManagerComponent';
 
 function App() {
   return (
@@ -21,12 +28,24 @@ function App() {
        */} 
 
        {/* parent and child communication */}
-       <PatientManager/>
+       {/* <PatientManager/> */}
 
        {/* form validation in react  */}
-       <PatientForm/>
+       {/* <PatientForm/> */}
        <hr/>
-       <AllEmp/>
+       {/* <AllEmp/> */}
+
+          <hr/>
+          {/* different kind of renders and useEffect  */}
+         {/*  <Hello/>
+          <Counter/>
+          <Propschange/>
+          <SideEffect/> 
+          <UseEffectExamples/> */}
+
+          {/* <ResourceManager/> */}
+
+          <ResourceManagerComponent/>
      </div>
   );
 }

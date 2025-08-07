@@ -1,0 +1,180 @@
+Event handling..
+
+
+const [temperature, setTemperature] = useState(99.9); 
+
+be conscious and observe, settemparature function
+we have not defined anywhere.. who has defined it react...
+
+
+if you are clear about event hanlding... then ..
+all hooks are nothing but event hanlding..
+
+useState...
+
+1. my component becomes event source.. 
+2. some variable is there which will change.
+3. react framework will become a listener... it is telling I
+am interested for the event... how.. it will tell you i have
+defined a function, please call this..
+
+2. in javascript... how knowing the language really matters..
+
+common thing between stupid programmer and intelligent programmer.
+both their programs work..
+
+intelligent programmer can tell why it is working
+stupid programmer will tell ok output came.. enjoy as long it 
+is coming..
+
+
+1. react component... can get dynamic things....
+state and props.
+
+
+
+
+any who who writes more than one components
+
+must think of how communication takes place between components.
+
+
+parent component and chld component.
+child component and parent component
+between two independent components..
+
+virtual dom.. more of  a terminology...
+
+1. reality, updating the ui is painful thing in real life..
+and expensive thing.. it consumes time.
+2. react does keep a virtual copy of the dom.. and it compares
+virtual copy with real copy and sees are changes only
+then it renders the component..
+
+rendering the component.
+putting the component in the dom tree to be visible..
+
+if possible consider this approach for any technical thing.
+
+1. tell what is concept dont tell the syntax
+2. then tell the syntax.
+3. give an example
+4. if possible talk about best practices..
+
+state .. something that can change inside the ocmonent.
+
+
+
+
+
+
+let i =3;
+i =5;
+
+component has changed..
+means
+
+1. some props given has changed.
+2. some state has changed..
+that the component has to be showing the page again.
+
+practical questions
+checklist
+1. can you write a non dynamic component and make it work.
+2. do you how to use state for variables of basic type as well as object.
+3. do you know how to use props.
+4. do you know how to setup event handling.
+5. are you ok with javascript... things.. most important
+function assignment..
+
+
+Remember any design ...
+you get a + means you get a minus also...
+
+React Hooks
+
+REact hooks help us in making a functional component
+as a event source for react..
+
+Array destructuring is taking individual element of the array
+and assigning to a variable.
+
+let x =[2,3];
+let [k,m]=x;
+
+
+let k = x[0]
+let m = x[1];
+
+
+let x = () => setCount(count + 1);
+
+<button onClick={x}>Click me</button>
+we have button
+we have registered for onClickevent
+the function that gets called when onclickevent occurs
+is anonymous function..
+
+
+
+
+
+how did the parent function come to child..
+thru props.
+inside the child call the parents function..
+
+
+PatientManager and Patientcard should show you how
+parent communicates to child
+child communicates to parent..
+
+favourite word of students .. "Inbuilt" system given...
+all these things needs details.
+
+11.03AM ... 11.18AM...
+...
+
+when we see function assignment dont try to understand the
+function just ignore and keep going , why functon ssingment
+is to equivalent to calling..
+
+only when you see function calling try to understand the code.
+
+you have to move the value from the textbox value to the
+state variable value...
+
+all of you should practice.. how to use textboxes in react..
+
+<Form action="" method="get">
+
+<input type="submit" value="ok submit now">
+</form>
+
+
+1. rg\a08react01basic\a03listformcommu-app
+
+folders present in src
+componentcommunication
+validation
+createViewall
+
+go thru these things and get assignment working..
+pg 42 of the pdf..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

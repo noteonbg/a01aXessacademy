@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "id": "36ce",
+      "resourceId": "1",
+      "resourceName": "monitor blood",
+      "status": false
+    },
+    {
+      "id": "1fd8",
+      "resourceId": "2",
+      "resourceName": "bp level",
+      "status": false
+    }
+  ]
+}

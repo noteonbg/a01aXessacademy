@@ -32,7 +32,7 @@ look at all  the branches..
 4. create a new branch from featurebranch.
 let us login-feature
 git checkout feature
-git checkout -b feature/loginfeature feature.
+git checkout -b loginfeature .
 
 5. add the files and commmit it..
 
@@ -53,6 +53,13 @@ git branch -d loginfeature.
 deleting remote branch pathetic..
 git push origin --delete branch-name
 
+
+update your branch  , to ensure your branchis in synch with what is on the repo.
+git pull origin branchname.
+
+
+
+
 ----------------------------------
 
 to get the lastest changes from the remote repo.
@@ -64,8 +71,6 @@ git checkout branchname.
 create a branch and check out.
 git checkout -b feature/login-page
 
-update your branch
-git pull origin branchname.
 
 if you want merge changes.
 git merge  origin/branchname..

@@ -2,6 +2,15 @@ import React, { useState } from 'react';
 import PatientCard from './PatientCard';
 
 function PatientManager() {
+
+  // const [x,y]=useState(z);
+
+  /*
+  inside my compoennt something changes, that is indicated by x
+  its default value is z. when ever i want to change x, i will
+  call the y function given by react.
+
+  */
   const [patient, setPatient] = useState({
     id: 'P001',
     name: 'Ramesh',

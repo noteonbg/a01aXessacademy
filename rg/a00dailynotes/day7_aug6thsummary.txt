@@ -406,6 +406,131 @@ and not thru "language"
 
 
 
+{medicalData.map(({ id, name, type, description }) => (
+            <tr key={id}>
+              <td>{name}</td>
+              <td>{type}</td>
+              <td>{description}</td>
+            </tr>
+          ))}
+
+on the array medicalData we are calling the map function.
+we are passing a function , in that function input argument.
+each element of the array...we are destructuring the array element
+which is an object, into id, name, type, description variable
+once you
+
+
+I am calling it...
+i will ask you to show in the code f1();
+
+welcome to javascript
+things picked up from the file...
+contact a website and get some data.. future version..
+
+fetch..
+
+earlier program it was an array.
+
+moral of the story.. we will take about useEffect tomorrow
+bigger story.. when you see somebody else function call
+do we have the decency to open documentation and read or
+we will look at astrology of people..
+
+
+fetch('/medicalData.json')  
+      .then(response => {
+        if (!response.ok) throw new Error('Failed to fetch data');
+        return response.json();
+      })
+      .then(data => setMedicalData(data))
+      .catch(error => console.error('Error loading medical data:', error));
+
+this uses the javascript concept of "Promise"
+talk like Shakespeare...
+
+we are loading the data from medicaldata.json and it we are successful
+then we are converting the string into json format.. and then we are calling a function passing that json object. that json object is
+used to setState ie array is set to the json data..
+
+
+let x='{"freak":3}';//this is a json string..
+let y = json.parse(x);
+console.log(typeof y);
+
+let q ='pqr';  //this is not a json string.
+
+we have a doubt on filter.. write a msall program..
+
+filter
+map
+copy paste some examples..
+
+programmer are you good functions and variables.. that is it..
+
+//kids world
+let x=[2,3];
+let z=x;
+z[0]=44;
+console.log(x[0]);
+
+let x =[2,3]
+
+
+//reallife
+function f1(z)
+{
+}
+
+let x =[2,3];
+f1(x);
+
+
+
+
+
+
+let [y]=x;
+console.log(typeof y)
+
+
+onChange={(e) => setSearchTerm(e.target.value)}
+onChange="f1()"
+
+function f1(e)
+{
+	setSearchTerm(e.target.value);
+
+}
+
+
+we have  variable in a state called SearchTerm.
+when we type in the textbox.. browser tries to have a property
+which contains the value of the textbox.
+now we have to tell react hey look this textbox value should be
+the value used in the state...
+so 
+
+
+If you hate function assignment unlimited entertainment is waiting
+for oyou..
+
+
+
+a03listformcommu project make it work in your system..
+till patientmangaer understand the codes..
+
+make a03listformcommu-app, this is a project.
+make it work.
+1. first put that in the correct folder.
+2. npm install.
+3. npm start.
+see in the browser...
+if tabular data is not coming it means ... the component
+are commented out in app.js uncomment it.
+page 42 pdf... should be tried eventually.
+
+
 
 
 
