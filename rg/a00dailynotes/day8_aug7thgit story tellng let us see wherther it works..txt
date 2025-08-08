@@ -154,9 +154,14 @@ present in the repository before you add things..
 
 ----------------------------------------
 
+git fetch origin..
+find out what this command does..
+
+
 git fetch --prune
 to ensure remote branches that no longer exist on remote..
 use it frequently...
+
 
 
 

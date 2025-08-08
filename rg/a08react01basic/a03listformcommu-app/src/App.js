@@ -14,6 +14,8 @@ import SideEffect from './components/renderinglogic/SideEffect';
 import UseEffectExamples from './components/renderinglogic/UseEffectExamples';
 import ResourceManager from './components/crud/ResourceManager';
 import ResourceManagerComponent from './components/crudwithcompnents/ResourceManagerComponent';
+import RectangleOutput from './components/poc/RectangleOutput';
+import Rectpoc from './components/poc/Rectpoc';
 
 function App() {
   return (
@@ -45,7 +47,9 @@ function App() {
 
           {/* <ResourceManager/> */}
 
-          <ResourceManagerComponent/>
+          {/* <ResourceManagerComponent/> */}
+
+          <Rectpoc/>
      </div>
   );
 }
