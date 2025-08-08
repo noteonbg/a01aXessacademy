@@ -1,4 +1,4 @@
-having things in the mind.. mental hospitall.
+having things in the mind.. mental hospital.
 written format... planning.
 
 
@@ -72,7 +72,15 @@ and prove that project created by person is working in your system.
 ---------------------------
 
 by monday  ie 11th August 2025.
-1. in youir project repo there will be branch called project poc.
+1. in your project repo there will be branch called project poc.
 which will have react project where routing and axios small example is working.
 2. you are clear about what you will do in git... 
 
+monday morning..
+1. take stock 
+
+week 1 assingments.
+week 2 assingments. ( some can be pending it is ok...)
+all pdf assingments should be documented how it is working..
+
+what you did with respect to project

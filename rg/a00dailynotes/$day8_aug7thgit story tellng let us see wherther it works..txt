@@ -129,7 +129,7 @@ git branch -d loginfeature
 is available in our system..
 be in the feature branch
 git pull origin feature    
-look ltest files should be in the feature ...
+look latest files should be in the feature ...
 
 
 ----------------------------------------------------------
@@ -165,14 +165,7 @@ use it frequently...
 
 my suggestion have a branch for doubtclearance..
 
-monday morning..
-1. take stock 
 
-week 1 assingments.
-week 2 assingments. ( some can be pending it is ok...)
-all pdf assingments shoul be documented how it is working..
-
-what you did with respect to project
 
 
 
