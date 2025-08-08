@@ -1,0 +1,78 @@
+having things in the mind.. mental hospitall.
+written format... planning.
+
+
+0. show good intent..
+1. are you clear about the requirements.. 
+2. how your screens will look like.. (long way to go)
+3. what all activities the team has to do, in what order.., who will do
+it should be the last
+4. git strategy.... is entire team clear, who is responsible repository
+management.. chief ambulance officer..
+5. a react project which the entire team uses... which is proven
+to work .. with all the features.. that project needs to ensue
+it has got the correct thing in package.json... random updates..
+on the project npm update.. will  kill yourself..
+6. focus on must have requirements first and ensure it is done..
+good to have.. come in the second iteration..
+7. it cant be without css... so what is your approach with respect
+to bootstrap and css with the whole project...
+
+-------------------------------------------------------------
+for each component in REact we must know the below things before coding..
+
+
+
+1. we have ui... component.
+2. component , changing things and non changing things.
+props, state. any default values..
+3. components can be nested. so they need to communicate.
+how the will communicate.
+4. validation needed
+4.event handling will be there.. so what all events you
+want to react to.. and what they are expected to do.
+5. navigating thru the components.. .. routing...
+details..
+6. when all you want to contact server... 
+6.1 what is purpose.
+6.2 what will you send.****
+6.3 what will you get.****
+6.4 when failure happens 
+	what will you do if failure because of user.
+	what will you do if failure is because of system.. server..
+6.5 when success happens what will you do
+6.6 mode of http request.. get, post, put or delete.
+
+look at these examples..
+
+1. project name.
+a03listformcommu-app
+<Rectpoc/>
+<SideEffect/> -- using fetch.. change it to axios
+<ResourceManagerComponentWithAxios/> 
+
+2. you have have to do your assingments aim for completion
+and then again go thru the checklist..
+
+---------------------------------------------------
+
+1. use ar react project.
+put all depenancies in it..
+
+1. bootstrap
+2. routing.
+3. axios.
+
+just show one routing program is working there..
+one axios program is working.. in poc..
+
+and push this project into a branch called "pocproject"
+shoud be able to clone this branch and then create a new branch
+and prove that project created by person is working in your system.
+---------------------------
+
+by monday  ie 11th August 2025.
+1. in youir project repo there will be branch called project poc.
+which will have react project where routing and axios small example is working.
+2. you are clear about what you will do in git... 
+

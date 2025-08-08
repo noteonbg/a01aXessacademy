@@ -15,8 +15,8 @@
     {
       "id": "59f5",
       "resourceId": "1",
-      "resourceName": "2",
-      "status": true
+      "resourceName": "sensor",
+      "status": false
     }
   ]
 }

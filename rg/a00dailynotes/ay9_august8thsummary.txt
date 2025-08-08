@@ -1,6 +1,7 @@
 1. how would rate your react understanding out of 5
 2. assignment... ?
 
+0. show good intent..
 1. are you clear about the requirements.. 
 2. how your screens will look like.. (long way to go)
 3. what all activities the team has to do, in what order.., who is not
@@ -15,6 +16,338 @@ on the project npm update.. will  kill yourself..
 good to have.. come in the second iteration..
 7. it cant be without css... so what is your approach with respect
 to bootstrap and css with the whole project...
+
+---------------------------
+
+1. we have ui... component.
+2. component , changing things and non changing things.
+props, state. any default values..
+3. components can be nested. so they need to communicate.
+how the will communicate.
+4.event handling will be there.. so what all events you
+want to react to.. and what they are expected to do.
+5. navigating thru the components.. .. routing...
+details..
+6. when all you want to contact server... 
+6.1 what is purpose.
+6.2 what will you send.****
+6.3 what will you get.****
+6.4 when failure happens 
+	what will you do if failure because of user.
+	what will you do if failure is because of system.. server..
+6.5 when success happens what will you do
+
+doing 1 to 6.5 is what I call planning for react..
+I am hundred percent sure you can do this at time of coding you should
+know it upfront.... 
+
+
+
+
+ghost lack of details and overenthusiasm to code..
+during code come to the conclusion that I am clear what to do..
+pathetic thing....
+
+
+all of you need an excel sheet for each component
+which answers the above question...
+
+Biggest risk the project lack of clarity..
+
+bigger problem when there multiple things to do... are you 
+going to depend on "great memory" or checklist..
+if I was you I hate to trust my memory , I will write checklists..
+
+this is "my opinion" go with what you feel is right..
+
+but one thing is for sure, project will get killed because of ghosts..
+"intent without details"
+
+
+
+
+
+
+
+
+
+
+
+
+
+do we define functions and pass it to another function in javascript.
+yes or no  --very common 
+
+f1(f3);
+
+f1 is not defined by us only called by us..
+f3 is defined by us but not called by us.
+when i write f3.. i should show the decency of going and checking
+with f1 hey f1, you tell how i should define f3.. what arguments
+should i pass, why.. f3 is called by f1 and not us..
+
+how to show I am stupid many ways there, let me show you one way
+who defined f1 , I
+who defined f3 , I
+this is sign that i am stupid..
+
+
+all these concepts.. are unknown to collge students and even many
+technical people because they suffer from this disease called "I mine me"
+and they dont understand technical things .. until you know multiple
+people re there..
+
+in javascript we will buried with functions which we define
+but we dont call system will call it.. most of times... 
+why... welcome to event driven  world.. most of times we are event
+listeners..
+
+when in doubt are you willing to write a poc...
+
+programmer who does not know folder structure comma state programmer.
+
+English speaking acting technical people will be scared to deathto write 
+a small program when they have a doubt..
+
+kids  hate constraints adults should like constraints..
+
+rules in validation
+1. if you can do something with html dont do it with css.
+2.  if you can do something with css dont it with javascript
+3. come to javascript only if you cant do something with html and css.
+
+with respect to css.
+
+1. normal text should be in one color
+2. success messages in another color
+3. negative messages in some other color.
+
+when you are writing a program that is used to check a doubt or a concept
+ensure the program is small... that requires skill.
+
+when you join any project.
+ask the project team clearly while coding what all tools do we use..
+and and know why.. before you suggesting your favourite tools..
+
+in react from textbox to the state variable you need to listen
+for a event.. 
+
+install react developer tools and see whether you are able tosee
+the components its properties..
+helloworld
+usecase1 
+
+when you have a doubt what variable you got
+liberally use console.log(typeof variable, variable) .. 
+you can see its type and you can see its content..
+
+
+
+in an web application..
+
+1. we make a request get a web page
+2. based on business logic we pick some input and react to some events.
+3. when we react to events.. usually we contact server, pass inputs
+and get status and data as what has happened from the server.
+4. when the data comes the server.. based on that we update the ui.
+5. updating ui. means changing the same page or going to a new page..
+
+SQr3
+learning style
+Survey
+read the questions
+REad
+REview
+REvise.
+
+
+those who tell "latest"... "updated" ... also tell the world "misery"
+
+
+
+
+in a typical web application. where does the html page stay..
+1. on server
+2. on client. it is on client   
+
+remember in web technology html, css, javasscript client side..
+
+they stay on the server, get downloaded and content of html, javascript
+,css is processed by the client ie browser.
+
+Dictionary
+
+we have to know the word, then we find its meaning..
+
+somebody cannot tell i will tell you meaning tell me the world.
+
+
+for routing
+
+1. install the library
+2. come to index.js use the Router.. BrowserRouter...
+3. which component should shown when.... that is RoutePath.
+
+sometimes in a project whole journey is movng from one stupid
+thing to another.. this happens.. because people dont respect details.
+
+what to do
+install the project and prove it works. (a04reactrouting)
+then open the react pdf and go thru the theory it tells on routing..
+copy the morning component work in this project.. for the link
+( you  have to copy your component and make it work in a0reactrouting
+project.)
+in case it is working add validation to your component such
+that number should be divisible by 10 else give a message must
+give a multiple of 10.
+
+hopefully you have an idea on.. what is routing how it is done..
+
+1. installation of library
+2. ensuring routing component BrowserRouter in the index.js
+3. configuration
+what will user see.
+ok user sees that which component it will map to..
+4.  ok.. but  may not be enough for the project.. so we need to learnmore..
+
+
+REST .. Expansion REpresentational State Transfer..
+what is REST?
+
+Technology must be a slave to the business.
+business gives my salary and not technology for any company
+including Microsoft, google, facebook, amazon...
+
+
+1. we have some logic with us.. logic logic logic.. not presentation.
+2. we have written this logic in language "X" let us say X="java"
+3. we can cover this logic with REST... what happens 
+
+we covered with REST
+1. this logic can be distributed..
+logic in ssytem1
+calling from ssystem2.
+2. it can be called from a software written in any technology let us
+call it as Y .
+Y =X ok
+Y=python
+y
+
+
+why REST
+1 we have a logic , that logic needs to be called from any technology
+and it needs to be distributed. to do this, we have a standard
+called REST.
+
+
+we have logic in  system1.
+I want to call this logic in system 2, system 3... in any language.
+then wrap your logic in system1 in REST.
+
+what are two things about REST 
+1. REst uses http and its cousins to communicate.
+2. to represent the data... it uses JSON or XML , we are slightly biased
+toward JSON.. but remember XML and json should not be compared..
+
+to compare two things be sure you have enough data with you
+else dont compare.
+
+REST means.
+1. there is a logic
+2. we have a cover called REST on it. for example one day .. when write
+our java code , our cover restcover is going to built by using spring boot.
+
+one day our code is written in java our rest cover can be built by
+using Flask or FastAPI
+3. because we put the cover called REST
+
+two things happen.
+1. we can this logic from other systems.
+2. it is standard you can call it from any technology
+
+what am i  doing in React about REST..
+
+
+1. you have to assume logic with the cover is there...
+2. how do you call this logic from javascript..
+
+
+
+hey why are you chewing my brain i like only functions... ok.. great..
+
+what is REST
+
+you define a function
+and allow the function to be called by using HTTP and JSON.
+why HTTP you have to reach thru the network.
+why JSON, function need input and output, those are variables.
+json is a standard to represent variabes..
+
+in spring boot we will define function.. REST publishing..
+by using axios ,we will now call the function.. REST API calling.
+by callng the function by using http and json..
+
+
+useEffect hook.
+
+by get, post, put, delete... what are these?
+these are modes of http request..
+
+response http status codes.
+
+when you make rest api call using
+
+fetch
+axios..
+
+mode of request.. get, put, post.
+what is uri.. where the request should go
+what input you plan to pass to the request... 
+what response code did you get...
+what data you are getting.. after looking at response code..
+response code is 4xx, that means failure because of user..
+response code is 5xx that means failure because of system.
+
+
+convention..
+usually we prefer to do that...
+
+get.. is used for querying
+post is used for adding
+put is used for updating
+delete is used for removing..
+
+quick summary
+
+1. relax.. dont get overwhelmed by systax
+2. just ensure, you know state, event handling, props
+3. inter component communication..
+4. navigation .. routing...
+5. we will come to axios... while using axious know what it is..
+6. useEffect hook...
+
+we are calling a function f1, we are passing the function f2 to it..
+what f1 tells is you must tell me when to call f2.., telling that
+is called dependency... 
+
+we useeffect to do sideeffects.
+sideeffects are things  that happen outside the function
+example making a request to a web serve
+using a timer...
+
+3.30PM .. 3.45PM.. git strategy
+
+team.. 
+loan origination
+Payment initialization..
+
+
+
+
+
+
+
+
 
 
 

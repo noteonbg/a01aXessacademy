@@ -110,7 +110,7 @@ git commit -m "login feature added"
 
 
 7. how to push the new  branch to the repo.
-git push -u origin loginfeature
+git -c http.sslverify=false push -u origin loginfeature
 
 
 8. how to do a pull request..
@@ -163,9 +163,16 @@ to ensure remote branches that no longer exist on remote..
 use it frequently...
 
 
+my suggestion have a branch for doubtclearance..
 
+monday morning..
+1. take stock 
 
+week 1 assingments.
+week 2 assingments. ( some can be pending it is ok...)
+all pdf assingments shoul be documented how it is working..
 
+what you did with respect to project
 
 
 

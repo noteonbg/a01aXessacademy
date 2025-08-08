@@ -43,8 +43,9 @@ function App() {
          {/*  <Hello/>
           <Counter/>
           <Propschange/>
-          <SideEffect/> 
-          <UseEffectExamples/> */}
+          */}
+          {/* <SideEffect/>  */}
+          {/* <UseEffectExamples/>  */}
 
           {/* <ResourceManager/> */}
 
@@ -52,7 +53,7 @@ function App() {
 
           {/* <Rectpoc/> */}
 
-          <ResourceManagerComponentWithAxios/>
+           <ResourceManagerComponentWithAxios/> 
      </div>
   );
 }

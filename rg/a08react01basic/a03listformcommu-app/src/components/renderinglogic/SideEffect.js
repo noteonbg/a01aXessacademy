@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 function SideEffect() {
   const [userId, setUserId] = useState('1');      // controlled input
   const [user, setUser] = useState(null);         // fetched data
-  const [loading, setLoading] = useState(false);  // loading state
+  const [loading, setLoading] = useState(true);  // loading state
   const [error, setError] = useState(null);       // error handling
 
   useEffect(() => {
@@ -15,11 +15,13 @@ function SideEffect() {
     fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
       .then(res => {
         if (!res.ok) {
-          throw new Error('User not found');
+          throw new Error('User is not found really');
         }
+        console.log(res.json,"json data got");
         return res.json();
       })
       .then(data => {
+        console.log("then json data got",data);
         setUser(data);
       })
       .catch(err => {
