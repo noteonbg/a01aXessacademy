@@ -14,7 +14,7 @@ function App() {
         <Link to="/multiply">Multiply Numbers</Link>
       </nav>
       <hr />
-      <Routes>
+       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/add" element={<Add />} />
         <Route path="/multiply" element={<Multiply />} />

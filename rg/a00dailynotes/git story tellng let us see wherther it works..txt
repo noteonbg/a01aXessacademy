@@ -1,0 +1,101 @@
+Git ..
+project is going to suffer bad project management..
+
+
+what all things we have to do in
+what order.
+this must be in written format..
+and then comes who will do it..
+
+Gannt chart..
+
+Git...
+
+why...
+without git you will not be control the changes..
+what does that mean for my project..
+
+azure repo.
+1. branch 
+ui
+api
+develop
+feature.
+nobody has business changing feature or develop
+branch except the person who is controlling the repo.
+
+local system.
+day 1
+clone the repo. (folder) keep it fixed..
+checkout the feature branch..
+create a new branch called login.... based on feature..add all your code to this
+add files
+commit.
+push the branch to the repo
+pull request..
+what is thing... team should review code is ok
+or not okk.. if ok.. loginfeature branch
+ill be merged with the feature branch...
+delete your login-branch...
+
+day 2..
+get the files from repo...
+come to your branch feature.. branch..
+
+
+
+
+
+
+what all git command we need to work...
+
+0. be conscious about the folder we are in
+1. clone 
+2. how to check which branches we got.
+3. how to switch to a branch.
+4. how to create a new branch..
+5. how to add files
+6. how to commit.
+7. how to push the branch to the repo.
+8. how to do a pull request..
+9. how to delete our branch.
+10. how to ensure latest data from repo
+is available in our system..
+11. repeat 3, 4,5,6,7,9,...
+
+
+
+
+
+in your repo
+create branches
+repo
+UI
+API
+feature
+Develop.
+
+in your system clone this and show me 
+that the repo and branches are there..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

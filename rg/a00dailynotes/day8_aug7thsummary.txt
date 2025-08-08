@@ -162,6 +162,119 @@ go thru these things and get assignment working..
 pg 42 of the pdf..
 
 
+web http..
+we need both server and client..
+server...
+process the request and send the response...
+
+html page/css/(js).. is processed by web server or the browser..
+
+web archtcture..
+client server...
+
+web designer...
+web programmer.
+
+var i
+let k
+const j
+
+
+let i;
+console.log(i);
+
+
+let i  ={ length:3, breadth:4 };
+console.log(i.length=5)
+
+what all things do we do in javascript
+
+1. access sections of the page and change it.. or access it
+document.getElementById, document.queryselector, 
+2. validation 
+3. contact server and send some data .. fetch
+
+
+this... 
+
+this in javascript has got different meaning you can never
+answer it.. until you know where you have used it..
+
+this...
+class A
+{
+f1()
+{//you are insie f1.. how will youi know x called o ry called
+there will something called this...
+	
+}
+
+}
+
+let x =new A();
+let y =new A();
+x.f1();
+y.f1();
+
+how do you concatenate strings in javaascript poor mans way..
+"Hello" + "hi";
+
+m1.filter(f1);
+
+what is m1... array.
+it will each element from the array and call f1...
+foreach
+map...
+what it does end is totally..
+foreach
+filter
+map
+
+you take each element from the array, and decide to what to do with it.
+
+class Rect
+{
+
+constructor() {  this.length=3; this.breadth=4}
+setlength(x) { this.length=x;  }
+getarea() { return this.length*this.breadth }
+
+}
+
+html
+1.inline and block elements..
+2. css..selector..     { color:green }
+
+css
+write at head level.. so page specific elements
+write at element inline .. so element specific css. only for that
+write a separate file .. so that across pages you can use css..
+ 
+
+grid system... 12
+layouts... vertical, inline, horizontal..
+
+let x=2;
+console.log(typeof x)
+
+
+what to do.
+1. would prefer you to work on the react assignment...
+step by step... and understand the code.. while writing.
+2. prepare for the exam if you feel that is needed.
+
+remaining part of the day a schedule..
+3.  3.45 PM .. git strategy.. we will discuss.
+4. project discussion with individual teams
+1. credit card origination.
+2. loan origination
+3. payment initialization.
+4. Rw tool.
+
+
+
+
+
 
 
 

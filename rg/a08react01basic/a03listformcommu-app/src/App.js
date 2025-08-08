@@ -16,6 +16,7 @@ import ResourceManager from './components/crud/ResourceManager';
 import ResourceManagerComponent from './components/crudwithcompnents/ResourceManagerComponent';
 import RectangleOutput from './components/poc/RectangleOutput';
 import Rectpoc from './components/poc/Rectpoc';
+import ResourceManagerComponentWithAxios from './components/crudwithcompnents/ResourceManagerComponentWithAxios';
 
 function App() {
   return (
@@ -49,7 +50,9 @@ function App() {
 
           {/* <ResourceManagerComponent/> */}
 
-          <Rectpoc/>
+          {/* <Rectpoc/> */}
+
+          <ResourceManagerComponentWithAxios/>
      </div>
   );
 }

@@ -1,0 +1,28 @@
+1. how would rate your react understanding out of 5
+2. assignment... ?
+
+1. are you clear about the requirements.. 
+2. how your screens will look like.. (long way to go)
+3. what all activities the team has to do, in what order.., who is not
+doing it we will come in step 4..
+4. git strategy.... is entire team clear, who is responsible repository
+management.. chief ambulance officer..
+5. a react project which the entire team uses... which is proven
+to work .. with all the features.. that project needs to ensue
+it has got the correct thing in package.json... random updates..
+on the project npm update.. will  kill yourself..
+6. focus on must have requirements first and ensure it is done..
+good to have.. come in the second iteration..
+7. it cant be without css... so what is your approach with respect
+to bootstrap and css with the whole project...
+
+
+
+
+
+
+
+
+
+
+
