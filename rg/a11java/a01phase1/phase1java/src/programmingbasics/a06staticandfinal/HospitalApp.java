@@ -6,7 +6,7 @@ public class HospitalApp {
         HospitalInfo.displayHospitalName();
 
         // Create doctor object
-        Doctor doc = new Doctor("Dr. Anjali", "Neurology");
+        Doctor doc = new Doctor("Dr. Ramesh", "Neurology");
 
         doc.displayDoctorInfo();
 

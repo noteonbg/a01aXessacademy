@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class PatientListApp {
     public static void main(String[] args) {
         List<Patient> patients = new ArrayList<>();
-        patients.add(new Patient("Anjali", 30, "Flu"));
+        patients.add(new Patient("Suresh", 30, "Flu"));
         patients.add(new Patient("Ramesh", 45, "Diabetes"));
-        patients.add(new Patient("Sneha", 27, "Migraine"));
+        patients.add(new Patient("Mahesh", 27, "Migraine"));
 
         System.out.println("=== Patient List ===");
         for (Patient p : patients) {

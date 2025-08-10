@@ -3,7 +3,7 @@ package programmingbasics.a06staticandfinal;
 public class HospitalInfo {
 
     // Static variable - shared by all instances
-    static String hospitalName = "CityCare Hospital";
+    static String hospitalName = "Cure Hospital";
 
     // Final variable - constant value
     final String registrationNumber = "REG-2025-HOSP";

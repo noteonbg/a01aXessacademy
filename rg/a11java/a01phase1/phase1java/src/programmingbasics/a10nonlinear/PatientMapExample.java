@@ -9,9 +9,9 @@ public class PatientMapExample {
         Map<String, String> patientMap = new HashMap<>();
 
         // Add some patients (ID -> Name)
-        patientMap.put("P101", "Anjali Sharma");
-        patientMap.put("P102", "Ramesh Gupta");
-        patientMap.put("P103", "Sneha Patel");
+        patientMap.put("P101", "Tarun");
+        patientMap.put("P102", "Varun");
+        patientMap.put("P103", "Karun");
 
         // Retrieve and display patient name by ID
         String searchId = "P102";

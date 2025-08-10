@@ -6,7 +6,7 @@ public class MedicalStringDemo {
         // ====== 1. STRING METHODS ======
         System.out.println("=== String Methods ===");
 
-        String patientName = "  Dr. Anjali Sharma  ";
+        String patientName = "  Dr. Ramesh Sharma  ";
         System.out.println("Original: [" + patientName + "]");
 
         System.out.println("Trimmed: [" + patientName.trim() + "]");
@@ -18,7 +18,7 @@ public class MedicalStringDemo {
         System.out.println("Contains 'Sharma'? " + patientName.contains("Sharma"));
         System.out.println("Replace 'Dr.' with 'Doctor': " + patientName.replace("Dr.", "Doctor"));
 
-        String inputName = "dr. anjali sharma";
+        String inputName = "dr. ramesh sharma";
         System.out.println("Equals: " + patientName.trim().equals(inputName));
         System.out.println("Equals Ignore Case: " + patientName.trim().equalsIgnoreCase(inputName));
 
@@ -28,7 +28,7 @@ public class MedicalStringDemo {
 
         StringBuilder sb = new StringBuilder();
         sb.append("Patient: ");
-        sb.append("Anjali");
+        sb.append("Ramesh");
         sb.append(" | ");
         sb.append("Diagnosis: Fever");
 
