@@ -1,0 +1,4 @@
+2025-08-12 16:34:56.500689+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]clear\000ashow databases"; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT"; SQL statement:
+clear
+show databases [42001-232]
