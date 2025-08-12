@@ -27,7 +27,7 @@ public class a05DecisionMakingDemo {
         }
 
         // 4. switch statement
-        int day = 3;
+        int day = 1;
         System.out.println("\nUsing switch statement:");
         switch (day) {
             case 1:

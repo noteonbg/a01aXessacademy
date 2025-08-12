@@ -5,10 +5,17 @@ import java.util.Scanner;
 
 public class A07HospitalSystem {
 
+
+   
+
     public static void main1(String[] args) {
         // Creating patient objects
         Patient p1 = new Patient("Alice Smith", 35, "Diabetes", "P001");
         Patient p2 = new Patient("Bob Johnson", 42, "Hypertension", "P002");
+
+        Patient poc =getSomePatient();
+        System.out.println(poc.getDisease());
+
 
         // Modify patient details using setters (optional)
         p2.setDisease("Cardiac Arrest");
@@ -16,6 +23,16 @@ public class A07HospitalSystem {
         // Displaying patient details
         p1.displayInfo();
         p2.displayInfo();
+    }
+
+    private static Patient getSomePatient() {
+
+        Patient tempn =
+                new Patient("abc",25,"vagueness","23");
+        return tempn;
+
+
+
     }
 
     public static void main(String[] args) {

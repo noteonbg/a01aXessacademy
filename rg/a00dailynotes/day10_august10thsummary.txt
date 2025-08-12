@@ -1,0 +1,675 @@
+0. just focus on your team and not what other teams are doing..
+this is my view.. you can have other opinions..
+1 . keep intent clean
+2.  keep your bp level normal.
+3.  how to approach the program stages..
+4.  hope your java program is working..
+
+
+
+
+
+
+1. java
+2. project.
+3. react..
+4. agile..
+
+yesterday summary..
+1. java one more language to learn.. it has got its opinion..
+and it quite a successful language like other langauges..
+
+
+technical features.. dont need to recompile our application
+across platforms..
+
+who uses java..
+1. IBM
+2. oracle.
+3. open source..
+they have source code which runs on multiple platforms
+every time they add a new feature, they have recompile
+code with java this gets avoided..
+
+
+how to make things fast..
+dont do unnecessary things...
+dont copy variables unnecessarily..
+
+one reason why pointers look so complicated
+is college teachers make it complicated
+and one person wrote a book which totally ruined
+C for lot of people... Let us C... yeshwant kanetkar...
+
+
+what is pointer
+
+a mechanism to ensure we dont make a copy of a variable..
+when you should not make a copy
+when you should make a copy..
+
+if you have a single process you dont neeed to make a copy..
+
+if you got multiple process. without copy nothing will work.
+
+IN C and c++ you had a choice.. whether to make a copy
+not to make a copy..
+
+once java came he told if i give you choice, you get confused
+to let me remove choice so you dont get confused..
+
+
+int i=3;
+int j =4;
+i =j;
+j =5;
+sout(i);
+
+Patient p =new Patient(1,"abc","languageskill",35);
+Patient p1 = p;
+p1.setDisease("burriedinjargons");
+s.o.p(p.getDisease());
+
+stack and heap..
+what is stack
+1. memory controlled by system.. within a fnction
+2. any variable allocated is done by system.
+3. it is removed from memory once the function has executed..
+
+
+
+variable.
+
+public void f1(int i)
+{
+	int j =3;
+	A obj =new A(); //goes into the heap
+
+}
+what is difference between i and j when both
+are local variables.
+
+i is assigned a value by the caller of the function
+j is asinged a alue by the owner of the function.
+
+freaky point.
+when we pass variables as input to function
+it is assignment.. when we return it is asisngment. remember
+these things..
+
+
+
+
+
+
+
+let x = [];
+let y=x;
+y[0]=23;
+console.log(x[0])
+
+
+
+in java data types are categorized as primitives and non primtivies
+
+why we should know it?
+the way assignment works is different..
+
+int x[]=new int[2];
+int y[]=x;
+y[0]=44;
+s.o.p(x[0]);
+
+kids hate compilation errors.
+adults hate logical errors.. when you dont know scope
+this is what we land up with..
+
+small assignment on this.. collect it..
+
+whenever you talk about this.
+
+1. you must be inside the class.
+2. inside a non static function
+3. this will get created automatically.
+4. it points to the calling object.
+
+local means.. in Computer science only one thing... function.
+those who give other meaning for local are shakespere ghosts..
+
+freak respect know the terminology and then use it.. if we
+believe in "science"
+
+static variable
+a variable which is inside a class and can exist without
+any object...
+
+Dont do anything that does not add value to the customer.
+flow chart..
+
+class diagram..little bit .. as of now zero priority..
+
+once upon a time all were hunter gatherers.. agriculture
+did not exist. do you agree.
+then we got agriculture where group of started dong
+something for first time "future" came into existence..
+we are in companies.. which have depts...
+
+organizations are managed by controlling information and not power..
+
+"Encapsulation"
+you have variables in the class, dont touch them directly
+come thru functions. so that we can some control...
+
+how to take user input.. taking input from keyboard
+by using scanf,  input, all these totoally scrap..
+never useful in real life...
+
+
+why in real life,input nd output is layer...
+
+do the assignment given in page 57 of the pdf
+
+1. Relationship between classes.
+INheritance. mechanism of creating hierarchy
+below two are called as association.. there will one thing
+within the other thinig..
+Composition   --Mobile and Battery
+Aggregation   --Mobile and sim.
+
+association... "has a".. whole  ... 
+
+talking about oops is good, but can we come with details..
+oops is not equivalent just writing a class.
+
+
+to tell oops we should demonstrate 4 things in our code.
+1. Abstraction**
+2. Encapsulation
+3. relationship between classes.**
+4. packages
+** parts consume lot of time.. in designing.. failing to
+do 1 and 3.. means oops is dead..
+
+Mobile has a battery...
+without the Mobile the battery is useless. .. design is..
+
+Mobile has a sim
+without Mobile the sim can be used in some other context
+example i will put that into my cctv camera for data...
+
+both are called association..
+whole, part..
+part cannot be reused without the whole.. composition.
+part can be used with some other whole... aggregation..
+
+
+I hate all these things i like simple words.. it comes
+down this word " scope"
+
+
+algrebra
+for composition or aggregation
+
+
+X "has a " Y
+can Y exist without X, if yes... aggregation
+if Y cannot exist withut X, then. .. composition
+
+operating system is X
+any software can be Y.
+
+Process has a Thread.
+can a thread exist without a Process.  --NO  -Composition..
+
+
+AGgregation.
+Socket ... IPaddresswhen 
+ocket oes IP
+
+Collect examples on aggregation and composition
+what it means you got examples on association.
+
+Inheritance.. it is making about hierarchies.. hierarchy
+makes requires lot of intelligence, kids will never understand
+this...
+
+without hierarchy there will be anarchy..
+
+suppose HR told between you and CEo there is 10000 level hierarchy..
+
+suppose HR told between you and CEo there is just 1 level
+difference..
+
+
+Science .. 
+Physics
+   classical physical
+   Quantum physics
+Chemistry	
+   Organic chemistry
+   Inorganic chemistry
+.... this is proof that stupidity once popular is no longer
+stupidity....
+
+why we make hierarchies..
+to remember less.. how.. we generalize...
+
+one of the kids favourite word "unique"
+tie him to the chair.
+give him a4 sheet and tell write down what is your meaning
+of unique and how did you come to the conclusion..
+
+hope you got clear idea about
+
+
+1. composition
+2. aggregation
+because of 1 and 2 you know association.
+3. inheritance.
+3.1 remember less, how you generalize..
+super class
+subclass..
+super class is written to genralize the subclasses...
+subclass object will get a feature of the super class +
+subclass.
+
+how do you test inheritance..
+
+take the subclass let us call it Y --Bank
+take the super class let us call it X --Account
+
+Y "is  a" X
+
+Y =Dog
+X =Animal
+Dog is a Animal.
+
+
+
+
+Bank "is a" Account
+
+
+nice engish which is scrap.
+There is a Bank , bank needs features of the account
+hence let us make the bank as subclass and account
+as the super class.
+
+many a times there will be association need and people
+will think of inheritance.. when in doubt dont touch inheritance..
+
+
+super keyword is used to refer to the super class
+things within the subclass.
+kids who hate code in multiple files are unfit to ever
+work in a projct... since dinosaurs where programming
+code will always come in multiple files..
+
+polymorphism
+
+overloading of functions..
+
+
+overloading word can be used only with functions never
+with varibles..
+
+function with same name
+but different input arguments..
+
+compile time polymorphism whoever introduced ths word.
+total scrap guy.. but remember stupidity once popular is no
+longer stupidity...
+
+compile time polymorphism
+overloading..
+function with same name different input arguments..
+
+Runtime polymorphism..
+behavior depending on context...
+copy    --> "it  depends"
+
+until you know the context.. you cannot tell what it will do..
+example copy function in the operating system..
+
+copy in texteditors
+copy in windows .. copy files
+copy in paintbrush .. graphic copy..
+
+what is work of an employee?
+it depends on the employee
+
+
+how to calculate area of a shape?
+it depends..
+
+all these scenarios lead to runtime polymorphism.
+
+if you want runtime polymorphism
+you must have 
+
+inheritance
+interfaces..
+
+
+what is runtime polymorphism
+1. you have a hierarchy ...
+
+
+you have a super class reference..
+you are calling some non final function... 
+
+function which can be overridden..
+
+summary
+1. what is aggreagation and compoisition.
+2. inheritance a mechanism to generalize put is a test..
+3. compile time polymorphism.. should be understandable.
+4. runtime polymorphism ask yourself can i use the word
+"it depends" if no.. then there is no runtime polymorphism.
+
+code will come..
+1. show me inheritance or interface scenario..
+NO I dont see, ok forget runtime polymorphism.
+2. ok you see inheritance..
+there wil be a function in the super class.
+that function is not sufficient for the subclass.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Employee
+{
+	public void work() {  }
+	 public void final swipeaccess()  {  }
+}
+
+class Admin extends Employee
+{
+	public void managefacilities() { }
+	public void work() { s.o.p( look at facilities)  }
+
+}
+
+public SoftwareEngineer extends Employee
+{
+	public void standup() {}
+	public void dosomeprojectwork()  {}
+	public void work( )  { attend project meetings rview, push code };
+
+}
+
+observe the subclass has got the same function as
+th super class why...
+
+because subclass object is not happy with the function given
+by the super class.
+
+Employee e  = ? ;//here you can get Se or Admin objects.
+e.work(); // example of runtime polymorphism
+why .. which work is done depends on ? you got.
+
+what is runtime polymorphism.
+
+theory, behavour depending on context...
+
+code.. in java..
+
+1. super class referene.
+2. you are calling a non final function.
+3. which function gets called depends on the object that gets
+assigned to the super class reference.
+
+why packages..
+1. to avoid naming conflicts..
+2. you can have a class called device, some other person
+can have a class devie how to avoid conflict, you put it
+in your package let him put in his package..
+
+public class   -- the class can be used across packaes
+non public class .. the class can be used in the same package.
+
+
+you are inside the class.
+
+1. private
+
+outside the class it i not accessible..
+
+2. public
+it is accessible outside, the class, outside the package.
+
+3. dont write anything.
+it is accessible in the same package..
+
+
+4. protected.
+it is like not writing anything but accessible within
+the inherited classes also..
+
+Explain history of computer science in one word  Abstraction?
+
+One of important ways to measure design is  Abstraction
+
+Project is scrap without Abstraction.
+
+How do you know somebody project is totally scrap in C
+
+ask him.. how many header files did you create..
+he tells I created zero header files.. ok scrap project...
+
+
+how do you know somebody created a scrap java project.
+ask him how many interfaces did you create he will zero
+scrap project..
+
+Interface... --Abstrction .... loose coupling -- future proof --
+standardization...
+
+good design ensures.
+
+1. one layer fails other layer should not fail.
+2.  one layer other layer should not change...
+that is possible only if you use abstraction in java,
+the way to use abstraction is by using conept called interface..
+
+what is abstraction in "English"
+
+I need a feature.. i know what it does, how it does I dont
+care..
+
+Browser tells I need internet connection, whether it comes
+thru wifi, or bluettoh or lan cable i dont care
+
+Shopping card I need payment .. i dont care whether it is sbi
+hdfc or canara bank..
+
+
+how do you know theory is right?
+1. give your own example.
+2.take examples within the language.. X
+3. take frameworks.. 
+4. take your projet.
+
+in all 4, theory should be right...
+
+if you are calling a static method.. you can call it 
+
+classname.functionname..
+
+class A
+{
+
+static
+{
+
+}
+
+
+}
+this will get loaded only once during program execution...
+
+
+Abstract class and interface.. tomorrow... because this 
+is not syntax that is a concept.
+
+interface like a food menu... in a hotel.
+abstract class half cooked batter...
+
+why string is  important?
+quick summary
+
+1. inheritance..
+2. runtime polymorphism...
+
+interface, abstract class we will visit...
+
+
+
+
+
+
+I am doing adding of two numbers do I need interface
+yes..
+
+usecase1
+usecase2
+did you use interface, no so assignment is scrap assignment
+but no output is coming. ok great as of now that is great
+assignment..
+
+
+
+
+in java we got three flavours of string.
+
+1 String  -- immutable..  (we use this...)
+2. StringBuffer  -- can be changed , when multiple threads
+are accessing.. it will be protected from concurrent changes
+thread  safe  (we may prefer.. need is not there..)
+3 . StringBuilder  ( we we will use this, when strings change)
+can be changed, but not thread safe...
+
+
+whatever is stupid in real life, people will do it can code
+and feel great about it.. 
+
+quick summary
+1. relationship between classes.
+2. we dont know abstract class and interface.. we have heard
+some words..
+3. string.. mutable version of string and immutable version
+of string..
+
+ 
+when we have to code..
+
+1. let us think project..
+2. let us think architecture.
+3. then start coding..
+
+
+X and Y are interacting..
+Y changes, I want X not to change.
+that means we need to put an interface between X and Y.
+
+String s1="hello";
+s1.toUpperCase();
+s.o.p(s1);
+
+
+x == y if you got on object and two references to same object.
+then use x ==y
+
+x.equals(y) if you got two objects and you want to know
+whether their content is same consider x.equals(y)
+
+a person is called Ramesh at home and in office he is called
+Chandrasekhar..
+
+There are twins called Ramesh and Suresh... .equals..
+
+to use .equals prove you got  objects
+
+
+String s =" horrible "
+String s1=s.trim();
+S.o.p(s);
+
+explain basic java in 3 words.
+
+1. interface.
+2. throws.
+3. annotations..
+
+i dont know the 3 i know everything else ok congrats you
+will be useless in the project..
+ 
+
+Annotaton.. not for kids... 
+kid is filled with the word " I  me  mine ".. obviously
+will get killed becuse of the mine.
+
+
+nobody took license or passport accidentally.
+I took intentionally after knowing the benefit..
+
+
+
+Annotations..
+1. somebody creates it promising a benefit. X
+spring framework gives an annotatin
+2. somebody uses it... after knowing its benefit. Y
+we programmer like the benefit given by spring hence we use it
+in our code
+3. at some point, benefit is given by somebody who is   Z 
+a friend of 1
+at some point spring framework will give us the benefit..
+
+usually Z and X are friends..
+
+in real life most of times we are using teh annotation..
+before using we should be "conscious" about
+on what to use, what benefit we get , when...
+
+
+all the important concepts in any programming language (x)
+is impossible to understand if you dont visualize a team..
+
+
+come to the folder.
+src in my project.
+you will see a folder called programmingbasics.
+copy this folder into your src... and refresh your folder
+you will see the code i wrote in your system..
+
+we did not import the project...rather we copied
+a package from one project to another..
+pg 98 do the assignment..
+
+expectation for next week presentation on Monday..
+
+1. 80% of the ui code.
+
+go ahead with your project ... 
+
+
+
+
+
+
+
+
+
+
+

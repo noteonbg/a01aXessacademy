@@ -1,0 +1,555 @@
+-1 being vague will consume lot of energy and bring frustration..
+0. hopefully first week asisngments is complete. and pushed to the branch
+1. react assingments prove you can complete..
+2. project see what components could be common... 
+3. have  a css strategy...
+4. a common project which the entire team uses...
+
+kid with 4 subjects.
+1. agile.
+2. project process related things.
+3. react
+4. java..
+
+my paranoid things... I dont know how many people understood react
+especially the inter component communication and after wards.
+how many of you know useEffect.. I dont know... how many you know
+fetch and axios I dont know... we will collect data..
+
+No project suffers from over communication..
+how do we resolve this issue?
+
+it is better to write a written thing in the WhatsApp group
+
+next week expectation is.
+
+1. react components working. to some extent atleast.
+2. wire frames complete..
+
+is our understanding correct or need to be changed. please let us know..
+"written communication is the key, talking is pathetic.. it dooes not help
+in real world"
+
+let us get  written thing...as to what we need to commit
+on next week.. as far as listening skill and understanding goes..
+
+1. process boards will be updated.
+2. react components will be working to some extent not completely.
+
+3. wire frames ready...( important or not important..)
+
+quick summary
+
+1. let us get a written confirmation as to what is expected
+from us next week.. you can check within other teams also... 
+and we will check it in our group also...
+
+2. entire team has to have some decent knowledge in react.. 
+I dont have data on it.. let us find out...
+
+3. ensure react assingments are complete..  , 100% first week
+assingments are complete for everybody i guess.
+
+--------------------------------------------------
+
+4th std kid
+
+5 subjects
+1. agile
+2. project
+3. react
+4. java.
+5. ....
+
+
+
+
+
+technical person ...
+
+1. should be fan of project.
+2 and not a fan of technology...
+3. you can work on n number of technologies as long as you know..
+3.1 concepts dont change overnight.. syntax does.
+3.2 do we have the basic skill required in all sciences.. how well
+you generalize your learning..
+
+we should learn how to know what is technical and not technical
+in a paragraph...
+
+ so called good technology is not gurantee that a company will succeed..
+
+company to succeed must know who is it  paying customer.. I am technical
+i like semicolons why are you boring with this... 
+
+
+java...
+1995 till today it is running well, you get java jobs in the market..
+what you will observe every technology has got scope including main frames..
+even today..
+
+those who tell this technology is dead, are usually dead people speaking..
+java is the boss especially in financial softwares...
+
+
+today what is a reality...
+1. cloud a reality today..
+2. every guy wants to sell a technology.. our job as technical person
+
+stay away from the sales pitch and look for technical things in it..
+know the minus of something, when you know the plus also..
+
+
+
+
+
+
+if your program is talking directly with os...
+your program tells the os hey commit suicide.
+will the os commit or not
+
+technical person be careful about using adjectives... or adverbs..
+
+
+
+
+you have an intermediary between os and your java compiled program
+
+
+
+JDK .. is needed if you are going to write code and compile it
+and run it..
+
+JRE is software needed for running the java programs, but you cant
+compile... the java program with jre.
+
+JVM is part of JRE which runs your java program..
+
+when you install jdk, you get jre also.. hence you get jvm also...
+
+before we go to the hello world java program..
+
+couple of common sense things. to know..
+
+1. is software installed.
+2. what tool are you going to code.
+3. eternally important thing, do you know the folder  structure
+
+jvm you are looking for java.exe file.
+java compiler you are looking for javac.exe file.. in windows..
+
+search for javac.exe in your system and see whether it is found.
+
+know when to use patience and when to use intelligence
+to get software working is more a question of patience than intelligence..
+
+editor we are using to code java programs is IntelliJ.
+
+whose who dont see file extensions names in your explorer
+are sinners..'
+
+
+checklist.
+
+1. you have jdk17
+2. when you open random command prompt type java -version
+you are seeing jdk1.8.
+3. IntelliJ shortcut is created on desktop.
+
+
+
+
+
+what did we do .
+
+1. we decided our folder structure.
+2. we decided in which folder to store our java projects.
+
+easy thing to say but hard thing to do
+
+I want to be technical person but most important loyal to my project.
+
+
+
+Opinions .. so you be a technical person and try to recognize
+the tool opinion... but only opinion that should matter is
+what we do in this boss called "Project"
+IntelliJ has got an opinion
+eccliplse has got an opinion
+visual code has got an opinion...
+
+IntelliJ opinion right now.. the way we did.
+
+
+I am programmer I dont know my folder structure ok congrats comma
+state programmer enjoy your comma state...
+
+
+ in java ... as in any programming language you will write
+code in multiple .java files.. 
+
+I will write code only in one file ... college kid.. useless in project.
+each file in java will have an extension called .java..
+can you refer from one file to another.. by using concept called package..
+
+in java when we tell i am running the program.
+we are taking a .class file.. and giving to the jvm .. this class
+must have a function called public static void main, with String array
+as input... compulsory. only such a function can be executed
+by the jvm to start. the java application.
+
+
+when somebody is telling I am running my java program.. ( Shakespeare
+ghost speaking English)
+
+1. we have a .java file, inside that there is a public static void mainf uctnion. 
+2. we have this compiled this to  .class file.
+3. we are feed this .class file to the jvm.. jvm is running the main
+function function.
+we in java world.. be care careful.. apply the old thing.
+
+1. when you see a function definition ask who is going to call it.
+2. if you call a a function, open documentation read it..
+3. variable.. look at its data type and scope..
+4. if you see function assignment.. relax relax and know
+function assignment means.
+1.  define a function
+2. assign it.
+3. but I wont call it.
+
+in java data types are categorized as primitive and non primitive..
+why... because assignment meaning changes... based on primitive
+or non primitive, we already saw this in javascript also..
+
+
+how do you recognize java primitive variables..
+data type starts with a small letter.
+non primitive starts with capital letter.
+
+String s ="hello";
+
+byte s =4;
+Integer i =3;
+int k =3;
+
+to store numbers without decimals we have
+
+
+1. byte 1
+2. short 2
+3.int4 
+4. long 8
+
+to store decimal values
+
+float  4 bytes
+double 8 bytes
+
+
+
+long j =4;
+int i =j;//java will scream... hey how come you pushing a larger
+type into smaller type..
+
+
+int i =4;
+long k =i;  //widening..
+
+all looks trivial but important concepts while programming
+
+when you want to use operator.. think what is its purpose
+and how operands it takes..
+
+
+IT industry skill copy X from some where, and then call X as Y
+and tell Y is a great feature...
+
+java will copy from python
+python will copy from java
+javascript will copy from java
+java will copy from javascript
+
+after that 100% be sure they will change names.. so show their
+originality... 
+
+for technical people... you should keep your bp level normal.
+
+int i =4;
+
+if( i > 2)
+	hello
+else if(i > 3)
+        how
+else
+      are you
+
+hello
+
+
+
+
+
+
+
+
+
+for(c1)
+  if( c2)
+     if( c3)
+	 if(c4)
+            break;
+
+
+for( s1; s2; s3)
+	  s4
+
+s1
+while(s2)
+{
+	s4
+	s3
+}
+s1
+do
+{
+s4
+s3
+
+}(s2)
+
+
+
+
+what is order of execution of for loop.
+s1
+s2
+s4
+s3
+s2
+s4
+s3
+s2
+s4
+until s2 becomes false.
+
+difference between while loop and do while loop
+
+nice engish..
+while loop condition is pretested.  --before getting into the loop
+test..
+do while loop condition is posttested  -- you get into the loop
+
+array
+1. contiguous memeory allocation
+2. fixed size..
+that is enough...
+all elements must be same different.. all these are English improvements..
+
+in every language there is to generalize all the data types..
+in C it is is called void ptr..
+
+after 40 years a new programming language, it will also have
+a mechanism to generalize all the types.. 
+
+I will not open visual code.
+
+I will give you phase1java, how will make it work..
+1.I am giving a project folder.. so most important
+copy project folder in your phase1 and not into your project
+folder..
+
+project folder.
+	another project folder ( programmer in comma state)
+
+never create java files in your project folder.. directly..
+because we are in java... the style in java which is technically important..
+
+you always create a package in java and create your class inside
+the package..
+
+
+how to recognize stupid java code..
+
+ask him show the code go to line 1... andsee if package keyword
+is there or not there, no package horrible java code..
+
+
+do these things
+1. create a package assignment.module1 -- pg 32 of pdf.
+2. in this keep creating new classes for each of the assignment
+and run it.
+3. whichever project i have done you keep it in your phase 1
+and dont do anything with i.
+
+you are in java.. what is proof
+1. be sure about the version you are using... 
+
+if you are using version x to compile your code. 17.x
+while running the code you must version x or higher.. and never lower.
+17.x
+
+all of you wrote decent java code.. nice English what are the details.
+
+1. you class is in a package.
+2.all your classes are public.
+
+but we had not time to think about the project because
+we are busy getting the output...architecture..
+
+
+many IT technical people as well college kids are afraid of
+writing new  Functions;
+
+you should not create a new project for fun.. you should create
+a new project only if you have real need... whne in doubt
+dont create a project..
+
+if you are using project called X... X has got some settings
+if you create new project again you have waste time doing
+these settings.. dont create new project for fun..
+
+in java when you have a doubt always create a package..
+inside that create a class whatever you have a doubt on..
+
+architecture... keeping logic and presentation separate..
+
+
+the only way to get a better decision is put time into perspective..
+you will  never get single file code, the code will be split into
+separate files.. why...
+
+all real life code will be split into multiple files..
+
+expand oops..  Object Oriented Programming software ssyste 
+when Object oriented programming is not working, then we can tell oops..
+here lot of ghosts are running around. in the industry...
+
+talk about it, dont know about it... no details..
+talk about oops  skipped it and then talk about class. and later on
+we will talk about oops
+
+
+class..and object.
+
+those who think because we are using a class and object we are using
+oops are stupid people.
+
+what is a class.. simple project specific data type..
+what is an object.. a variable of this class.
+
+
+int is a data type
+
+int i.  here is a variable of this data type
+
+
+Class customer is a data type
+when we create an object of this customer.
+
+Customer obj =new Customer(...);
+// int i
+
+Customer is equivlent to int
+obj is equivent to i..
+
+
+freak point.
+not knowing answer to question is ok
+answering stupid questions is separate skill.
+
+inside the int what i can store.
+inside int we cannot store anything
+only if you avariable of int you can store anything..
+
+inside the class you have..
+
+1. state.. variables which are non static present in the class.
+2. behavior.. functions present in the class.
+all these 1 and 2 will make sense only after you create an object..
+
+all the people who can just look at aclass as project specific
+data type... that is great start to understanding class.
+
+constructor is a special function..
+what is special about it..
+it gets called automatically when the object is getting created..
+
+Patient class defined person X
+Patient class used person Y.
+if X wants to impose some conditions on Y, he can write a constructor
+in Patient class.
+
+familiarity creates lot of logical problems for people..
+
+functon f1()
+{
+
+}
+
+in javascript what is default return type of function?
+javascript does not care...  undefined..
+
+what is default return type of a function in java..
+java will result in a compilation error if you dont mention
+return type... in java functions you must mention return type
+for every function you define except constructros..
+
+
+this..
+
+1.when somebody ask about "this" dont ever touch javascript..
+javascript "this" has too many meanings... but we are talking
+about java.. this has only one meaning..
+
+
+this.
+1. you must be inside a class to talk about this.
+2. inside the class there must be a non static function...
+3. inside this non static function, a variable called this gets
+created automatically and it will get removed once you
+come out of the function.
+4. this refers to the object calling the non static function.
+
+kids inability to setup experiments always tell
+show me visible proof.. this is a sign of kid.. in science..
+
+
+A obj =new A();
+
+new A() is on heap.. anything on heap does not get impacted
+whether function runs or does not run..
+
+
+A obj is created on the stack... 
+
+A obj =new A();
+
+new A() is called object
+obj is called reference 
+
+local variable.
+1. variable which is specific to a function
+
+instance variable.
+variable which is specific to an object.
+
+
+static variable
+a variable which exists in the class.. with or without an object..
+
+
+all of you who have heard the word static variable in C and c++
+should never think about it in java... 
+
+
+
+
+
+
+
+
+
+
+
+
+

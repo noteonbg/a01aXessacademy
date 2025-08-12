@@ -30,6 +30,9 @@ During Scrum in a project, teams follow a structured framework to develop produc
      3. Are there any impediments?
    * Helps keep the team aligned and detect blockers early.
 
+
+   
+
 5. Sprint Review:
 
    * Held at the end of the Sprint.
@@ -74,4 +77,29 @@ During Scrum in a project, teams follow a structured framework to develop produc
 * Definition of Done (DoD): Agreed criteria that must be met for a product increment to be considered complete.
 
 ---
+
+single machine..
+
+1. presentable state..
+2. 
+
+working code.
+boards
+repo.
+
+own a story
+complete the use case story...
+complete the react component..
+
+
+----------------------------------------
+expecation is ..
+
+1. got started..
+2. distribution of user stories...
+3. user story...  check you delegate ... .
+check about the link... one user story for them...
+4. owns the entire chain...create the user story...
+monday .. of 80% of ui..
+
 

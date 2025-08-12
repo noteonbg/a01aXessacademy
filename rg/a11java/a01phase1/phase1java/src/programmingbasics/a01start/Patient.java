@@ -7,6 +7,8 @@ public class Patient {
     private String disease;
     private String patientId;
 
+
+
     // Constructor using 'this' keyword
     public Patient(String name, int age, String disease, String patientId) {
         this.name = name;

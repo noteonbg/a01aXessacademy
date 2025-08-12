@@ -2,6 +2,27 @@ having things in the mind.. mental hospital.
 written format... planning.
 
 
+-----------------------
+
+1.presentation act in terms of role.. of the project. 
+2.ensure ui is consistant. 
+3 .forget about server calls for the time being, just focus on props and state..
+4. ensure a git.txt file is provided to each team  member which contains commands.
+4.0 no need for cloning everytime.
+4.1 how to get the lateast data from the git branch.
+4.2 how to branch
+4.3 how to push the branch.
+4.4 how to delete the local branch.
+4.5 how to raise pull request..
+
+strucure of the presentation
+1. after the role potentially
+2. one component.. show story board... what you did in react, what were you learning..
+3. git strategy..
+4. summary.
+
+
+---------------------------------
 0. show good intent..
 1. are you clear about the requirements.. 
 2. how your screens will look like.. (long way to go)
