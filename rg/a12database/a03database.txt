@@ -134,3 +134,52 @@ FROM appointments a
 JOIN patients p ON a.patient_id = p.patient_id
 JOIN doctors d ON a.doctor_id = d.doctor_id
 LEFT JOIN departments dept ON d.department_id = dept.department_id;
+
+------------------------------------------------------------------------
+
+full outer join another example
+
+CREATE TABLE Customers (
+    customer_id INT PRIMARY KEY,
+    first_name VARCHAR(50)
+);
+
+CREATE TABLE Orders (
+    order_id INT PRIMARY KEY,
+    customer_id INT,
+    amount DECIMAL(10, 2)
+);
+
+INSERT INTO Customers (customer_id, first_name) VALUES
+(1, 'Alice'),
+(2, 'Bob'),
+(3, 'Charlie');
+
+INSERT INTO Orders (order_id, customer_id, amount) VALUES
+(101, 1, 150.00),
+(102, 2, 200.00),
+(103, 4, 75.00); -- Order for a non-existent customer
+
+
+
+SELECT
+    c.customer_id,
+    c.first_name,
+    o.order_id,
+    o.amount
+FROM
+    Customers c
+LEFT JOIN
+    Orders o ON c.customer_id = o.customer_id
+UNION ALL
+SELECT
+    c.customer_id,
+    c.first_name,
+    o.order_id,
+    o.amount
+FROM
+    Customers c
+RIGHT JOIN
+    Orders o ON c.customer_id = o.customer_id
+WHERE
+    c.customer_id IS NULL; -- Exclude rows already covered by the LEFT JOIN
