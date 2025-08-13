@@ -1,0 +1,632 @@
+two risks...
+
+1. abandonment of planning due to project pressure.. this will
+kill us..
+2. has all the teams decide what they will present on Monday
+that part needs completion first..
+3. moral science things.. project matters. absolutely zero
+blame game in the team..
+4. all you push your branch to the repository but dont raise
+pull request.. .. when you are starting again get back
+your branch from the repository and start..
+
+
+
+-------------------------------------
+
+in todays world if i tell i can write code. so what...
+all of us need to become an architect..
+
+
+
+quick summary
+
+1. oops has got lot of details , writing a class and telling
+oops is not great deal... abstraction, encpauslation
+relationship between classes and packages..
+
+2. many things are understandable technically only if
+you know multiple people are there..
+annotations..
+
+
+
+String and string builder..
+
+
+int i =some value is coming here;
+String s ="Hello  " + i;
+
+Stringbuilder s =new StringBuilder("hello");
+s.append(i);
+
+although the code looks lengthy this is correct way to do things
+when a stirng needs to change.. use a stringbuilder and dont
+use string in java..
+
+
+kids define a function and then call it..
+
+
+adults call a function usually and then define it...
+calling will force us to get clarity on...
+what is input, what is its return type, what it should..
+
+
+
+
+
+
+interface main
+advantage is
+
+3 changes
+2 need not change.
+
+
+
+exception handling.
+
+below topics are full of interfaces..
+if we dont know the paintbrush picture.. then we wil use
+"inbuilt it is like that only..."
+datastructures collection
+jdbc
+
+
+
+
+hey show me code
+1. keep presentation separate
+2. keep logic separate
+3. put an interface in between..
+to tell all this we need to know architecture..
+
+Exception hanlding idiotic questions..
+
+1. can door get injured.. 
+runtime error handling.. ie program is running we get into
+problems what to do with it.. for that common sense.
+
+
+ person can get injured.. situation you may recover from..
+person can die also..  -- situations which you cannot recover from..
+
+Ghost tells I want to be "rational"... ok ghost where are
+the details tell what wil you do , to be rational...
+
+
+people who cannot differentiate dead from injured scenarios
+pathetic people what they will do in the code..
+
+in java injured scenarios are called Exceptions
+dead scenarios are called "Error"
+
+you should look for whether code shows Exception or Error
+patiently...
+
+
+a class can throw only one exception or many exceptions?
+a class will never throw exception...
+
+execution only functions things execute
+so focus on functions...
+
+function can thorw one exeption or any exception
+at a given only one exception...
+how does exception hanlding work..
+
+try
+{
+normal flow of code
+open the file
+read the file
+close the file
+
+}catch(file not opened)
+{
+
+}
+catch(file not read)
+{
+}
+catch(file not closed)
+{
+
+}
+
+exception advantage is you seprate the normal flow
+of code from the error handling flow.
+
+
+
+
+
+
+control has to switch from try block to catch block
+then an object of some exception has to be thrown..
+
+what is meaning of exception has occurred.. 
+
+1. in the try block some exception object is created and thrown..
+
+checked and unchecked exceptions..
+
+based on whether an exception is a subclass of runtimeexception
+or not..
+
+if you have exception which is a subclass ofRuntimeexception
+then it is called unchecked.
+
+if it is a not asubclas of runtimeexception then it is called
+as checked..
+why this matters..
+
+
+paranoid and being careless.. has to be moderated..
+
+
+
+
+
+if you catch a unchecked excpetion in the code.. compiler
+will not check it..
+
+but if you catch a checked exception unnecessarily in
+the code. compiler will check it..
+
+
+try
+{
+
+to come to catch, throw must have been used here.. by somebody
+yourself or function calling it..
+}
+catch() 
+{
+
+}finally
+{
+which will get called irrespective of exception occurs or
+does not occur.
+
+}
+
+
+throws is a super important word..
+you use it a function level..
+
+owner of the function will use this.
+void f1() throws IllegalARgumentException { }
+
+
+caller of the function look at the throws keyword and understands
+at some point.. the function he is calling my throw IllegalArgumentException...
+
+Exception propogation..
+
+
+if f1 calls f2, f2 calls f3..
+if an exception occurs in f3..
+if is not handled in f3, it will look for some handling in f2
+it is not handled in f2.. it will look for in f1.. in f1 if
+the catch block is put, it will handled in the catch block of f1..
+
+how to tell java programmer is in Comma state..
+he will thorw an exception from main.. it will reach jvm
+jvm will tell hey idiot why are throwing exception at me
+take the exception back and program will collapse.
+
+while solving the problem what is most important
+thing we should know?
+
+context in which problem is occurring..
+
+people who prescribe solutions to a problem without knowing
+the context are pathetic people... 
+
+
+throws keyword..
+two people are there X and Y.
+X is defining a function called f1.. it can cause an exceptin
+called E1.
+
+Y is calling the function f1..  in f1, when a problem occurs
+called E1 , x wants to tell hey Y, in my f1, problem  has occurred but I will not handle it.. becusae I dont know the
+context in which you are using my f1... so I will let you
+know the problem, you decide how to handle the problem.
+
+
+when a problem occurs and we dont know the context
+report the problem don't solve the problem..
+
+whenever we attempt to give a solution to a problem
+without knowing the context.. be hundred percent sure
+we gave a wrong solution..
+
+create a new package
+copy your old class into this..
+make changes to accommodate page..117 of the pdf.
+those who complete early please go thru the java
+ pdf..
+please.
+
+grammar proper nown..
+any line you tell, then you add for example.. complete the thing.
+
+
+Datastructures   -- Collections.
+
+what is a data type?
+data type tells what a variable can store and what
+operations you can perform for example.. if i have an int i
+variable.. because data type is int, it can store numbers
+because it is int, i can do  operations like minus, multiply, divide..
+
+
+
+defines the type of data the variable can hold.. Shakespeare..
+cousin..
+
+
+what is a Datastructure?
+a systematic way in which we store the data.. Robert frost..
+1. group of things 
+2. we decide what operations we want.
+3. based on operations we decide how to store..
+
+for example i have an array... we have  a group of things..
+operations.. i plan to add at last.. i plan to search
+from first till last... 
+i think how to store.. it.
+
+what is a datastructure for us..
+
+1. group of things..
+2. what operations you want to perform, this is the boss.
+3. based on the operations we pick one from the libary..
+that is what we do in real life.. we dont write our own..
+
+
+how do you pick datastructure or a data type
+is first decide the operations and then pick one..
+
+String s ="hello";
+String s1  = s -"Hell";
+minus operation is not defined on string.. compilation error.
+
+
+
+
+
+
+
+
+
+
+categorize datastructures..
+
+1. Linear datastructures  --no branching..
+2. non Linear datastructes --branching
+
+
+in real life..
+learning datastructure means..
+
+1. decide what operations you want.
+2. decide which one you will pick from library.
+3. learn other person design... how sort is done
+how find is one,  how search is done...
+
+
+wrapper class.
+a coverin for the primitive types is called as wrapper classes.
+
+int.. wrapper Integer..
+char wrapper Character.
+why we should know this.. datastructures in java cannot hold
+primitives, it can hold only object types, hence you need
+wrappers..
+
+in java today... primtives to objects and objects to primitives
+is converted automatically this is called boxing..
+
+int i =3;
+Integer k =i; //boxing
+int m = k;//boxing
+
+how do you pick a datastructure
+decide on operations and then pick.
+
+stupid ways of doing things which is popular.
+I need a linkedlist, I need a tree, I need a queue horrible..
+dont start with names, start with operations..
+
+
+
+
+
+i need to write something 
+i am ok with searching from first to last.. or may be i will
+never search.
+many atimes i will go first page till the last page..
+I need a normal notebook.. linear ds
+
+go the library nd find out in java you will see.
+
+1. ArrayList -- growable array
+2. LinkedList  -- is a linkedlist.. 
+3. Vector.. dinosaur.. dont consider using it... 
+
+
+normal notebook we dont plan to insert a sheet inbetween
+
+but we can still a file with sheets inside in that file
+we can think of inserting a sheet inbetween.. linkedlist
+
+1. normal notebook.. ArrayList
+2. if you want to insert sheets in between, then consider
+using a LinkedList.
+
+operations to your terminology and not terminology to operations..
+
+I nee to insert somethings inb etween so i will use linkedlist.
+
+
+
+
+
+
+
+
+
+
+adding some elements.
+searching from 1t element to last element.
+accessing ech element if this is case normal notebook
+wuill do, I am inserting any element in between
+so the class that helps in this in java is ArrayList.
+
+
+adding some elements.
+searching from 1t element to last element.
+accessing ech element if this is case normal notebook
+wuill do, I am inserting any element in between
+so the class that helps in this in C++ is Vector.
+
+when people tell I like datastructurs you should
+trust them because many people secretly hate the subject
+Mathematics
+
+they will teach tree datastructures...
+this non linear structures are implemented internally
+as a graph...
+Tree datastructure is  subset of graph..
+
+in coding time.. the way we look we say do you want
+ a set or a map...(dictinary)
+
+1. tree in college, not coded directly in any project.
+2. in project need is for a map, it is readily avaiablel
+inside the map.. there will be a Tree used.. 
+3. set also same case, inside the set tree will be used..
+
+what is tree.. connected graph without  cycles..
+what is a graph.. ? find out.. from computer science, from maths
+
+when it comes datastructures..
+what operations you want
+
+I want a datastructure which will allow duplicates..
+ok use  set
+
+
+I want a datastructure where  i need key and value
+and i want to use it like a dictionary..
+dictionary..
+
+1. put word and its meaning.. key and its value.
+2. 
+in a dictionary we know the meaning and then locate the word.?
+in a dictionary we know the word, we will try to find its meaning..
+3. word and its meaning.. traversal of the dictionary..
+4. remove word and meaning by giving word..
+word meaning... IT guys hate this kind of language so give
+a better word..
+
+word -- key
+meaning -- value.
+
+
+
+
+
+
+
+
+
+
+summary
+
+1. understand interfaces properly.. take time but
+understand then show in code,, you understanding is working..
+2. in exception handlng most important point..
+i dont know context. report the problem dont solve the problem
+welcome to world of "throws"
+3. in datastructure dont chew other people brain by terminologies
+keep it simple..
+3.1 first decide operations..
+3.2 from the library pick one.
+3.3 spend time. understand what is he expecting.... respecting
+other person design..
+
+let us break for lunch and join back at 2.01PM.
+Database concept.. 6 months in college semester course..
+why we should use database?
+
+
+
+
+
+
+
+
+
+
+time to keep things ready..2.00 to 2.20PM..
+
+1st week html, css assingments.
+2nd week react assingments..
+remaing people just look whether all java assignments is
+over or not..
+
+3.45 PM.. we will start with the database adventure
+light weight thing..
+
+database part..
+
+why we should use relationa database.. in our project..
+
+why database.
+1. physical and logical indendence of data..
+
+by now you there is something called a class
+we can create an object of the class.
+we can take this object write to a file..
+but there is a problem, you dont get physical
+and logical independence of data..
+
+for example.
+class
+	pincode	
+        area
+
+create an object of the class .. obj1, with pincode 3, area:"abc"
+write this object ot the file...ok...
+but tomorrow customer comes and tells hey look this class
+needs to have pincode, area, cityname... then old object
+written to the file cannot be read.. now.. this is called 
+
+in an rdbms codd. information has to be stored  in tables.
+table you will columsn
+table info
+column pincode
+column area..
+put 1 row into this table 3, "abc"
+alter table.. add a cityname, 3, "abc" is not lost...
+this is possible because in any database.. physical and logical
+independence of data..
+
+to interact with the database.. we need to learn sql
+sql is independent of database we interact usually...
+because sql is   "standard"
+
+
+physical and logical independence of data..
+structure of the table changes, old content is not lost..
+which is big deal in database...
+
+we will have a database.
+we should know what is database we are working on, typically
+its location.. how to access it, userid , password,
+how to access the system on which the database is running on.
+portno on which it is running...
+person who does not know.. this .. comma state.. 
+in different databases it can be different..
+
+
+database superset word... insie database there will lot of
+things..
+
+1. tables.  -- unit where you store your information..
+columns... 
+for each column you can mention some costraints... 
+primary key   -- something to uniquely identify the row..
+foreign key -- some column in the table whose value is primary
+key in some other table.. "
+
+
+
+2. views
+3. indexes
+4. triggers
+5. stored procedure
+6. stored functions...
+
+
+if possible be conscious what adds value to customer
+and what does not..
+
+ensure information is spread across multiple tables
+so that we can avoid duplication...
+
+
+suppose for the 4th std kid
+if all the textbooks like English, social, science, language
+are clubbed into one and given it is a problem
+if he loses the book he lost everyting...
+
+book.. 
+index make things faster, provided what is being indexed
+is not changing frequently..
+any database by default indexes the primary key...
+
+how do i reach the city railway station from my home
+should be byhearted it should found out on need basis.
+so is the case with how do you connect to some database..
+
+to connect to any database..
+
+1. find out the server where it is running
+2. find out how we are authenticated.
+3. find out how to create a database...
+4. find out how to connect to the database..
+once you are done with 4... routine things start..
+quick summary
+
+1. database.. physical and logical independence of data..
+2. remember interface story.. sql.. you can work
+with any database...
+3. how to get connected to database dont byheart.. find out
+on need basis.
+4. know difference between table and database..
+views, index,trigger (Event handling..),
+
+
+create a table and make a query.. kids world...
+
+adults world how we design..
+1. think of your queries.
+2. based on query design a table..
+
+get on with your project planning and doing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

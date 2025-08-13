@@ -2,6 +2,8 @@ package programmingbasics.a08exceptionhandling.throwsandthrowkeyword;
 
 public class PatientAdmission {
 
+    //person does not know context. so report problems and not handle it.
+
     // Method that may throw the exception (uses throws)
     public void admitPatient(int age) throws InvalidAgeException {
         if (age <= 0 || age > 120) {

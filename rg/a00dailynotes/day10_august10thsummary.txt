@@ -657,11 +657,39 @@ we did not import the project...rather we copied
 a package from one project to another..
 pg 98 do the assignment..
 
-expectation for next week presentation on Monday..
 
+
+expectation for next week presentation on Monday..
 1. 80% of the ui code.
 
 go ahead with your project ... 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

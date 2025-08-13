@@ -4,8 +4,10 @@ public class HospitalApp {
     public static void main(String[] args) {
         PatientAdmission admission = new PatientAdmission();
 
+
+        //this person know context...
         try {
-            admission.processAdmission(5); // invalid age to trigger exception
+            admission.processAdmission(-1); // invalid age to trigger exception
         } catch (InvalidAgeException e) {
             System.out.println("Admission Failed: " + e.getMessage());
         }

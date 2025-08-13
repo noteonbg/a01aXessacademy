@@ -7,7 +7,9 @@ h2 database.. way to go...
 
 1. be in some project folder.
 bootcamp... databaseconcepts db , in this folder have h2.
-come to this folder and type java -jar h2.jar
+come to this folder and type 
+
+java -jar h2.jar
 
 2. copy the freakdb.db into this folder.
 

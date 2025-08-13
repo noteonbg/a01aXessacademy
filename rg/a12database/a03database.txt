@@ -17,6 +17,9 @@ CREATE TABLE doctors (
     department_id INT REFERENCES departments(department_id)
 );
 
+
+
+
 -- Create Patients table
 CREATE TABLE patients (
     patient_id SERIAL PRIMARY KEY,

@@ -1,8 +1,6 @@
 package programmingbasics.a09ListExample;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class PatientListApp {
     public static void main(String[] args) {
