@@ -103,3 +103,14 @@ check about the link... one user story for them...
 monday .. of 80% of ui..
 
 
+----------------------
+
+maven settings
+
+<dependency>
+<groupId>com.h2database</groupId>
+<artifactId>h2</artifactId>
+<version>2.1.214</version>
+<scope>test</scope>
+</dependency>
+ 

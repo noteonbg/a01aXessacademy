@@ -22,7 +22,7 @@ VALUES
 ('Dr. Smith', 'Eve Davis', 'Cardiology', '2025-08-04', 210.00);
 
 -- Step 3: Query - Find departments with average fee greater than 200
-SELECT department, AVG(fee) AS avg_fee
+SELECT department, AVG(fee) AS freak
 FROM appointments
 GROUP BY department
 HAVING AVG(fee) > 200;

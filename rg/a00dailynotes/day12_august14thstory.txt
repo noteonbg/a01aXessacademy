@@ -1,0 +1,269 @@
+today..
+1 . get some practice on some database.
+2. figure how to get connected to database from java..
+3. react assessment..
+4. randomly with each project team member their basic git skills.
+
+
+database part..
+1. database physical and logical indepence of data..
+2. we have to some basic theory..
+2.1 database server.
+2.2 database.
+2.3 our table.. this table design is interesting,usually in a project we do table
+design after we do query design.. and not directly table design..
+2.4 when we do tables we dont want junk to go into it.. so we can put constraints..
+usually constraints.
+primary key.. column which must be unique and not null used to identify the row.
+foreign key... 
+we should think of two tables..
+x table.. here c1 is primary key.
+y table. there will column c2, whose values will from c1 of x table.
+
+x = dept deptid as a primary key
+Employee deptid.. c2.. whose values from should deptid of dept table..
+
+
+always be conscious about the structure of the table..
+nobody is asking us to do Astrology on table columns.....
+
+1. create table, alter table.. DDL command.
+2. insert, upate, delete.. DML command, we can undo these things or commit these things 
+by using DCL.. rollback and commit..
+3. query.. select command.
+4. database != table.. databse... tables, triggers, indexes..
+5. how to get connected to database, view all the databse information including tables
+each database has an opinion so when we work we should look into on need basis...
+
+
+1. create a database using this database product called h2.
+2. what we should do with h2.. is find out how to create our own database..
+3. check whether this database works...
+4. create tables, issue some sql commands...
+5. how about writing a java program that connects to this database..
+
+
+syntax is a function of time..
+
+each database will have its own opinion on how to do things...
+h2 is a java based database...to run this.. 
+
+1. confluence page, you will get something h2....jar
+2. come to goldenversions folder.. unzip this to a folder called h2
+3. java --version.   1.8 or 17.xx
+4. 
+
+java -cp h2-2.1.214.jar org.h2.tools.Server -web -webPort 9001 -tcp -tcpPort 
+9002 -ifNotExists -baseDir C:/Users/<username>/h2db 
+
+java -cp
+you are telling jvm hey look at the library file i am giving you
+
+
+-webPort 9001
+this port n which in your browser you will see some ui.. thru this ui, you
+can connect to the database, create tables issue your sql commands..
+
+
+-tcp -tcpPort 
+9002
+ok from some other program, example our java program you connect to h2 via 9002 port
+
+
+-ifNotExists -baseDir C:/Users/<username>/bootcamp/databaseh2/
+you are telling in which folder the databases should get created..
+
+when we create a new database, let it get created in this folder..
+
+
+
+
+
+
+
+
+what you should prove.
+
+1. h2 software in golden versions.
+2. your database in bootcamp..\database
+3. see whether it works.. by running things from GitHub.
+4. rg\a12database\database1.txt.... run till database4.txt...
+5. open the database.pdf and go thru it... also...
+
+we are checking whther database is working in your system or not. before we go
+further...
+
+
+
+1. you ran some command in the command prompt..
+
+
+you have to type in command prompt goldenversions\h2 
+java -cp h2-2.1.214.jar org.h2.tools.Server -web -webPort 9001 -tcp -tcpPort 
+9002 -ifNotExists -baseDir C:/Users/<username>/h2db
+
+
+
+in real  life, there are many ways to do things...usually people ui tool
+to manage the database but our job is to learn database commands hence we are going
+with this approach..
+
+to know good reasons to fail, and horrible reasons to fail
+
+horrible reasons are syntax mistakes
+good reasons are... constraint???
+
+
+when will insert command fail.--constraint violation.
+
+when will update command fail
+1. constraint violation  -- here you will get exception..
+2. where condition not satisified.  -- logical failure.. programmer should take care
+
+
+
+insrt into table(columnames,...) values (...)
+
+
+run all the commands in a03database.txt.. file and then prove you understood
+go thru the pdf.. do the assinments in the pdf..
+
+checklist..
+
+1. your h2 is working and on Monday also you can start h2.. hopefully and  show your database tablescontents.
+2. you have practiced some syntax from database1.txt to datatase3.txt..
+3. go thru the database.ppt and ensure you understood the words mentioned there.. if any doubt
+let me know -- do the assignments mentioned.
+4. you know where your database is there and where your  h2 software is there..
+
+everything technical thing in a project has to be slave to the decided  "Architecture" 
+
+
+A person who looks at + things of X and negative things of Y is a sales person for X.
+the drawbacks will always scream along with the plus things.. so it is left to the person who 
+is evaluating to see whether something is worth or not worth..
+
+
+
+
+quick summary..
+
+1.node and npm.
+2. node for react is what..
+react is javascript code. so it will use node for interpreting the javascript..
+node is runtime for react..
+
+2. npm installation.. 
+install globally it will go windows\users\xyz\nodemodules.
+
+locally it will that folder specific..
+
+3. npm install bootstrap..
+what is bootstrap..  third party libraries..
+node by default as got some libraries local library and third party library..
+
+4. npm init..
+will lead to package.json..
+package.json.. what will it have... ependancies.. tasks.. npm start..
+
+6. index.html public folder... index.js... app.js... from here our componentadventures
+will begin...
+
+7.react about components..
+dynamic things will come 
+1. state -- within a component
+2. props.  --parent component to child component..
+
+
+
+parent component assigns a function as props to the child...
+within the child that function got thru props will be called...
+
+
+const freak[x,y]=useState(z);
+
+if you tell javsacript you must ask question about this
+else we are not are a javascript  " E	t  H   g"
+
+without know this array function of javascript in react..
+people cannot build lists in react..
+map ... hope you remember how map works, those who dont remember..
+
+how will you know your bootstrap came from cdn or node_modules folder..
+looking at the link in the html..
+
+if you want to use bootstrap.. in node project..
+1. npm install bootstrap
+2. link which you use should refer to nodemodules/bootstrap..
+
+standard adventure.. of prev number and next number assignment.. in first phase..
+
+standard for variable representation.
+JSON
+
+json is of what data type? String.
+this json string usually needs to converted to an objct..
+
+input x is json, output y is javascript.. we should give x to y = json.parse(x), y will be an object.
+										
+you have y which is JavaScript. to convert that into json string ... x = json.stringfy(y)..
+type of x will be a string..
+
+if you want to contact server and get data from the server....
+
+inbuilt thing in the browser called 
+
+fetch  --inbuilt thing...
+third party library .. axios..
+
+
+git is a centralized architecture.. True or False..-- False..
+
+git add .. what is add to which area it is moving  " staging"
+
+move from staging to repo... git commit -m  "ok .. git adventure is going on"
+
+git status
+git log..
+
+1. difference between node and npm..
+2. how is node, npm related to react.
+3. how is JavaScript related to react..
+4. react opinion.. jsx...
+5. how dynamic things appear in react.
+6. function assignment, function calling.
+7. communication between components.
+8. little about routing...
+9. know a little about git.. architecture... add ..staging.. commiting
+10. folder structure, then you 
+once your exam gets over we will start with jdbc... 
+
+1.00PM... 1.45PM.. and 2.00PM starting adventure.. after the test 
+
+start preparing for the test..
+jdbc should be half an hour..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
