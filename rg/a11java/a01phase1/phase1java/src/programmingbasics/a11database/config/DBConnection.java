@@ -15,7 +15,7 @@ public class DBConnection {
                 Class.forName("org.h2.Driver");
                 // connection = DriverManager.getConnection("jdbc:h2:./projectdb", "sa", "");
                 //jdbc:h2:tcp://172.26.128.1:9092/./projectdb
-                connection = DriverManager.getConnection("jdbc:h2:tcp://172.26.128.1:9092/./projectdb", "sa", "");
+                connection = DriverManager.getConnection("jdbc:h2:tcp://172.26.128.1:9092/./hellodb", "sa", "");
             } catch (Exception e) {
                 e.printStackTrace();
             }

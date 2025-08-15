@@ -1,5 +1,13 @@
 
+in your company
+
+
+git -c http.sslverify=false
+
+
 step1
+
+
 
 1. you got a repository.. and you are going to clone it.
 git clone https://github.com/noteonbg/pocrepo.git

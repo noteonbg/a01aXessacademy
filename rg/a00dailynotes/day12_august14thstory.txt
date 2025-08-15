@@ -245,6 +245,137 @@ jdbc should be half an hour..
 
 
 
+database ..
+
+1 . where is your database server running ip address. portno on which the database is running.
+2. what is name of the database.
+3. what is userid and password to access the database
+4. who is vendor who has provided the database, which company database you are working on...
+
+
+conceptually
+database superset word. table is a subset word.
+
+in your project what tools do they use to look database or table contents..
+2. knowledge of some basic sql is a must... select rows from the table... primary key
+foreign key...
+
+there is changing part in X code.. if we tell this line it means we have isolate the changing
+part into a separate program.
+
+we will do two category of commands.
+
+
+1. insert, update...   all we need get some status..
+2.select ... from the database you get rows and columns   Cursor..
+
+select .. cursor processing..
+
+cursor will have some rows and some columns
+
+interfaces are already part of your jdk...
+pentagons impleentations are not there as part of jdk.. that has to be provided
+by database vendor...
+
+you should take your project and tell hey please let the pentagons join..
+you have to tell the jvm here is pentagons.. how you do it.
+include a jar file in your project..
+
+kids hate multiple files.
+but all project's are in multiple files. so that means kids hate projects..
+
+
+
+
+
+package 
+x public static void main... from here you will call the functions of dao package..
+x.config.. here you put database specific configuration
+x.model .. here you put your project specific data type.. customer, employee
+x.dao -- interface.. class.
+in this class you write your jdbc programs..
+
+break till 3.47 PM and join back..
+
+I dont understand ok.. but am i trying to visualize what is happening..
+
+
+   
+insert.
+1. get a prepared statement with sql.
+2. fill up the ? from the patient object.
+3. issue the sql command.
+4. take feedback
+
+select all.
+1. get the resultset from the select command.
+2. take each row in the resultset, make a patient object in this row.
+3. take this patient object and put that in a list.
+4. return the list..
+
+
+1. in my project you will see a  folder called.
+programmingbasics in src.
+in that  a11database..
+in that you will see three more folders
+config
+model
+dao..
+
+
+copy a11database in programming basics folder..
+show patience and check a11database folder is present in programming basics..
+open DBconnection in a11database.config package.
+DriverManager.getConnection("jdbc:h2:tcp://172.26.128.1:9092/./hellodb", "sa", "")
+hellodb to your database name.
+tcp...to whatever has been given in your system... 
+
+come back to a11Database package.
+and run the java file called main.. and see whether it works..
+
+
+freaky programs
+1. try a program which gets you connection... 
+2. try a simple program which inserts into employee
+3. try your assignment. given in the javapostgres pdf..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
