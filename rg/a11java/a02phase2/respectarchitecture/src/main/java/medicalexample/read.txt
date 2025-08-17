@@ -1,0 +1,17 @@
+patiently look at application.properties
+and see wehther you database entries are right...
+
+look at pom.xml and see whether database related
+drivers. web related things and spring jpa
+related poms are present
+
+run the main application
+
+h2 console can be got at..
+http://localhost:8080/h2-console
+
+database name given in the application.properties..
+jdbc:h2:mem:medicaldb
+
+in post try get all first.. then you can try...
+insert..
