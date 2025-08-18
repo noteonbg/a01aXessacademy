@@ -1,0 +1,53 @@
+<!-- resources/static/multiples.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiples Calculator</title>
+</head>
+<body>
+  <h1>Multiples Calculator</h1>
+
+  <div>
+    <h2>Get 5th Multiple (GET)</h2>
+    <input id="numberGet" type="number" placeholder="Enter number">
+    <button onclick="getFifthMultiple()">Get 5th Multiple</button>
+    <p id="resultGet"></p>
+  </div>
+
+  <div>
+    <h2>Get 8th Multiple (POST)</h2>
+    <input id="numberPost" type="number" placeholder="Enter number">
+    <button onclick="postEighthMultiple()">Get 8th Multiple</button>
+    <p id="resultPost"></p>
+  </div>
+
+  <script>
+    function getFifthMultiple() {
+      const number = document.getElementById('numberGet').value;
+      fetch(`http://localhost:8080/api/multiply/fifth?number=${number}`)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('resultGet').innerText = `Result: ${data}`;
+        })
+        .catch(error => console.error(error));
+    }
+
+    function postEighthMultiple() {
+      const number = document.getElementById('numberPost').value;
+      fetch(`http://localhost:8080/api/multiply/eighth`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ number: parseInt(number) })
+      })
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('resultPost').innerText = `Result: ${data}`;
+        })
+        .catch(error => console.error(error));
+    }
+  </script>
+</body>
+</html>
