@@ -1,0 +1,347 @@
+1. intent first , everything else afterwards..
+intent... focus on the project and make everything its slave.
+you know architecture...
+
+intent should can I use it in the project than telling other people
+I know it. who cares..
+
+2. when there are multiple steps having "courage" to tell
+I remember is pathetic.. we should operate thru checklists..
+--------------------------------------
+
+1. did the spring boot program given in your confluence
+work in everybody system..
+
+2. did you install postman...
+
+3.did you install postgressql.. we will isntall in afternoon not
+now.
+
+
+are we good at functions and variables(5/5) .. ok..
+web... http
+html.. structure.
+css -- layout
+javsacript -- dynamic behavior in the web page
+event...event source.. eventlistener..
+json... standard for representing variables..
+java.. jvm role...  how things are on heap...
+annotations..
+
+which is older industry..
+IT or  non IT..
+non IT.. surely that means usually they will more commonsense than
+IT..
+
+Remember IT is good if non IT people use it..
+
+for Non IT people IT means INvite Trouble
+
+
+when we write 2, 4 to check this we can use tools like postman..
+we use some more decorative things like swagger.. once it works
+only then we will tell 1 guys hey my 2, 4 is working hey 1 now
+you start using..
+
+
+when 2, 4 is not working telling hey 1 guys try now let us see
+whether 2 and 4 is working.. is pathetic..
+
+
+process.
+1. we write 2 and 4.
+2. we use postman .. and swagger ..
+3. check whether 2 and 4 is working or not.
+4. then we will communicate to 1 guys hey 1 guys use it..
+
+in this Bootcamp... they are telling dont write 2 and  4 separately
+mix both... ok... very bad idea.. but that is what we are telling
+so we will get used to it..
+
+
+
+
+you see an annotation.. you should know
+
+1. who gave it,, in this case it is spring...
+2. wwhere we should use it.. code.. class, function, varible..
+
+if you forget to use the annotations.. you land up in a logical
+mess... so again more way to be in comma state in programming..
+
+ok we have seen annotation usage.. in the code.
+but how to understand there is same way..
+
+1. ask what benefit you are getting
+2. when..
+I dont know.. ok then dont use it..
+
+
+@SpringBootApplication
+this annotation is given by whom...
+
+when it is other person design you have to find out and not think..
+
+kids favourite question can you tell what @springbootapplication will do...
+answer for the kid find out..
+how.. by searching..
+
+
+@SpringbootApplicaion is given by spring boot... how did you know
+look at the package name... it will look in your project....
+what all things you are using and autoconfigure them. for example
+if you are using database, it will based on information you give
+autocnfigure databse, if you are using web.. it will autoconfigure 
+one http utility for yu...
+
+
+you are using an annotation called M given by X.
+in your code called N.
+inside your code N.. there must some class or some interface(Z) of X
+we use only then benefit given by M, provided by X is visible
+in the code..
+
+M= SpringBootApplication.
+X=Spring framework people..
+N = StartApp
+Z=springapplication..
+
+
+
+@RestController
+this is used at class level.. to tell the functions in the
+class can be invoked by using http and json..
+
+
+@CrossOrigin...
+1 can be running in a system called 12.1.2.3
+42 can be running in al system called 4.5.6.7
+if you dont do @crossorigin.. requests will be blocked at 4 ... so obviously
+2.
+
+
+http://localhost:8080/api/multiply.
+
+when you define a function ask who is going to call it...
+here system is going to call it... 
+
+
+<button onclick="f1()"> oh oh oh </button>
+
+@GetMapping("/fifth") --> called ... Event   Registration)
+    public int getFifthMultiple(@RequestParam int number) {
+        return  47;
+    }
+
+hey one day in http request.. if your ip  is
+http://localhost:8080/api/multiply/fifth
+an mode of request is get..
+in get request you must supply me a parameter called number
+then call this function..
+
+There are so many steps. I will remember.. ok we dont know about the brain..
+lot of noise.. so better learn operate thru checklists..
+
+
+you should be able to copy the folder 
+a00basicpoc
+it is there in this location
+\a01aXessacademy\rg\a11java\a02phase2\respectarchitecture\src\main\java
+
+to your spring boot project..
+in the src\main\java
+load the contents.
+you will see  package called a01basic.
+in this package you will see two .java files..
+in that run the program called startApp...
+and see whether it runs...
+
+install postman and keep it ready..
+join back at 11.15AM.. 
+
+
+keep your bp level normal first..
+
+1. how do you start spring boot..
+2. write a class, write a main function
+3. at class @pringBootApplication.
+4. REstController full of http event registration... but while
+using postman.. you should look at..
+
+1. portno on which service is running.
+2. URI. a string used to identify the function to call via http.
+3. observe what it returns, observe how it takes input and from
+where..
+4. mode of request..
+
+
+
+
+we will create a package called x ( think deeply about x name)
+we will create a package x.controller.... in this we will put only
+controller code.. @RestController., controller is not a freak word
+it is an architecture word.
+create a package called x.model.. here you will put your project
+specific data types..
+
+decency of making packages in spring boot project..
+package
+x -- main class, which has got main method.
+x.controller.. controller class.
+x.model .. project fate.
+x.repository or dao.. here will put database code.
+x.exceptions.. here we will have exceptions
+x.security... we will think of security..
+x.config.. for all freaky things..
+follow the project convention.. why spring makes it easier....
+
+
+
+No I will practice entertainment
+
+a
+b
+c
+d
+e
+f
+g
+
+
+
+standard college pathetic adventures..
+focusing on logic..
+
+
+if you are writing a function
+
+
+X  functionname(Y)
+
+{
+	Z
+
+}
+
+dont focus on Z. show lot of patience on focusing on Y
+and X and see are you convinced Y and X are correct things
+and atlast come to Z.
+
+
+The function cannot be called via http.. because
+we ahve not registered for event handling..
+
+
+
+
+1. prove function is getting called.
+2. inside the function prove input is got correctly.
+3. return some thing, prove the caller gets it..
+4. logic we will think then...
+
+take sympathy on the function, it is telling I need input
+pleaes supply it... how it needs in http it is also telling
+taht..
+
+when I wrote a controller
+
+Patiently.... 
+Patiently.... 
+Patiently.... 
+Patiently.... 
+Patiently.... 
+Patiently.... 
+
+we just worked on..
+what is input needed for the function, how .. 
+what is output sent by the function.
+and checked thru http are we able to get the input and response
+has reached the client thru postman..
+we did not think of logic.. once it worked, then came
+the logic depending on architecture... 
+
+autowired.
+1. you are telling hey spring you must have two objects
+with you..
+
+in this 
+1. Controller object how... @RestController.
+2. Repository object ... @Repository
+3. hey spring put the repository object in my Controller object.
+how.. @Autowired.
+
+
+hardest thing for any computer science is
+function design..
+
+what will function take as input
+what will return.
+how will the return tell failure.. because of user.
+how will the return tell failure because of system.
+how will the return tell things have succeeded.
+
+
+while writing code..
+
+call the function and then define it...
+but you cant do this if your function is going to called by the system.
+
+in any IDE... if you call the function,d efinition it will give you
+a template.
+
+
+observe function returns. based on return you have to conclude...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+can we consciouis about what our function returns
+how do we know whether it fails... any way let me tell
+the code I wrote is kids code... not because of spring boot.
+because of the data type the function returns..
+how to make it smart..
+
+
+
+
+what all did i do.
+1. have decency in package naming..
+x
+x.controller.
+x.model  -- courier which goes around function inputs..
+x.repository  -- class which contains arraylist...
+adding, updating.. logic done here.. most important we return
+this return communicates failure or success..
+controller.. registers for http request events.
+each function..
+1. uri.
+2. mode of request.
+3. how input is picked up from..
+objects pick up from requestbody.. you must non get...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

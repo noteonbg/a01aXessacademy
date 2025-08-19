@@ -1,15 +1,14 @@
-package a00basicpoc;
+package a03repeat;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-//two words
 @SpringBootApplication
-public class StartApp {
+public class AppStartsHere {
 
     public static void main(String[] args) {
-
-        SpringApplication.run(StartApp.class,args);
-
+        SpringApplication.run(AppStartsHere.class,args);
+        // AppStartHere class is using the annotation
+        //called SpringBootApplication
     }
 }

@@ -5,20 +5,23 @@ package a00basicpoc;
 import org.springframework.web.bind.annotation.*;
 
 
-@CrossOrigin(origins = "*")
-@RestController
-@RequestMapping("/api/multiply")
+@CrossOrigin(origins = "*") //2nd step
+@RestController  //1st step
+@RequestMapping("/api/multiply")  // nice to have..
 public class MultiplicationController {
 
-    // GET method: returns 5th multiple
+    // registering for get event...
     @GetMapping("/fifth")
     public int getFifthMultiple(@RequestParam int number) {
+        System.out.println("freak freak freak");
         return  47;
     }
 
-    // POST method: returns 8th multiple
+    // registering for post event
     @PostMapping("/eighth")
     public int getEighthMultiple(@RequestBody NumberRequest request) {
+
+        System.out.println("junk junk junk");
         return request.getNumber() * 8;
     }
 
