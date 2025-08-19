@@ -1,0 +1,380 @@
+quick summary
+
+0. when we have so many things to do... have a written plan always help
+than thinking in the "mind" and of course number 1 virus that kills everybody
+in real life.. bad time management very hard thing to cure, but we will try..
+
+1. week1.. how html,css,javascript work .. using css library like bootstrap..
+mostly most of your assingments were completed...
+
+2. week 2 .. opinion of react.. how component, dynamic ( state or props.. when)
+, routing... how to contct server.. to get data..
+react.. second casestudy.. half complete.. css missing.. part 3 yet to get started..
+
+
+3. java hurricane.. hopefully if people understood interfaces great going..
+throws.. annotations.. we got some database part working.. with h2..
+hopefully jdbc programs are working
+java with database.. is pending..
+database part assingments did you complete?
+
+project success.
+in any system.. single factor failure or success is highly unlikely..
+
+success or failure both needs team effort..
+
+if "intent" is wrong, no process in the world can help..
+
+project success = process * technology * tools * culture
+
+in multi step process. do you want to depend on your "memory" or 
+"checklist" .. memory is fragile and totally stupid may be depending
+on checklist helps..
+
+
+todays jargon..
+1. maven... 
+2. spring and obviously when it wears a boot, spring boot.
+what is needed to understand this hopefully we remember core java a little
+bit atleast .. annotations..
+
+Annotations.. analogy we used was License or passport..
+
+1. somebody else has written them.
+2. we are using it in our code... but most important do you know the benefit of it...
+and when the benefit comes..
+3. you have to check did the benefit come or not..
+
+This week what becomes important, can we generalize our learning..
+
+
+
+
+
+
+
+
+
+
+
+
+project success = process * technology * tools * culture
+
+one tool in a project which is important is a build tool.
+npm...
+in java based world... there are many build tools todays flavor
+
+is 
+build tools in java
+0. long time ago,even today it is relevant.. ant.
+1. maven.
+2. graddle.
+
+
+what npm was doing for you in javascript world.. maven will do it in java based world.
+
+
+what does a build tool do.
+1. assemble code..
+2. compile code.
+3. package code.
+4. deploy code.
+5. run code..
+
+
+good question to ask in a project what build tool are we using..
+suppose build no , no build tool, run away from the project.. because you know
+... asylum..
+
+when we have to use some software X... we need "patience" to figure out how to make 
+it work.. 
+
+if you want make maven work... there are multiple ways...
+
+1. IntelliJ also has maven inbuilt inside... so that also should resolve..
+
+in maven, the filename is pom.xml file..
+
+100% comma state programmer first symptom he does not recognize folder structure..
+
+
+we worked on java project last week.. that was not a maven project...
+we used a a build tool which was given  by IntelliJ, that was IntelliJ specific..
+
+
+this week we are going to work java project by using maven as a build tool
+why maven.. generally accepted standard for java projects.. works across ides
+
+with npm.
+
+npm init...
+
+maven.. there is an option...
+
+1. archetype...
+2. artificact id
+3. projected..
+
+whenever something is repetitive we should know how to automate it...
+today slowly coding will get automated...
+
+
+today in the It industry somebody makes a tool... very hard to think of "business perspective"
+so he wants users.. so what he does he tells give it away free. ok..
+
+intent matters..
+
+1. want to give it away free, have no intent of making money on it.. ok great. apache.
+2. want to give it away free, secretly thinking how to make money from it. bad intent
+once upon a time there was a dangerous hat which was thinking like this it is dead today..
+
+apache is  a good example of open source..
+you should license conditions... 
+
+as with every product.. 
+
+product(x) means it will have a OPinion
+
+example p
+x = vs code
+x = npm
+x =react
+x=bootstrap
+x=java
+x=maven.
+
+archetype.
+
+maven tells i got some category of projects for you, if you choose
+depending on that I can create appropriate folder structures for you..
+
+category of maven projects.. typically called with jargon archetype..
+
+
+
+when we get error message, first thing, dont show any moods read the complete
+message irrespective of you did you understand or did not understand..
+
+we faced the problem beucase with maven tool we did not learn any theory
+directly started doing astrology on the mvn command..
+
+proof of any theory or practical is repeatability..
+
+scary words in "IT industry" is this words called "IN depth" usually
+it means death for the person listening..
+
+"In depth" is a great word, provided the person has decency to show
+thru code how it helps..
+
+simply talking jargon and going away is pathetic... and not worth listening..
+
+phase 1
+1. come to bootcamp folder.
+2. java folder..
+3. mavenlab.
+4. open command prompt here
+5. mvn archetype:generate -DgroupId=sc 
+-DartifactId=pocmavenproject 
+-DarchetypeArtifactId=maven-archetype-quickstart 
+-DinteractiveMode=false
+
+phase2 
+create a maven project called pocmavenij thru IntelliJ
+ensure project is getting created inside the mavenlab
+check the folder structure..
+
+phase 3..
+go thru the mavenconcepts.txt and mavenstory.txt
+from a13maven folder of GitHub... repo..
+we have created
+1. maven project thru the maven software
+2. we have created a maven project by using IntelliJ which internally uses the maven
+tool and creates the project.
+
+folder structure..
+
+what we have done so far.
+
+1. create a project using mvn.. in command line.
+2. createa  project using IntelliJ which uses mvn internally 
+both are maven projects..
+3. we issued some phases in our maven project, mvn compile.
+4. we will revisit maven again tomorrow.
+
+
+how to insult maven.
+1.maven is used to compile code and run it.. horrible. no...
+maven can used to download the necessary dependancies, and do a complete build cycle..
+
+build cycle.
+
+1. assemble code
+2. compile code
+3. package code.
+4. deploy code
+5. run code..
+
+let us quickly talk bout XML 
+expand XML
+eXtensible Markup Language.
+
+what is XML?
+xml is language that is  used to describe things...  (this has got unlimited scope
+in terms of usage)
+
+xml -- superset .. you can arrive at lot of subsets..
+
+chemical industry.. cml
+maths.. mml
+vrml --vrml.
+....
+
+xml real meta language..
+
+XML is languge used to create other languages..
+comparing xml with anything kind of stupidness... 
+
+what is worst way to insult xml is to tell it is used to configure things..
+or compare it with html... 
+
+xml came in 1980's
+language
+1. vocabulary.  ( tags)
+2. grammar  ( order in which you have to use the tags..)
+xml will give this..
+
+
+quick summary
+1. xml is a standard for describing things..
+2. from this xml we can arrive at lot of subsets based on the domain we are in..
+3. thru xml we can mention vocabulary of that domain and grammar.
+vocubalary means the tags and grammar means the order of using the tags.. how do you
+recognize grammar is specified.. answer is via schema or DTD
+
+
+
+
+
+delta.. it depends...
+
+
+delta in social studie
+delta in science
+delta in airlines..
+how do you indicate this in java based world...
+in java you want to create three classes with same name Delta we should compulsory
+put them in a different package
+in xml we use namespaces..
+
+
+xml is before ... java or python..
+
+
+
+
+
+Spring framework.. SpringBoot ...
+
+once upon a time.. we told if you tell framework you have to know three things..
+
+what is framework...
+1. it has an opinion
+2. it will be half cooked.
+3. you have to understand its opinion and then take its half cooked and cook it finally
+to eat it..
+
+
+1. which layer of the architecture it uses
+2. what is opinion
+3. which language does it support.
+
+
+Spring framework..
+1. spring framework can be used in all 3 layers..
+2. spring framework tells let us do.
+2.1 inversion of control.
+instead of you creating object, asking spring to create objects..
+
+2.2 use me to make anything easy for you..  , X+spring = x becomes easier
+jdbc+spring = jdbc becomes easier
+web+spring = web becomes easier.
+
+
+2.3 aop... aspect oriented programming..
+
+
+
+which language does spring support.
+java and its cousins..( any language that the jvm can understand)
+
+spring framework can be used in all three layers..
+
+
+1. presentation
+2. service
+3. dao repository... ( where our code interacts with database)
+4. to carry information from one layer to another.. we need models... models
+can become entities..
+
+
+Three category of classes from an architecture point of view..
+
+1. Boundary class.  --Presentation class
+2. Controller class.  --Service class. business logic
+3. Entity class  -- database related classes.. a class which is related to a table..
+
+
+devils question is what  full stack programmer cannot do?
+
+
+
+may be approach..
+1. talk about concept.
+2. give an example
+3. talk about a hello world syntax.
+4. best practices.
+5. logic..
+
+
+http://127.0.0.1:5500/rg/a14htmlcheck/checknumber.html
+
+
+pathetic thing in the college is get addicted to this data type called int
+outside int if you talk about any data type bp issues come.. this is tragic..
+in real life it is always about objects
+
+go to confluence age,, see whether you are able to see spring boot project.
+copy the zip file to the mavenlabs folder..
+and open it in IntelliJ.
+and wait patiently for maven to download the libraries..
+and then start the main application.
+open the browser and type localhost:8080...
+and see whitelabel error.
+and install postman..
+install postgres also... because we will using this database
+this week and not h2 hopefully.. confluence page has got
+the details.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

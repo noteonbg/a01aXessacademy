@@ -1,4 +1,7 @@
-mvn archetype:generate -DgroupId=com.example.addition -DartifactId=AddTwoNumbers -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.example.addition 
+-DartifactId=AddTwoNumbers 
+-DarchetypeArtifactId=maven-archetype-quickstart 
+-DinteractiveMode=false
 
 
 cd AddTwoNumbers

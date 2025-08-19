@@ -13,7 +13,7 @@ public class MultiplicationController {
     // GET method: returns 5th multiple
     @GetMapping("/fifth")
     public int getFifthMultiple(@RequestParam int number) {
-        return number * 5;
+        return  47;
     }
 
     // POST method: returns 8th multiple

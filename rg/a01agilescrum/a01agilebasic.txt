@@ -1,6 +1,15 @@
 During Scrum in a project, teams follow a structured framework to develop products incrementally and iteratively. Scrum is designed for complex projects, especially in software development, and it emphasizes collaboration, accountability, and continuous improvement.
 
 
+2.45 to 4.30 PM occupied.
+no project review.. today...
+till 6.00 PM we have the classes..
+postgres sql.. connection must be there..
+pga tool.
+pg admin also they have to download.
+.m2 folder copy the settings.xml.
+
+
 
   Scrum Process Overview
 
