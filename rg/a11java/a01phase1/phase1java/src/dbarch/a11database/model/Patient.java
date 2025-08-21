@@ -1,4 +1,4 @@
-package programmingbasics.a11database.model;
+package dbarch.a11database.model;
 
 import java.time.LocalDate;
 

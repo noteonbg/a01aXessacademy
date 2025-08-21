@@ -1,12 +1,11 @@
-package programmingbasics.a11database;
+package dbarch.a11database;
 
 import java.time.LocalDate;
 import java.util.List;
 
-import programmingbasics.a11database.model.Patient;
-import programmingbasics.a11database.config.DBConnection;
-import programmingbasics.a11database.dao.PatientDAO;
-import programmingbasics.a11database.dao.PatientDAOImpl;
+import dbarch.a11database.model.Patient;
+import dbarch.a11database.dao.PatientDAO;
+import dbarch.a11database.dao.PatientDAOImpl;
 
 
 public class Main {

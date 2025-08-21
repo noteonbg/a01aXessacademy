@@ -1,4 +1,4 @@
-package programmingbasics.a11database.config;
+package dbarch.a11database.config;
 
 
 

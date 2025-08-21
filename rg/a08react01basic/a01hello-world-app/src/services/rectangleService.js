@@ -12,6 +12,7 @@ export const calculateRectangle = async (length, breadth) => {
     return response.data;
   } catch (error) {
     // Throw error to be caught by the calling component
+    console.log(error,"know what it is");
     throw error.response?.data || "Unknown error occurred";
   }
 };

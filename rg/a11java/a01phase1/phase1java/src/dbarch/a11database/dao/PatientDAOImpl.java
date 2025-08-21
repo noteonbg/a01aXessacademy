@@ -1,12 +1,11 @@
-package programmingbasics.a11database.dao;
+package dbarch.a11database.dao;
 
 
 import java.sql.*;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import programmingbasics.a11database.model.Patient;
-import programmingbasics.a11database.config.DBConnection;
+import dbarch.a11database.model.Patient;
+import dbarch.a11database.config.DBConnection;
 
 public class PatientDAOImpl implements PatientDAO {
     private final Connection connection;

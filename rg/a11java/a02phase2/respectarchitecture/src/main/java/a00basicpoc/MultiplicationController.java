@@ -14,7 +14,7 @@ public class MultiplicationController {
     @GetMapping("/fifth")
     public int getFifthMultiple(@RequestParam int number) {
         System.out.println("freak freak freak");
-        return  47;
+        return  number *5;
     }
 
     // registering for post event

@@ -1,6 +1,6 @@
-package programmingbasics.a11database.dao;
+package dbarch.a11database.dao;
 
-import programmingbasics.a11database.model.Patient;
+import dbarch.a11database.model.Patient;
 
 import java.util.List;
 

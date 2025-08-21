@@ -54,7 +54,8 @@ how the will communicate.
 want to react to.. and what they are expected to do.
 5. navigating thru the components.. .. routing...
 details..
-6. when all you want to contact server... 
+6. when all you want to contact server...
+6.0 when will you contact the server. 
 6.1 what is purpose.
 6.2 what will you send.****
 6.3 what will you get.****

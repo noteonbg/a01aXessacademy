@@ -330,6 +330,17 @@ each function..
 3. how input is picked up from..
 objects pick up from requestbody.. you must non get...
 
+ 
+1 a03repeat package make it work in your thru postman.
+2.usecase1 of spring boot.
+3.do the api planning for each component in your project.
+4. retrospective..3.45PM 
+10 minutes per team... randomly i will pick one person
+that person has to explain some part of the code.. 
+5. postgres installation and check whether it works..
+
+
+
 
 
 

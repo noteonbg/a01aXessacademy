@@ -48,7 +48,10 @@ pg admin also they have to download.
 6. Sprint Retrospective:
 
    * A reflection meeting after the Sprint Review.
-   * The team discusses what went well, what didn’t, and how to improve.
+   * The team discusses 
+   what went well,
+    what didn’t, and
+     how to improve.
 
 7. Repeat:
 

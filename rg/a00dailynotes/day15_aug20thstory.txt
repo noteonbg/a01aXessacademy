@@ -1,0 +1,167 @@
+1. ideas never end... but somebody should put a freeze on it.. else project will become an amoeba..
+2. project can accommodate changes, but there should be a backbone which does not change
+in the project.
+3. api goes.. slow down. slow down..
+api design.. what is hardest thing..
+
+excel.
+
+1. which use case story ... which components... which api
+
+
+when all you want to contact server...
+6.0 when will you contact the server. 
+6.1 what is purpose.
+6.2 what will you send.****
+6.3 what will you get.****
+6.4 when failure happens 
+	what will you do if failure because of user.
+	what will you do if failure is because of system.. server..
+6.5 when success happens what will you do
+6.6 mode of http request.. get, post, put or delete.
+
+
+why this is important this will give you clarity, this will help you in indentifying models.
+
+
+two things..
+
+1. traceability matrix...
+anything we do technically in design, in coding.. how do you prove it is related to
+the requirement...
+
+2. model identification with getting clariy on api calls.
+
+http://localhost:8080/getdeviceinfo/1   -- path variable..
+http://localhost:8080/getdeviceinfo?devcieid=23 ... requestparam.
+sending information in the body taht is called requestbody.. using post..
+
+1. we have a controller function..
+2. it takes some input from http request via requestparameter/requestbody /pathvariable.
+3. it returns something, yesteray we returned only our models. today onwards we will
+use ResponseEntity...
+
+
+what is REctangle, Customer,  Device.. these are our data types  --models
+ResponseEntity this a data type in the http based world..
+
+data type  == content  + operations.
+
+REsponseEntity = http status + whatever  model data you want...
+operations... get body of the responseentity.
+
+the way we use a data type is by creating a variable
+int is a data type
+
+i variable is of type int.. we use the data type.
+
+I am not trying to send data... alone like yesterday
+
+http status + data... if this is case you must ResponseEntity..
+All of you must ensure your Controller functions return REsponseEntity only
+and nothing else.
+
+you must return http status + your model.. dont send only model... why
+because of fate... other person design..
+
+what 1 exepcts is..
+4 returns http status + data...
+because based on http status only 1 assumes whether function succeeds or fails.
+
+API design..
+1. REstcontroller function design, which you started yesterday..
+yesterday we did some kids coding.. return model data.. 
+
+whenever you want to create an object of somebody else class. what you should do..
+open documentation and look at the constructors provided..
+
+
+
+
+
+ResponseEntity e
+=new ResponseEntity();
+
+
+1. in any programming language X. java or javascript, python. who cares..
+2. when you creating object of somebody else class. look at constructor documentation.
+3. look at class documentation.. why.....class documentation will tell some important
+things about the class.
+
+
+String s="freak";
+s.toUpperCase();
+s.o.p(s);
+
+REpsoneEntity is immutable..
+
+all your api funtions must return http status code + data 
+the way you do it in spring boot, controller functions must return ResponseEntity..
+
+when you are writing a restcontroller function ensure you REsponseEntity
+the advantage you can return response status  + model data....
+
+if you are returning only http status 200 from your controller functions
+you will not reach the catch block in your axios... then you have to waste
+time writing if conditions.. check data whether it is success or failure..
+i have a spring boot code..
+in package called a02anotherpoc.. run it and check it with postman.
+
+come to a01hello-world-app
+src..
+reactpocforspring folder.
+services..folder..
+
+i can come to my react project.
+copy these folders into src of my project.
+come to app.js..
+<RectangleForm/> component..
+ 
+
+spring boot, copy my package into your project.
+
+react.. dont run my project.. copy my component into your (poc program)
+project 
+and show it works..
+
+we will join back at 11.15AM
+
+1. make react and spring boot work.
+2. try to make youir jdbc program work.. with postgres ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
