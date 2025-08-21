@@ -1,0 +1,302 @@
+1. let us intent clean.. then everything else will follow.
+2. keep your bp level normal.. best way to do it , dont invest emotion on code..
+3.  when there are multiple steps.. are you depending on process . or you depending on
+"memory or instinct.. or scrap".
+
+security. who are you and what you can access.
+
+first decide what you want to cook, then we will how to cook...
+
+not start cooking and then find out what we cooked.. this is pathetic..
+
+you cant solve lack of clarity by being busy coding..
+
+in kids world we write
+tables and then think of queries..
+
+in adults world we think of queries first and then take a call how the table should look like.
+
+---------------------------------------
+
+intent for a paid software developer..?
+to solve customer problem and not focus on improving his technical skills.
+improving technical skills should be a byproduct..
+
+
+today we are going to discuss how to talk with database in the spring boot world.
+once you see what will learn is we  wasted time doing jdbc..
+
+Eternal answer for everything is "it  depends"  --nuclear weapon..
+
+you will database part will be easiest part in coding.. not today.. .for long time even in the past..
+
+today.
+0. did you understand yesterday code..
+1. we will dicuss how to deal with database.
+2. how to deal with exception handling.
+3. swagger.
+
+12.30 we will make quick revision of last week.
+4. 2.45 you got an adventure.. assessment..
+
+
+we have to make things easier...    Abstraction
+
+0. did you understand yesterday code..
+yesterday how you want to talk..?
+
+Intent... chew people brain with terminologies... or think of project and its architecture
+and explain everything in context of it.
+
+
+yesterday code has two part..
+
+1. back end part.
+2. front end part..
+
+pleasure kids... very happy with the output dont ask how it works..
+
+
+
+how it works in backend..
+1. you will agree with spring boot opinion of how it needs to start.. which is what
+@springBootapplication......
+
+2. we have  a controller class... 
+we have a series of functions in this class which will get called only http request events
+occur with a particular mode of http request and with a particular uri.
+
+3. these controller functions.. 
+when the event occurs... pick input from the http request... 
+and return something as a response.. usually this response will have two things.
+http response status code.
+content.. body of the response...
+for example.. this in Spring framework is called ReponseEntity..
+
+what is ResponseEntity.. chew chew... 
+data type in http based world in spring framework, it contains both http response status and some object.
+
+
+any class for which you create an object, treat the class just like a data type, beuase it s..
+
+you should refuse to believe there are "so many things to remember" are pathetic kids
+who could not generalize.. these are not science kids...
+
+
+why did you  write a controller?
+hey I am doing this for
+
+1. getting distributed computing..  presentation running on one system , service running on other system..
+
+2. my presentation layer 1.. can be anything. written in any technology..
+
+
+moral of the story..
+drag any syntax to the architecture first..
+
+
+
+what are you doing in Front end..
+1. you know the changing part and non changing part.
+2. you know when you want contact the server.
+3. you know what you should pass as input...
+4. you know what is uri and ipaddress you need to reach..
+5. controller function on the backend is the master, it tells you what it wants
+and our job in frontend is to be its slave and give what it it wants and pick
+up with it returns and use it in our front end.
+
+we are using axios.somehttpmodeofrequest..
+we are telling what is uri..... 
+we are passing parameters what the uri is expecting from us... in our case rectangle object..
+usually these requests will return a promise.. that means they are telling hey wait, I am doing
+and one day i will come back to you..
+
+when you are calling a function which returns a promise, you better wait...
+so await.. 
+	async function f2()
+	{
+
+	let x = await functionthat_returns_promise()
+
+
+	}
+
+
+	Z  function freak()
+	{
+
+		let abc = Y X();
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+prioritize architecture and not jargons...
+
+
+wheel  of the car and the car -- tightly coupled or loosely coupled.
+
+loose coupling means things can be changed without impacting the other and not
+things are independent..
+
+how to explain controller code.
+1. http request events.
+2. uri
+3. function definition.. 
+3.1 input
+3.2 return.. with http status code..
+
+
+how to explain front end code.
+1. changing and non changing part.
+2. event when you will call controller function.
+3. provide what controller function with its needed input
+4. call and wait.. so async
+5. one day you get some response.. decide what to do with response.
+6. response can be normal response, error response... and dont get addicted only normal response..
+
+
+1. database.
+2. exception handling..
+3. swagger.
+4. unit testing..
+
+
+security.. Monday..
+kids think technology is everything
+adults know to make things work in real life you must have ... technology + process.
+
+
+security == technology .. pathetic kids will get shocks.. in life..
+security = process+ technology.. those who think only technology, shocks will come..
+
+hopefull summary of last 1hr 30 minutes rant is..
+
+it is possible to generalize and talk technically by being loyal to the project architecture
+and not the necessary opinion called framework or language.
+
+-----------------------------------------------------------
+All good products will secretly "induce"  Addiction...
+
+Addiction , please dont leave me use me everywhere...
+
+Spring tells dont leave me , dont use anyting independently use everything along with me..
+
+X+ spring = X becomes easier.  programmer feels great my job is becoming easier.. spring feels
+great.. ok i have an addict now...
+
+so what can you technically as a person.
+use spring.. at time keep generalizing, so that one day spring tells I will keep a gun at your
+head, tell spring hey I will not use spring..
+
+
+Database..thru spring boot..
+
+ok.. but then we should know database concepts atleast...
+
+query language
+create database, creating tables..
+
+what all things we should database  concepts  during programming.
+1.database server.
+2. databasename.
+
+nestedqueries
+aggregate
+normalization.
+triggers and cursors.
+create, read, update, delete
+views..
+transaction acid properties..
+
+
+
+practically...
+
+
+
+1. we should tell x.. how are you going to tell
+
+phase i
+
+0.9 include the necessary database libary in your project.
+1.0 how you plan to talk with the database.. driver.. ( via os, directly to the database)
+.. pure java driver...
+1.1 what is the database server.
+1.2 what is database .
+1.3 what is userid
+1.4 what is password.  
+
+
+phase 2..
+have a mechanism to create tables and some dml operations through scripts, rather
+than programming, this also is a very common need.
+
+
+-----------------------------------
+
+1. pom.xml 
+added postgres dependency.. refreshed the maven.
+
+
+2. application.properties
+added some properties.
+spring.datasource.url=jdbc:h2:tcp://localhost:9092/./projectdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+
+
+
+
+
+
+1. keep your bp level normal.
+2. have an idea how controller works and what axios is doing in javascript.
+3. we should patience in database configuration.. explain..
+4. excel sheet which should like a process for you to get your api design..
+5. database assignment..  .. you have to complete it..
+REST API .pdf in week2 content, please go thru it..
+
+2.11 PM to 2.45 PM... prepare go ahead and prepare..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

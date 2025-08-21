@@ -124,12 +124,107 @@ react.. dont run my project.. copy my component into your (poc program)
 project 
 and show it works..
 
-we will join back at 11.15AM
+
 
 1. make react and spring boot work.
 2. try to make youir jdbc program work.. with postgres ...
+3. try to get postgres sql working in your system.
+try the commands..
 
 
+checklist
+1. react and spring boot program connected is working.
+2. postgres sql working.
+
+do all these things in phase 1.. last week program.
+3. java program connect to postgres..
+4. postgres query builder and try your sql commands.....
+5. craete any  table and add some rows and most important rename the table.
+6. get your core java database assignment working with postgres sql
+ensure structure is like my program structure..
+
+we will have four classes broadly..
+1. class model.. Customer.
+2. class main.
+3. class is for interface CustomerInterface.
+4. class which implements customer interface CustomerIntefaceIMplementation
+this should not have any sysout... 
+
+
+1. first prove your know how to start your database, and pgadmin tool
+issue some commands like select * from table name. insert command..
+
+2. come to a11database java program, prove it works. prove
+you know how it works..
+
+3. react program with spring boot working...
+
+4. your phase1 core java assignemnts.. do the database assignment according
+to the architecture..
+
+5. what is a Graduates.. all get killed because of three things..
+
+1. scared to see multiple files for a program.
+2. scared of writing functions.. .. buried with int and void
+3. scared of architecture..
+
+poc for your api making..
+react
+component
+service
+it has to use axios
+
+spring boot
+main
+controller
+both needs to be coded
+
+
+in controller we need to write a function
+
+whose input is Student  -- rollno, name, science, maths.
+return type is ReportCard --rollno, name, grade   -- Good, Better
+Good , science  maths are both more than 75.
+    in other cases grade as Better.
+
+Function Design
+
+  ReportCard   whocares(Student student)
+    some stupid logic..
+
+Controller...
+http status code should be 200, in case ReportCard grade is good.
+http status code should be 406.. in case reportCArd grade is not good.
+
+
+react ui..
+component there will be four textboxes.
+rollno
+name
+science
+maths..
+ [ contact spring ]
+explore science as  career  --good
+We will get back to you.  --not good
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 

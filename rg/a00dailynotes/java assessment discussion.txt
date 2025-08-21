@@ -1,0 +1,184 @@
+1. quick summary last week. hope it helps.
+2. at 2.00 clock... 2.00 to 2.45 .. test adventure.
+3. 2.45 to 3.45 test adventure break adventures..
+4. 3.45 again start database... why it is important to be systematic..
+
+1.  run -->  what is java compiler (JDK) doing, what is JRE doing.. 
+2. jdk is needed if you are writing .java file and compiling to .class...
+3. static.. and non static variables..
+A obj, obj2.
+specific to obj and obj2..
+static or non static..
+non static variable.. my object.. my variable.. non static variable.
+constructor.. default return type.. no return type for the constructor.
+can you call the constructor by yourself, you can call it. but the main advantage
+of constructor system calls it when object is created..
+class X
+{
+int k //member variables, non static variables, instance variables.
+static int l;  // class variables, static variables..
+
+public void freak()
+{
+	
+}
+
+
+
+
+}
+
+String s1="Hello";
+String s2=s1;
+s1 and s2 are two names for the same object.
+to compare this in java we use s1 == s2 , s1.equals(s2);
+
+to compare two references for the same object, we can use ==
+
+Employee e =new Employee();
+Employee e1 =e;
+if(e == e1)
+
+overloading..
+1. function. function name must be same input arguments must be different
+
+f1(int)
+f1(int, int)
+f1(int, Boolean)
+
+
+2. overriding will happen only during inheritance or interaces..
+
+class A
+{
+	public void freak(){}
+}
+
+class B extends A
+{
+	public void freak() {} //overriding
+
+
+}
+
+Exception hanlding..
+you are inside a function, some lines are there..
+
+void f1()
+{
+	TRY
+{
+	open socket
+	SEND MESSAGE
+	close SOCKET
+}CATCH(SOCKET NOT OPENED ...) { }
+CATCH( MESSAGE NOT SENT .. ) {}		
+
+
+
+}
+
+x AND Y ARE TWO PEOPLE
+x WRITES A FUNCTION F1.. IN HIS FUNCTION SOME PROBLEM CALLED P1 OCCURS..
+X DOES NOT WANT TO SUGGEST SOLUTION BECUASE HE DOES NOT KNOW THE CONTEXT
+IN WHICH F1 IS CALLED.. 
+
+void f1() throws Problem //this is what X will do
+
+X is telling the caller of the function f1, hey look you must decide
+what to do when Problem occurs not I.. because I dont know context
+in which the problem has occurred.
+
+List -- can have  duplicates
+Set  -- it cannot have duplicates
+Map -- Key, values..
+no duplicate keys.
+but duplicate values are allowed..
+
+location
+1. pincode number    primary key..
+2. areaname varchar
+3. place.   varchar
+
+insert into location(pincode,areaname,place) values (1,'halli','bengaluru');
+PreparedStatement...
+
+
+areaname='freak' we have to update that to junk area..
+
+update location set areaname='junk' where areaname='freak';
+
+X obj =new Y(); this is possible only under two cirumstances..
+
+1. interfaces
+2. inheritance..
+
+Mobile m =new iPhone();
+
+3.5mm device =new HeadPhone();
+XML is a mechanism to describe things..
+case sensitive.
+all tags open must be closed
+single root lemenet.
+
+
+select * from emp order by empno;
+
+select distinct deptid from emp;
+
+Runtime polymorphism..
+
+final function we cannot override it..
+non final function.. we can override it... runtime polymorphism.
+
+Http.. headers, body.. 
+request   
+response.. REsponseEntity...
+1. status code.
+2. body..
+3. headers..
+
+
+quick summary.
+1. what does JRe-run or jdk to compile do..
+2. inside the class, static variables(class) , non static variables(instance)
+3. Aggregation --part can be used with another whole , Composition.. part cannot be used.
+Mobile and sim... aggreg
+Mobile and Battery -- composition..
+4. inheritance, interface.. runtime polymorhism.
+6. packages.  public classes can be imported..
+7. exception throw, throws.. ( context not known to definer of the function, hence
+caller should decide)
+8. datastructures List, Set and Map
+9. database... driverclass, url,  insert, update , select..
+10. http request or response..we need to get status codes.. headers, body... 
+
+2.10PM we will join back and then you "prepare for the assessment"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
