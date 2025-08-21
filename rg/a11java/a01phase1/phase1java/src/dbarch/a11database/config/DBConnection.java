@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class DBConnection {
     private static Connection connection;
 
-    public static Connection getConnection() {
+    public static Connection getConnection1() {
         if (connection == null) {
             try {
                 Class.forName("org.h2.Driver");
@@ -23,18 +23,18 @@ public class DBConnection {
         return connection;
     }
 
- // public static Connection getConnection() {
-//     if (connection == null) {
-//         try {
-//             Class.forName("org.postgresql.Driver");
-//             connection = DriverManager.getConnection(
-//                 "jdbc:postgresql://localhost:5432/yourdbname", "yourusername", "yourpassword"
-//             );
-//         } catch (Exception e) {
-//             e.printStackTrace();
-//         }
-//     }
-//     return connection;
-// }
+  public static Connection getConnection() {
+     if (connection == null) {
+         try {
+             Class.forName("org.postgresql.Driver");
+             connection = DriverManager.getConnection(
+                 "jdbc:postgresql://localhost:5432/yourdbname", "yourusername", "yourpassword"
+             );
+         } catch (Exception e) {
+             e.printStackTrace();
+         }
+     }
+     return connection;
+ }
 
 }
