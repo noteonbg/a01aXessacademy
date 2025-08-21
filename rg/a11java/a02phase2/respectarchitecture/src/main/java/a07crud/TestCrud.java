@@ -1,0 +1,13 @@
+package a07crud;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class TestCrud {
+    public static void main(String[] args) {
+
+        SpringApplication.run(TestCrud.class);
+
+    }
+}
