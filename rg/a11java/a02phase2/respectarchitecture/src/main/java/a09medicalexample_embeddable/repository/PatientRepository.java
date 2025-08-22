@@ -1,8 +1,8 @@
-package medicalexample_embeddable.repository;
+package a09medicalexample_embeddable.repository;
 
 
 
-import medicalexample_embeddable.model.Patient;
+import a09medicalexample_embeddable.model.Patient;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

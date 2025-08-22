@@ -1,8 +1,8 @@
-package medicalexample.controller;
+package a04medicalexample.controller;
 
 
-import medicalexample.model.Patient;
-import medicalexample.service.PatientService;
+import a04medicalexample.model.Patient;
+import a04medicalexample.service.PatientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

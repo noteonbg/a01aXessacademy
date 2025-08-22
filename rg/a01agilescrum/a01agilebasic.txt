@@ -34,10 +34,9 @@ pg admin also they have to download.
      1. What did I do yesterday?
      2. What will I do today?
      3. Are there any impediments?
+
+     
    * Helps keep the team aligned and detect blockers early.
-
-
-   
 
 5. Sprint Review:
 

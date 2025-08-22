@@ -1,7 +1,7 @@
-package a04onetoone_mapping.controller;
+package a06onetoone_mapping.controller;
 
-import a04onetoone_mapping.model.Citizen;
-import a04onetoone_mapping.repository.CitizenRepository;
+import a06onetoone_mapping.model.Citizen;
+import a06onetoone_mapping.repository.CitizenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,4 +1,4 @@
-package medicalexample_embeddable.model;
+package a09medicalexample_embeddable.model;
 
 
 import jakarta.persistence.Embeddable;

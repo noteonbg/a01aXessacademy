@@ -1,4 +1,4 @@
-package a00com.poc.respectarchitecture;
+package a01com.poc.respectarchitecture;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

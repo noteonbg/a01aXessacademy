@@ -1,4 +1,4 @@
-package a04onetoone_mapping.model;
+package a06onetoone_mapping.model;
 
 
 

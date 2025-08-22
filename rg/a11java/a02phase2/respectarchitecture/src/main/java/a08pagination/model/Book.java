@@ -1,4 +1,4 @@
-package a06pagination.model;
+package a08pagination.model;
 
 import jakarta.persistence.*;
 

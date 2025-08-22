@@ -1,9 +1,9 @@
-package a06pagination.controller;
+package a08pagination.controller;
 
 
 
-import a06pagination.model.Book;
-import a06pagination.repository.BookRepository;
+import a08pagination.model.Book;
+import a08pagination.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
 import org.springframework.web.bind.annotation.*;

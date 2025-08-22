@@ -1,9 +1,9 @@
-package medicalexample_embeddable.controller;
+package a09medicalexample_embeddable.controller;
 
 
 
-import medicalexample_embeddable.model.Patient;
-import medicalexample_embeddable.repository.PatientRepository;
+import a09medicalexample_embeddable.model.Patient;
+import a09medicalexample_embeddable.repository.PatientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,9 +1,9 @@
-package medicalexample.service;
+package a04medicalexample.service;
 
 
 
-import medicalexample.model.Patient;
-import medicalexample.repository.PatientRepository;
+import a04medicalexample.model.Patient;
+import a04medicalexample.repository.PatientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

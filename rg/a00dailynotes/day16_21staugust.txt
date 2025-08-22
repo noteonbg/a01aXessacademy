@@ -270,6 +270,126 @@ spring.datasource.password=
 REST API .pdf in week2 content, please go thru it..
 
 2.11 PM to 2.45 PM... prepare go ahead and prepare..
+to work on database.
+
+1. pom.xml file
+we need dependancies of postgres.. spring jpa repository...
+
+2. application.properties file. .this is place where we will do many configurations
+for our project..
+
+configuration file will be present resources folder always..
+
+X+ spring =  x becomes easier..
+welcome to opinions...
+
+
+pom.xml file entrires first day... and then once it starts working
+dont touch..
+
+how to interact with database from a language..
+
+1. what we have seen a jdbc based approach..
+
+
+Before doing bad things, what we should do, tell good things..
+CAnteen guys wants to provide fresh food , good idea or bad idea.., good idea.
+so what he does after he sees he starts cooking in front of you... he starts planting
+the crops...
+
+Connection creation is expense.. at that moment to create it it takes time
+so precreate connection and pick one...
+Object Pooling  
+
+JDBC one way of doing things..
+JPA is another way of doing things.. generally the number of lines we code in JPA
+will be very low almost zero when compared to JDBC...
+
+expand JPA ... Java Persistence Api, this entire project is taken by opensource
+
+Jakarta.....   Persistence api.. ok expansion.. what is it?
+
+
+JPA is a mechanism to do ORM in java.
+
+
+ORM -- Object Relational Mapping  --superset
+JPA  --java way of doing ORM.. in todays world.
+
+
+O -- Object  -- Class
+R  -- Relation   --Table
+
+RElating  class and a table.. via some library to get better abstraction is called
+as ORM.
+
+for example..
+
+
+I wont even write 1 line of code..
+but 
+insert
+update
+single select
+multi select
+everything is taken care of..
+
+
+
+road side view about what ORM is..
+
+
+
+
+how do i insert, update, delete, select relax we will come to it...
+there will be one standard how you will do it irrespective of yoru model.
+
+road side talk on jpa.
+
+
+1. it used in the repository layer in the architecture ie layer which interacts
+with database.
+2. we have to use some framework ,we are using spring boot data jpa libraries..
+3. what we do is take model and using the library annotations map to the table.
+4. we start using the functions of the library to do interact with the tables
+5. library comes to know about our database we have configured it in the properties
+file.
+
+what we did..
+1. did we add jpa dependancies and postgressql depenancy..
+2. we did add database properties...
+3. we need some more properties.. to the application.propertis. what are those...
+dialect..you must mention the dialect ..
+
+
+
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
+
+welcome to more opinions...
+before your run your java class. spring boot tells if you want I can run
+and create tables for you, insret some rows for you but then
+that should in a file called schema.sql and data.sql.
+
+schema.sql.. creation tables.
+data.sql .. dml commands..
+
+but for this to work, youi need an entry in properties file..
+
+
+
+
+listen ...
+
+1. take my project respectarchitecture and see can open it in maven
+and does it work... a02poc... come to application.properties and change
+to include postgres you database information and ensure pom.xml
+has got postgres dependanc..
+
+1. socalleddesign.xls fill  up
+2. schema.sql and data.sql.
+
+
+
 
 
 

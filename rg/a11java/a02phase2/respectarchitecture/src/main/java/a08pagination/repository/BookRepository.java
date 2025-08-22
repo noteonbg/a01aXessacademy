@@ -1,8 +1,8 @@
-package a06pagination.repository;
+package a08pagination.repository;
 
 
 
-import a06pagination.model.Book;
+import a08pagination.model.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

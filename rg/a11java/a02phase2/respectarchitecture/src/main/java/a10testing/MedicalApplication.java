@@ -1,16 +1,12 @@
-package a04medicalexample;
-
+package a10testing;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MedicalCrudApplication {
+public class MedicalApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MedicalCrudApplication.class, args);
+        SpringApplication.run(MedicalApplication.class,args);
     }
-
-
 }
-

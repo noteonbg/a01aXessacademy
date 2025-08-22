@@ -1,4 +1,4 @@
-package a06pagination;
+package a08pagination;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

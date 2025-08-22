@@ -1,4 +1,4 @@
-package medicalexample.model;
+package a04medicalexample.model;
 
 
 import jakarta.persistence.Entity;

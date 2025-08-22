@@ -1,4 +1,4 @@
-package a00com.poc.respectarchitecture.exceptions;
+package a01com.poc.respectarchitecture.exceptions;
 
 
 import org.springframework.http.HttpStatus;
