@@ -1,1 +1,24 @@
 we all steps we need to do in react..
+
+for each component in REact we must know the below things before coding..
+
+1. we have ui... component.
+2. component , changing things and non changing things.
+props, state. any default values..
+3. components can be nested. so they need to communicate.
+how  will they communicate.
+4. validation needed
+4.event handling will be there.. so what all events you
+want to react to.. and what they are expected to do.
+5. navigating thru the components.. .. routing...
+details..
+6. when all you want to contact server...
+6.0 when will you contact the server. 
+6.1 what is purpose.
+6.2 what will you send.****
+6.3 what will you get.****
+6.4 when failure happens 
+	what will you do if failure because of user.
+	what will you do if failure is because of system.. server..
+6.5 when success happens what will you do
+6.6 mode of http request.. get, post, put or delete.

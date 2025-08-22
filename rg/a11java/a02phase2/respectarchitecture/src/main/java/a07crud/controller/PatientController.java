@@ -27,14 +27,11 @@ public class PatientController {
     public ResponseEntity<Patient> createPatient(@RequestBody Patient patient) {
         try {
 
-            if(!repository.existsById(patient.getId())) {
-                Patient savedPatient = repository.save(patient);
-                return new ResponseEntity<>(savedPatient, HttpStatus.CREATED);
-
-            }
-            return new ResponseEntity<>(patient, HttpStatus.BAD_REQUEST);
-
-
+            if (patient.getId() != null && repository.existsById(patient.getId())) {
+                return new ResponseEntity<>(patient, HttpStatus.BAD_REQUEST);
+             }
+            Patient savedPatient = repository.save(patient);
+            return new ResponseEntity<>(savedPatient, HttpStatus.CREATED);
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -56,7 +53,7 @@ public class PatientController {
         if(box.isPresent())
         {
             Patient gotpatient =  box.get();
-            return new ResponseEntity<>(value, HttpStatus.OK);
+            return new ResponseEntity<>(gotpatient, HttpStatus.OK);
         }
         else
         {
@@ -75,7 +72,7 @@ public class PatientController {
             if(repository.existsById(updatedPatient.getId()))
             {
                 repository.save(updatedPatient);
-                return new ResponseEntity<>(existingPatient, HttpStatus.OK);
+                return new ResponseEntity<>(updatedPatient, HttpStatus.OK);
             }
             else
                 return new ResponseEntity<>(HttpStatus.NOT_FOUND);

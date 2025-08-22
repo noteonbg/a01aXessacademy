@@ -1,0 +1,267 @@
+we need to talk with the database..
+how to exception handling.
+swagger..
+unit testing.
+
+small open ended exam......to build front end and backend with database.
+
+-----------------------------------
+
+
+Intent.. multiple things are there dont trust your memory, operate
+thru checklists...
+
+
+
+
+--------------------------------------------
+
+yesterday story.
+
+1. pom. jpa dependency. postgres dependency.
+2. entries in application.properties..
+3. schema.sql and data.sql is working.
+4. we know how to write controller function and return http response status
+with some model in the body....
+--------------------------------------
+
+JPA how to start...
+
+1. open your model class.
+for model class I will an annotation called @Entity.. this means..
+we are telling hey look this model of mine is going to mapped
+to some Table.
+
+there should be duplicate rows in the table... every row
+should be unique.. primary key..  how to get free headache
+ask user to enter the primary key.. should be generated..
+
+Sequence..
+
+@Id.. that column will act like a primary key...
+
+@Entity
+@Id
+compulsory..
+
+ @GeneratedValue(strategy = GenerationType.IDENTITY)
+we are planning to generate the primary key user will not enter it..
+
+
+three annotations on our once upon a time Model..
+once I use annotations Model now becomes an entity.
+
+relax... after seeing the model with these annotations..
+
+look at url. in application.properties to know your database name.
+
+in the entity look for..
+
+1. column names in the table.
+2. instance variales in your entity should match...
+
+
+
+model becomes an entity
+
+1. look at annotations @Entity @Id... @genrated for primary key
+2. show patience ... look at your table... and look at your class variables
+names it is matching or not...
+3. did you do 2.
+4. write a new interface in a package x.repository..
+it is an emtpty interace,it should extend JPa repository..
+
+
+public interface PatientRepository extends JpaRepository<Patient, Long> {
+
+public interface PatientRepository extends JpaRepository<Entityclassname, datatype of Id column in the Entity> {
+
+ congrats yoru database programming is over.
+
+all these are 25 year old technology....
+
+
+ok we have ths interface.. XRepository..
+
+welcome to power of spring... 
+you can tell spring hey create the object of XRepository in my controller
+you only should tell because... you decide architecture and not spring.
+
+
+
+
+I got a repository .. object with me.. how do i know spring will I will
+create it for you..
+
+
+const freak={scrap:23};
+freak.scrap=55;
+
+final Patient altp =new Patient(1,"JE",23);
+altp =new Patient(2,"ACOJE",45);
+altp.setAge(44);
+
+
+we can tell spring hey create object of mobile
+create object of sim, create object of battery..
+
+@...
+class Mobile
+
+{
+
+@Autowired
+private Sim sim;
+
+}
+
+we put repository object inside the controller ..why?
+becuae insie controller function we plan to the repository functions.
+
+
+to insert or update the patient table..
+
+the function you have to use is save..
+
+I want only save not update..
+
+now I have that save should work only for insert, how..
+repository.existsById(patient.getId()) --Boolean true.. if id exists.
+
+
+kids are afraid compilation errors. grown up(100) kid afraid of runtime error
+adults are afraid of Logical errors.
+
+
+in JPA you should know two methods..
+
+repository.existsById(patient.getId()) give an primary key it will return
+true if the entity exists in the table..
+
+
+repository.save(entity)
+it will insert or update.. if use above method... you can do insert..
+
+
+
+if you like the customer and are having intent to solve his problem
+we will focus on architecture and not on unnecessary ccooking of code.
+
+
+
+repository.findAll() you will get all the rows from the table
+in a List<Patient>
+
+single select  -- only row query is based on primary key
+multiple select  --multiple rows.. query is based on on primary key
+you may get one row or multiple rows..
+
+
+
+Entity object =repository.findById(id);
+
+
+
+tell me a four lettered word
+which 
+
+1. c, c++, javascript , java, .net guys, database guys are all scared
+to .. , because they dont know theory...
+
+null. because these were scared to death and they were ALTPs... so what
+java did, ok to avoid null, let me give you box which may contain null
+or not contain null. that box name is optional.
+
+
+if you want to do single selet, query based on primary key
+
+Optional<Entityonwhichyourrepositoryisbased.> box = repository.findById(primarkey);
+
+
+1. insert.
+2. findall get all rows from the table.
+3. get a particular row based on primary key.
+4. updatePatient
+
+
+am i confused about JPA no... I have written a horrible controller function...
+so I am thinking is my controller function for update or not...
+
+f1(updatedobject)
+f1(primary,updatedobject)
+
+what to do.
+
+I have got a package called a07crud..copy it your project...
+and please check.. table and entity are correct.... and then 
+run my program and check thru postman whether it works..
+check in the database table also..
+understand the code
+
+in GitHub.
+https://github.com/noteonbg/a01aXessacademy/blob/main/rg/a16design/a04misc.txt
+go thru this text file also.
+
+
+we will catch up at 2.10PM.
+
+
+problem statement 
+
+both spring boot and react.
+
+no database
+spring boot controller function, takes a  number via pathvariable.
+and tells whether it is a multiple of 5 or not... must
+return http status code and a message... yes or no.
+
+with database.
+Location.. pincode number, city string, area string.
+
+spring boot controller function
+1) get information about city, area, pincode by specifying pincode.
+2) get all pincodes associated with a city.
+build a react ui for the same.. think how to build the ui.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Excel sheet.
+2. spring boot project with all dependancies.. and all properties set.
+3. data.sql empty, schema.sql empty.
+4. package poc.. SpringBoot hello world program..
+ensure you push this into repo..
+
+
+1. today multiplication table.  spring boot and react 
+2. Location   --no react needed. spring boot should work
+3. a07 crud   .. you have to make it work and prove thru postman..
+
+100% to demonstrate 1 of the 3.. randomly..
+
+Thank you..
+
+
+
+
+
+
+
+
+
+
+
+
+

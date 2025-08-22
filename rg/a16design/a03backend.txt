@@ -21,7 +21,7 @@ pom.xml
 4. testing dependancy
 5. may be in one day security dependancy.
 6. devtools dependancy
-7. swagger depadancy..
+7. swagger depedancy..
 
 4. when you create a spring boot project..
 4.1 pacakge, spring boot main application.

@@ -6,7 +6,52 @@ here we  will list.. software setup for
 4. database
 5. back end.
 
+cloud..
+azure repo location...
+your boards location.
 
-design.xls ready or not...  query.... table....
-schema.sql
-data.sql.
+version control.
+1. how to clone your branch.
+2. what is your project folder.. stick with this.
+3. add code to the branch.
+4. communicate
+5. push the branch and raise pull request.
+6. dont clone get the branch again to your local repo.. 
+
+front end
+1. react project with react-router dependancy, axios dependancy, bootstrap dependancy.
+
+back end.
+spring boot project with
+1. web 
+2. database dependancy
+3. jpa dependancy
+4. testing dependancy
+5. may be in one day security dependancy.
+6. devtools dependancy
+7. swagger depedancy.. 
+
+
+application.properties..
+your database information
+has to be configured..
+
+spring.datasource.url=jdbc:h2:tcp://localhost:9092/./projectdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
+spring.jpa.hibernate.ddl-auto=update
+spring.sql.init.mode=always  // you can change it to never.
+
+schema.sql  --what will be its contents
+data.sql  --what will be its contents.
+
+
+2. hello world spring boot program.
+new package. class with main function and @SpringBootApplication and SpringApplication usage.
+
+3. run this let it work...
+
+4. excel sheet... 
+
