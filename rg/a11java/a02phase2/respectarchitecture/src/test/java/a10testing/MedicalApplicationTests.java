@@ -1,9 +1,10 @@
-package com.poc.respectarchitecture;
+package a10testing;
 
+import a10testing.controllertest.PatientController;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+@SpringBootTest(classes = {PatientController.class})
 class RespectarchitectureApplicationTests {
 
 	@Test

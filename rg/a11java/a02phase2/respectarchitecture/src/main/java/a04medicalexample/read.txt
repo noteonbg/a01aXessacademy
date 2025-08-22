@@ -7,8 +7,12 @@ related poms are present
 
 run the main application
 
+modify all the below things based on which
+application you are working on...
+
 h2 console can be got at..
 http://localhost:8080/h2-console
+
 
 database name given in the application.properties..
 jdbc:h2:mem:medicaldb

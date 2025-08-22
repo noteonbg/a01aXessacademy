@@ -1,9 +1,9 @@
-package com.poc.respectarchitecture.controller;
+package a00com.poc.respectarchitecture.controller;
 
 
 
-import com.poc.respectarchitecture.exceptions.PatientNotFoundException;
-import  com.poc.respectarchitecture.model.Patient;
+import a00com.poc.respectarchitecture.exceptions.PatientNotFoundException;
+import a00com.poc.respectarchitecture.model.Patient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
