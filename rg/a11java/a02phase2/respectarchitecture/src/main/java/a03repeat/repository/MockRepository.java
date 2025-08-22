@@ -10,9 +10,15 @@ public class MockRepository {
 
     ArrayList<Device> devices = new ArrayList<>();
 
+
+
     public MockRepository()
     {
         System.out.println("object created");
+        devices.add(new Device(1,"A",false));
+        devices.add(new Device(2,"B",true));
+
+
     }
 
     public String addDevice(Device device) {
