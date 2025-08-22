@@ -1,0 +1,65 @@
+steps to do in spring boot.
+
+1. should know what is your database, and how are you going to view
+contents of the databsae and what tools are you using..
+
+postgres 
+pgAdmin 
+
+
+2. we know our folder structure...
+
+
+3. you want to do spring boot project..we are using
+intellIJ editor with maven as a build tool...
+because of maven our fate is pom.xml
+pom.xml
+
+1. web 
+2. database dependancy
+3. jpa dependancy
+4. testing dependancy
+5. may be in one day security dependancy.
+6. devtools dependancy
+7. swagger depadancy..
+
+4. when you create a spring boot project..
+4.1 pacakge, spring boot main application.
+you will see your application now will not run...
+
+5. application.properties.. your database information
+has to be configured..
+
+spring.datasource.url=jdbc:h2:tcp://localhost:9092/./projectdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
+spring.jpa.hibernate.ddl-auto=update
+spring.sql.init.mode=always.
+
+6. again run your application.. you must not see any error.. in the screen.
+
+
+*********** milestone 1**********************************
+
+7. do you want to put something in schema.sql or data.sql.
+
+8. show patience, intelligence ( to ask is this what you want in your project)
+models , controller function , controller with all the details...
+first level check whether controller function is getting called or not
+input reaching or not.
+return type with ResponseEntity is working or not..
+
+
+
+
+
+
+
+
+
+
+
+
+

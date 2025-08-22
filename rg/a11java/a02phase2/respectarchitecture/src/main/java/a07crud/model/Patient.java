@@ -4,6 +4,7 @@ package a07crud.model;
 
 import jakarta.persistence.*;
 
+
 @Entity
 public class Patient {
 

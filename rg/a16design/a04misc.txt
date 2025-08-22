@@ -1,0 +1,46 @@
+	steps..
+
+    1. convert Model to Entity
+       @Entity, @Id ... 
+
+    2. in package repository.
+    create the interface, be conscious about your entity name and data type of the Id.
+
+    3. create the object of repository .. in youir controller...
+    private XRepository repository;
+
+    4. once you have sensible controller function... start using
+    the jpa methods.. which are written below..
+
+
+    
+    
+    
+    // insert in jpa repository...
+
+    if(!repository.existsById(patient.getId())) {
+                Patient savedPatient = repository.save(patient);
+
+
+    //update           
+    if(repository.existsById(patient.getId())) {
+                Patient savedPatient = repository.save(patient);
+ 
+
+ //single select.
+  Optional<Patient> box = repository.findById(id);
+        if(box.isPresent())
+        {
+             Patient gotpatient =  box.get();
+
+
+//get all.
+List<Patient> patients = repository.findAll();
+
+
+//delete
+if (repository.existsById(id)) {
+                repository.deleteById(id);
+
+
+

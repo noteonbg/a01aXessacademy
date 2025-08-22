@@ -1,0 +1,12 @@
+here we  will list.. software setup for 
+
+1. cloud.
+2. version control 
+3. front end
+4. database
+5. back end.
+
+
+design.xls ready or not...  query.... table....
+schema.sql
+data.sql.
