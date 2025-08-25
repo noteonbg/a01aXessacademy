@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = "http://192.168.29.16:3000")
 public class CalculatorController {
 
     @GetMapping("/add")

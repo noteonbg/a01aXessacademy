@@ -17,7 +17,7 @@ public class Medicine {
 
     @JsonBackReference
     @ManyToOne
-    @JoinColumn(name = "pharmacy_id") // FK column in medicine table
+    @JoinColumn(name = "pharmacy_id") // foreign key column in medicine table
     private Pharmacy pharmacy;
     /*
     Create a foreign key column in the medicine table called

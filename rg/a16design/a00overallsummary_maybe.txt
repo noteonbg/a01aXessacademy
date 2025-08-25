@@ -1,0 +1,219 @@
+This is my rant... see if useful.
+
+Basics.
+1. loyalty towards project.
+    1.1 respect architecture.
+    1.2 multiple files will be there have to figure out the flow.
+    1.3 know the meaning of terminologies, web, event, cloud, distributed computing..
+2. tolerate uncertainty.
+3. figure out how to generalize your learning.
+4. programmers have to be 5/5 in functions and variables.
+    function definition.. who is going to call the function
+    function calling, can I open documentation and see what it is doing.
+    function assingment.. oh oh oh.. it is not function calling.. you have to think
+    of two people..
+
+5. variables.
+    1. you must know the data type
+    2. scope.
+
+---------------------------------
+
+Project ...
+
+Process, technology , tools , culture all 4 are important..
+
+multiple steps are there, do you want to trust your memory
+or operate thru a checklist.
+
+poor requirements gathering != requirements are changing..
+
+
+ant .. needs a different process.
+elephant .. needs a different process.
+you cannot copy process...
+
+
+git..
+0. repo location, your access identity.. which folder you want to work
+1. do you know how to clone.
+2. create a branch.. add contents, commit.
+3. push the branch to the repo and raise a pull request.
+4. get back the latest from the repo.. again.. without cloning. (?)
+
+-----------------------------------------------------------
+
+React
+
+have an opinion of what css you plan to follow...
+component a piece of UI.
+react opinion of associating a component with a tag.. 
+which part of component changes.. and which part of component does not change..
+component part that changes.
+   state, props..( when you want to communicate between multiple components)
+event handling..
+becoming familiar with javascript syntax .. spend some time.
+
+typical thing.
+
+1. have a ui which has changing part..(state, props ) and non changing part
+2. ensure event hanlding is setup.
+3. decide what to do in event handling.
+4. call the api via axios , think does your api ask for security....
+5. get both positive and negative scenarios
+6. think what to do on the ui.
+    6.1 change it.
+    6.2 routing.
+
+
+--------------------------------------------------------
+
+Java.
+0. jdk, jvm .. .java file and .class file.
+1. folder structure, importance of packages.
+2. class is a data type.. model..
+3. constructors, non static functions, static functions..
+4. relationship between classes.
+       association
+           aggregation
+           composition.
+        inheritance
+            hierarchy making
+            runtime polymorphism.
+5. interface
+    remember implementation can change, feature usage remains same.. think...
+6. packages
+7. Exception handling  ( throws and try and catch, printStackTrace)    
+8. datastructures.. choose after you decided operations.
+
+----------------------------------------------------
+Database..
+
+1. database server, database, table, primary key.. two tables foreign key...
+2. how to insert, update, delete and select command.
+3. know how to use the database like h2 or postgres.. what tools are you using
+how to start... h2 server, how to start postgres , how to use pgAdmin tool...
+
+-----------------------------------------------------------
+Spring boot.
+
+know your maven folder structure and mvn commands.. although not necessarily
+we need to run from the command prompt.. show patience in the settings.
+
+1. how to validate.
+2. how to compile
+3. how to install
+4. how to package
+5. how to run.
+
+within intellij and outside intelliJ thru command prompt via mvn commands.
+
+
+Annotation.. if we are user, we should know the benefit ,on what we can use
+( Class, function, variable.)
+
+Follow the package structure correctly.
+
+1. x
+   x.controller
+   x.model
+   x.repository
+   x.configuration
+   x.security
+
+spring .. 
+    spring main with annotation SpringBootApplication
+
+controller
+    functions that get called when http request is made..
+    you must know the uri.
+    mode of request
+    input how you plan to read, path variable, request param or body.
+    return type is http response status code + body.. ResponseEntity.
+    check with postman.
+    if you want to connect from react, then @CrossOrigin.. 
+        this allow spring boot to accept requests from React application
+
+JPA
+
+
+1. you know your database server, databasename,username, password  is it configured
+in application.properties.
+2. tables can be created by schema.sql and data inserted via data.sql.
+depends on the property in application.properties called
+spring.sql.init.mode=always #to call schema.sql or  data.sql
+spring.sql.init.mode=never # not to call the schema.sql or data.sql 
+
+3. if you create your entity class
+@entity
+@identity
+then you can use also a property called ..
+spring.jpa.hibernate.ddl-auto=update
+
+
+4. tables can get create via jpa property or sql.init.mode property.. choose
+your choice.... 
+
+
+5. JPA repository methods, know it.
+save
+findById
+findAll
+findBy...
+existsById..
+take care of negative scenarios...
+
+
+6. one to many , many to one, one to one... all of them
+show patience and see where foreign key is coming.. practice
+some examples...
+
+
+--------------------------------
+
+Exception hanlding how you want to do.
+
+1. controllerAdvice... when controller function throws Exception
+you can handle it in a method..
+
+----------------------------------
+
+unit testing... for what...
+
+scenario
+function to call.
+what will be input
+what will be the output expected  x
+what is output got ... got y
+assert whether y is equal to x..
+
+It  needs to be fast.. whichever part is slow mock it...
+how to mock .. learn it on need basis.
+
+----------------------------------------
+
+Security..
+
+1. controller... level.
+2. what apis you want to protect
+3. how will the system know who are you.
+4. how will the system get user details and role.
+5. follow spring opinion...
+6. if you want to call from react.. then enable cors... that is important.
+
+----------------------------------------------
+
+
+Final rant..
+
+Relax... focus on the project success, respect architecture, uncertainty
+will be there, tolerate are we willing to write a small program when we get a doubt...
+or we trust.... ?
+when multiple steps are there, we cannot "Remember" so please 
+consider operating thru checklists..
+
+
+
+
+
+
