@@ -1,0 +1,447 @@
+purpose of the excel sheet..
+
+1. to freeze on controller functions...
+ie function input.
+what does it return.
+what http status we plan to take..
+in design go from query... table..
+
+
+Events...
+what should be our intent... 
+
+1. project success this is our intent...
+2. go thru the waves of events that occur during the project.
+
+9.00AM  to 12.30PM -- theory, practical...
+1.30 to 2.00 PM you can plan for what you will present..
+2.00 to 4.00 PM .. you entertainment + celebration or mourning period..
+4.00 to 5.30PM.  standard theory practical adventure will continue..
+"Maturity"
+
+morning adventure.
+
+1. security in spring..
+2. basic concepts in spring. like dependency injection
+3. mvc..
+4. jpa... stuff. one to many to many one..
+
+afternoon. after your celebration or mourning...
+we will talk about Unit Testing..
+
+
+Hope is everybody jpa program is working..
+1. hope you did some postman jobs...  give pincode give the area...
+give city get the location.... 
+
+Hope you have an idea on JPA...
+
+1. Entity... (model which is tied to a relation)
+id primary key
+2. JPA repository... 
+3. using the methods of the repository..
+security..
+
+
+
+theory about spring boot.
+
+1. look at what you have put in your dependency, based on that
+autoconfigure things... example..
+if you put a web dependency in your spring boot. it will autoconfigure
+this tomcat.. which is a web container...
+
+jPA dependency, spring already started configured your database for you
+that is reason, we had to put url property.. driver, userid, password..
+
+if we want to security then we have to put some dependency...
+that dependency will autoconfigure security for us..
+
+if we spring boot, based on what we have put in our dependency.
+spring boot will autoconfigure things for us... .. the jargon
+in spring autoconfiguring things is called "starters"
+
+
+Spring boot is not a replacement for Spring, rather a wrapper on spring
+spring boot makes spring easier..
+
+Spring boot is not a replacement for Spring, rather a abstraction on spring
+spring boot makes spring easier..
+
+
+in spring framework we had to configure lot of things, in spring
+boot this will automatically done..
+
+second concept, this is spring feature, which spring boot follows..
+
+inversion of control --creation of object instead of we creating
+spring will create it..
+
+dependency injection
+we have X, Y , Z put Z into Y, put Y into X... all this is done
+by spring this is called dependany injection.. but what to put
+under what programmer will only decide... how based on
+the Architecture
+
+Torch
+Bulb
+Battery..
+
+
+I need to put bulb and battery under Torch that is called as architecture..
+
+Controller functions will be called eventually from front react part..
+JPA repository functions are called from which place  Controller..
+
+
+
+
+
+
+you will many parts in a project..
+1. which objects are going to created by spring, which object
+is going to created by you.  -- Inversion of control
+2. which object needs to be under what...  Dependancy injection..
+
+
+
+
+
+  we have two things X and Y.
+  what should we do put X into Y or Y into X.. that architecture will decide..
+  we put repository under controller why... because repository functions
+  are called inside the controller functions.
+
+  we have autowired repository in controller this is an example of
+  dependency injection.
+
+intent is always to communicate, not manipulate or impress.
+
+if we dont use proper nowns..  we land up sucking energy from the person
+listening to us..
+
+
+quick summary
+1. spring boot... autoconfiguring things based on pom dependency
+2. inversion of control and dependency injection..
+
+Spring boot security...
+0. security is a process +technology and dont insult it as just
+technology..
+1. it is all about the Controller
+2. you know all controller functions are identified with some thing URI
+3. decide which URI need security, which URI does not need security..
+4. security means two things..
+4.1 who are you  --authentication
+4.2 what you can access  --Authorization..  	
+5. how to do this in spring boot..
+5.1 did you plan 2,3,4 decently, NO dont touch spring security go back..
+5.2  open pom.xml file..add some dependency... but now remember spring 
+boot will autoconfigure.. security..
+for the time being.. application.properties.. add some hardcoded
+username and password.
+
+
+two things in terms of coding..
+1. in pom.xml spring security dependency.
+2. in application.xml ... we are telling what is username and what is password.
+we can get this from many places relax..
+
+
+we have created a package x.config
+earlier we had
+
+x. 
+x.controller
+x.model
+x.repository.
+now to this joins the package called x.config
+
+This is a convention we can keep filename we want.... but the convention
+SecurityConfig
+UserConfig.
+
+1. securityconfig ...
+you will teach which all uri need security, thru some spring syntax
+dont byheart it you will get used to it...
+
+we have one section in the code, which is to allow react to connect
+to our application...
+
+
+Securityconfig.. we are just configuring only which URI need security
+which URI does not security...
+
+UserConfig we are telling from where the username and password
+is coming, in our current case it is coming from .. the application.proerties
+
+
+
+
+
+@configuration Annotaton.
+we are telling spring hey use this for configuring something in this 
+case it is security..
+
+@Bean..
+hey spring I am creating the object and giving it to you, you should
+use it for dependency injection.
+
+steps
+1. pom.xml
+security dependency.
+2. in application.properties.
+in currnt case we added username and password....
+
+coding..
+1. config package.
+1.1 securityconfig class. here we told which uri need security which
+uri does not need security.... we use annotations like @configuration
+@bean
+
+1.2 userConfig.  class.
+here we are telling how username and password are coming to spring boot...
+in our case we are telling it by using application.properties..
+
+
+
+
+
+
+
+
+
+
+
+
+if we see a simple example..
+
+asking you to create a controller.. which has two functions
+
+
+f1 and f2.. no input nothing for it..
+f1 returns Hello
+f2 returns hi..
+
+provide security for f1 and no security for f2..
+
+
+
+
+
+security..
+
+0. controllers are working
+1. you know which uri needs security ..
+2. come to pom.xml and application.properties, do the necessary opinions..
+pom.xml security dependency..
+application.properties.. username and password.
+3. create a new package x.config
+here two files.. 
+SecurityConfig  -- tell the uri which need security..
+UserConfig. --tell how the username and password is coming..
+4. run your app.
+5. test your application using Postman
+
+
+
+once you add security... all controllers in that project irrespective
+of package security will get applied until you tell dont apply security.
+
+
+
+expand json
+javascript object notation
+
+what is json?
+standard for representing variables.
+
+We can username and password from a table in a database also..
+if you want to contact a database..
+
+two ways..
+1.JDBC way
+2.JPA way   -- we should prefer it..
+
+
+JPA  --security information from a table..
+
+1. Entity  -- table. 
+
+every entity needs a table..
+how is this table created?
+1. you can create table schema.sql.. there is one more way..
+
+
+
+spring.jpa.hibernate.ddl-auto=update
+if you dont have schema.sql even then jpa will create the table
+based on your entity...
+
+
+two ways for table to get created.
+1. schema.sql
+2. use the jpa property
+spring.jpa.hibernate.ddl-auto=update
+here we are going to get usreid information from the database..
+
+what are we doing..
+
+1. we are doing spring security...
+2. what is change when compared to earlier code..
+change is we are getting username and password from a table in databse.
+3. so what we did.
+3.1 create a entity
+3.2 create a repository.
+4. we have created something called service... not controller... why
+this service function we are going to call, controller functions
+are not called by us, they are called by web container, when http request
+is made..
+
+
+1.  we have repo with entity which talks aabout userid and password.
+2. we write a service class.. which implements springboot  related
+UserDetailsService interface..
+3. because we implemented this interface we are forced to write
+a method called..loadUserByUsername what spring will do
+call this function by giving username and password...
+4. we wouild have wired our repository in this service..
+5. loadUserByUsername function we have to call the repo function
+and tell spring boot whether user is found or not found.
+
+
+
+
+1. main class.. public static void main
+2.controller class on which you need to apply security.
+3. jparepository and entity.
+4. service class.. in this you will wire repository object... and 
+teach spring how to pick userid and password from your  table obviously
+by using the entity.
+5. come to securityconfig, wire service inside the securityconfig ...
+6. your job is over, information will be picked from the table
+
+
+you can get the user information from both..
+
+1. from application.properties
+2. from  a database..
+jpa repo... you will put this in a servie.. this service will put inside
+a securityconfig class.
+This service class needs to implement a spring related interface..
+
+
+
+
+freak
+$2a$12$kXF3MobmGIPf/61PgDoOFOg33Z7QWhbsUCvjpPwTYziJ5OKM8UsDK
+
+
+1. you have to get the controllers secured how..
+
+1.1 follow the spring way..
+
+1.1 pom.xml
+1.2 where you want username and password from database...
+1.3 coding.. config package.
+security config
+user config  -- from database.. class where you plan to put the repo
+must implement spring boot related interface..
+
+
+currently what I have...
+
+ a single project.
+ in this project multiple packages.. but pom.xml file is only one.. for the
+ whole..
+ in your actual projct..
+ whatever security we talk about applies to whole project that means
+ it must be like this only.
+
+ project..
+
+
+
+
+
+
+
+
+
+
+maven project.
+src/main/java..
+project
+      x.businesslogic.controllers
+      x.businesslogic.models
+      x.
+      main function..
+	@springbootannotation
+
+
+
+
+src/main/java
+
+under this sabha has created.
+
+1. package location
+2. package multipleof5
+it is impossible to make this work togther the way it is..
+
+src/main/java
+    create a package classlab  --spring boot application with main
+    create a package classlab.mutiplciation.controller
+		     classlab.muliplication.model   
+    create a package classlab.multipleof5.controller
+    if she runs the main classlab. spring boot progam only then both
+   the controller will work..
+
+double check does every team member know the folder structure
+and what is packages he will create and let all do a mock run
+before you start coding your project..
+
+during the project if anybody does a folder adventure dont help him or her..
+let them suffer..
+
+start preparing for presentation. we will see this adventure. after..
+
+
+working directory not in staging area..
+
+how do i get back my files from staging area to working directory..
+
+
+
+
+
+
+
+
+
+12.02 to 12.30 prepare for presentation
+have lunch
+1.30 to 3.30 presentation adventure.
+3.30 to 4.00 break
+4.00 we will join back..
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

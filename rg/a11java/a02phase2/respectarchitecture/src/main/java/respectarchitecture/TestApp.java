@@ -1,15 +1,12 @@
-package a00basicpoc;
+package respectarchitecture;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-//two words
 @SpringBootApplication
-public class StartApp {
+public class TestApp {
 
     public static void main(String[] args) {
-
-        SpringApplication.run(StartApp.class,args);
-
+        SpringApplication.run(TestApp.class,args);
     }
 }

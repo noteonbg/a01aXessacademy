@@ -1,4 +1,4 @@
-package a01com.poc.respectarchitecture.exceptions;
+package respectarchitecture.exceptions;
 
 
 public class PatientNotFoundException extends RuntimeException {

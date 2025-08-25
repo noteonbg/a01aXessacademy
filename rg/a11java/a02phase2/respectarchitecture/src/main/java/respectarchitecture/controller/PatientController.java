@@ -1,12 +1,11 @@
-package a01com.poc.respectarchitecture.controller;
+package respectarchitecture.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import respectarchitecture.model.Patient;
 
 import java.util.Arrays;
 import java.util.List;
-
-import a01com.poc.respectarchitecture.model.Patient;
 
 @RestController
 @RequestMapping("/patient")

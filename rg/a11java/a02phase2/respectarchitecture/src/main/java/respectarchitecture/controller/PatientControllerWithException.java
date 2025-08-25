@@ -1,15 +1,14 @@
-package a01com.poc.respectarchitecture.controller;
+package respectarchitecture.controller;
 
 
-
-import a01com.poc.respectarchitecture.exceptions.PatientNotFoundException;
-import a01com.poc.respectarchitecture.model.Patient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import respectarchitecture.exceptions.PatientNotFoundException;
+import respectarchitecture.model.Patient;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.ArrayList;
 
 @RestController
 @RequestMapping("/patiente")

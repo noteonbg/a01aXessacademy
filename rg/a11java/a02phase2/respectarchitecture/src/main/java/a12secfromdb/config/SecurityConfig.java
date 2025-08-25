@@ -1,6 +1,6 @@
 package a12secfromdb.config;
 
-/*
+
 
 
 import a12secfromdb.service.CustomUserDetailsService;
@@ -53,4 +53,4 @@ public class SecurityConfig {
         return config.getAuthenticationManager();
     }
 }
-*/
+

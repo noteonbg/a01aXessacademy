@@ -1,4 +1,4 @@
-package a01com.poc.respectarchitecture.model;
+package respectarchitecture.model;
 
 public class Patient {
 

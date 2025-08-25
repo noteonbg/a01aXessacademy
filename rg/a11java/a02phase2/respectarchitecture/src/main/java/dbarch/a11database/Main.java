@@ -8,6 +8,10 @@ import dbarch.a11database.dao.PatientDAO;
 import dbarch.a11database.dao.PatientDAOImpl;
 
 
+//observe this is not spring boot application
+//this is only a  jdbc program.
+
+
 public class Main {
     public static void main(String[] args) {
         PatientDAO dao = new PatientDAOImpl();
