@@ -13,6 +13,8 @@ import java.util.Map;
 @ControllerAdvice
 public class WhyYouWantoHangToAName {
 
+
+    //If your exception is PatientNotFoundException then do this..
     @ExceptionHandler(PatientNotFoundException.class)
     public ResponseEntity<Map<String, Object>> handlePatientNotFound(PatientNotFoundException ex) {
         Map<String, Object> error = new HashMap<>();

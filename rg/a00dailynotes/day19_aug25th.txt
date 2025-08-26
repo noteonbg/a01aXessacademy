@@ -408,10 +408,10 @@ start preparing for presentation. we will see this adventure. after..
 
 
 working directory not in staging area..
-
 how do i get back my files from staging area to working directory..
 
 
+Quite an adventure...
 
 
 
@@ -419,11 +419,8 @@ how do i get back my files from staging area to working directory..
 
 
 
-12.02 to 12.30 prepare for presentation
-have lunch
-1.30 to 3.30 presentation adventure.
-3.30 to 4.00 break
-4.00 we will join back..
+
+
 
 
 

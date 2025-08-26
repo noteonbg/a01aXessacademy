@@ -18,8 +18,8 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import static org.mockito.Mockito.*;
 
-@Import(SecurityConfig.class)
-@WebMvcTest(PatientController.class)
+@Import(SecurityConfig.class)// from which secuirty info
+@WebMvcTest(PatientController.class)  //whcin controller you are testing
 public class PatientControllerTest {
 
     @Autowired
@@ -33,6 +33,11 @@ public class PatientControllerTest {
         Patient mockPatient = new Patient(1L, "Alice", 30);
         when(service.getPatientById(1L)).thenReturn(Optional.of(mockPatient));
 
+
+
+
+
+//testing the controller uri
         mockMvc.perform(get("/patients/1"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.name").value("Alice"));

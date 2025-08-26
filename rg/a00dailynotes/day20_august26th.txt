@@ -1,0 +1,576 @@
+1. project folder structure.
+2. meaning of it.. what are you supposed to deliver.
+api coding back end coding...
+3. security
+4. swagger.
+5. exception handling.
+6. unit testing.
+7. one to many , many to one JPA world.. very simple
+do you know foreign key properly.
+
+intent is the boss.. have clean intent... you want to make the project
+a success.. ( satisfy your sme and satisfy abhishek and Niranjana)
+
+if you want to design something that should not change.. common
+sense dictates we should show patience and rigour in the design..
+
+you have to design two things 100% right, if you think of changing
+it , think somebody will kill you...
+
+1. controller function
+2. model design
+
+ghost intent without details..
+there is nobody who gets killed because of too much of details..
+
+
+in any system unequal effort is the norm.
+
+
+what first, tables or queries?
+
+all of you remember queries first.. look at all your queries
+and then design your table...
+
+ER diagram write it if suppose somebody keeps a gun at your head or lse
+skip it.
+
+lack of clarity cannot be solve by becoming busy....
+
+steps.
+1. are you clear and do you have the details for each component
+controller function, what is input.. how is input from http..
+wht is return.. what is http status... ranting the samething what i wrote
+in excel..
+
+Excel sheet.  ( Traceability matrix)
+
+usecasestory1     reactcomponent...			backendcontroller 							unction
+----------------------------------------
+why in java project folder has got a meaning...
+
+
+
+
+what it means "backend" project 
+
+1. project folder structure...
+2. pom.xml..
+2.1 web  --controller will work
+2.2 jpa   -- entity... repository
+2.3 database  -- database
+2.4 swagger.  -- this will make your controller easy to document and access.
+2.5 security  -- this is needed because controller functions without security
+is pathetic.. soem function may not need some functions do need security
+2.6 testing  -- culture... do it do it do it... 
+2.7 secure testing dependency.
+2.8 freak dependency..
+2.9 jwt dependency... security related depenancy..
+
+
+
+3. application.properties..
+#not important as of now..
+#app.security.username=root  # we will see this is not preferable..
+#app.security.password=toor
+
+spring.datasource.url=jdbc:h2:tcp://localhost:9092/./projectdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgresSQLDialect
+
+
+spring.jpa.hibernate.ddl-auto=update
+spring.sql.init.mode=never or always
+schema.sql and data.sql.
+
+
+
+
+3. project folder structure.. (here .. any team member who creates
+misery for you, punish him /her serverely... life long they should
+remember"
+
+we have a project.. folder.. 
+there will be  pom.xml because our build tools is maven.
+
+package .. you should create it first..
+lam_creditcardorigination
+		under this package create a main function 
+		with @springBootApplication and other ritual 				SpringApplication.run..
+
+you got 5 team members.. formally..
+
+projectx is your package...
+Aryan
+he will create a package projectx.offerpage.model
+			 projectx.offerpage.controler
+			 projectx.offerpage.exception
+			 projectx.offerpage.service
+			 projectx.offerpage.repo
+			 projectx.offerpage.config.
+
+
+			 projectx.homepage.model. 
+				
+
+I hope spring boot project structure is clear.
+those who violate punish them complain about them in groups
+and send whatsmessage n group..
+
+
+
+1. know your project folder.
+2. in that project folder, what will be in pom.xml
+3. what will be application.properties.
+4. how will the package structure look like.
+
+in spring boot.. if we put some dependency it will autconfigure 
+do you agree.   True.. example web dependnacy automatically
+you got http...
+
+if you spring boot jpa and dont configure database it will slap
+us.. because it needs database information..
+
+
+if you put spring security dependency will it autoconfigure
+answer is 100% yes... what it will do it will not allow you
+to access any controller function. via postman or swagger..
+in your package  projectx , crete a package called projectx.security
+i have passed a code in a class SecurityConfig.. it can be any name
+we have kept as SecurityConfig..
+
+I have told dont check security for any uri..
+
+
+today in your project folder.
+
+
+1. projectx.
+	   class with main function
+   xfeature
+	 controller
+	 model
+         repo
+         service	
+	 config
+   security
+         keep one file securityconfig
+
+
+have  checklist.txt file.. 
+where you write down what people should do during coding..
+
+
+hope you are aware of backend project structure... and what you 
+need to if you tell I am coding "my part" in the project.
+
+
+what all files you need to write.
+
+1. Controllers
+2. Models , Entities
+3. repo.
+4. Exception handling. -?
+5. service..  --?
+
+before project begins fill this and keep it ready...
+schema.sql 
+data.sql
+
+before your project begins..
+
+1. project folder.. 
+2. nobody needs to touch pom.xml or application.properties.
+3. main function.
+4. security package..
+
+data.sql
+schema.sql
+
+only then coding begins..
+
+
+
+
+
+
+
+
+------------------------
+
+first I will explain to you about  x, yz... things..
+afternoon you make my "packages " make it work in
+your system.
+
+
+security.
+0. controller function should be working
+1. controller uri which needs security.
+2. how are we going who are we, what they can access.
+
+
+Swagger.
+swagger is a tool which is used to document the controller functions
+and it creates a ui thru which we can test it also..
+
+
+
+
+http://localhost:8080/swagger-ui/index.html
+
+
+
+makeup on your controller done by a third party so that you can 
+check your apis.
+
+what is swagger.. dont need chew brain
+a library to document our controller functions,, instead of postman
+we can use this..
+
+
+what to do with exceptions that occur in controllers
+
+suppose you throw an exception from the controller  function..
+
+1. remember controller function is not called by us.
+2. so when we throw an exception it will go spring framework
+beucase spring framework called our controller function.
+3. we can teach spring framework hey if you get an exception
+from any controller handle this here..
+
+
+just like security... you can create a package called exceptions
+let all things any exception that comes of controller be hand
+
+ideally
+1. dont let controller function throw any exception.. put ry
+and catch handle it.. and use appropriate http status to indicate
+the same.
+
+
+1. project needs lot of coordination ensure it is...
+2. swagger another document api. for your controller functions.
+3. exceptions from controller... handle it with a controlleradvice.
+
+
+
+
+
+security part..
+what you will do in your project.
+react part of the code..
+
+
+1. controller function should work.
+2. which uri needs security.
+3. how will you know who is the user.
+4. how will you know what he can access.
+
+
+what we will do spring boot
+
+1. we should tell spring boot how username and password is identified.
+2. what he can access.
+3. spring boot.. that when request from react it should allow.
+4. if you want to use swagger.. ensure swagger ui is allowed
+it comes slightly different syntax.
+
+welcome to showing patience..
+did it work in postman before you go to react.. security related code..
+
+
+
+
+
+what we will do in react.
+
+
+a011security package.. spring boot part.
+react part..
+a91hello-world-app
+Scomp... services calculatorapi.js
+
+process.
+1. spring boot code you wrote
+2. did you check with postman.. most important..
+3. then react...
+
+
+hope you have an idea how to connect react with a secure api written
+in spring, answer is auth object along with axios.get or put function..
+
+moral science word... which dinosaurs were talking and their great
+grand fathers were talking...    they will talk and not do,
+"Unit      Testing "
+culture issue...
+great thing to do unit testing..
+
+
+
+why we should unit testing code..?
+To check our code works or not..?
+
+Bette answer unit testing is a good way to document what our code does..
+what should unit test.
+1. controller.
+2. service.
+
+dont keep this as a priority in your project..
+whichever part you plan to present on the demonstration day
+"Executive Presentation"
+
+
+
+
+
+
+
+unit testing we should do.. that is good way thru which 
+you can document your code..
+
+collo.... way 
+as a programmer if you cook something you eat it first and prove
+it works then we will make other persons eat it. so follow it.
+
+
+what is code we write in unit testing.
+1. what function you want to test.
+2. what are inputs you plan to give.
+3. what is output you expect.
+4. what is output you got.
+5. prove you got output is same as expected output
+prove 4 is equivalent to 3..
+you do all these things by using annotations..
+ 
+
+how to write test code..
+src/main/java/x  
+src/test/x..
+
+you want unit tests to run fast.. so whichever part is slow
+you should learn to mock it..
+
+mocking is simulating the thing..
+there are tools available for doing this.. one such tool is Mockito.
+
+which part you plan to demonstrate on the presentation day first..
+for that particular part write unit test cases and go and show
+it runs.. and you tell the philosophical word "due to time constraints
+we would have liked to complete unit test cases for all things but
+for time constraint. Thank you".
+
+
+unit test case for what..
+
+for 2 controllers and 2 services
+1. controller
+2. service.
+
+
+stupid persons cannot be helped... how do you recognize a stupid
+person in programming all his functions return this horrible word void.
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+in your project
+in pom.xml security dependency becuse it will be there
+security package... your controllers will not need any access
+but even you are doing unit testing..
+
+  when(service.getPatientById(1L)).thenReturn(Optional.of(mockPatient));
+when service. getPatientById supplied with 1 is called
+return an optional Object which contains a MockPatient..
+
+
+you have a function called f1 in a class A. this function f1 takes input
+as number and returns String, this function takes lot of time to execute..
+
+you are using the class A in class B..
+
+class B
+{
+
+public void freak()
+{
+	mock A class, when I give you 3, return "Hello" let me call
+	call A class object as obj
+
+	String x = obj.f1(3);
+
+}
+
+}
+instead of calling actual f1.. you can can mock f1. function
+
+
+
+    @MockitoBean
+    private PatientService service;
+
+Ok in this current class I want to mock PatientService...
+
+you have to teach, if the function is called, how it should behave.
+
+
+Patient mockPatient = new Patient(1L, "Alice", 30);
+    when(service.getPatientById(1L)).thenReturn(Optional.of(mockPatient));
+
+
+mocking theory is..
+
+1. something is slow in X. you are using it in your code Y.
+X is written by Ramesh
+Y is you...
+you dont want to go and slow down unit testing code of yours because Ramesh
+code X.
+so what you do is mock X in your code.. there by telling I am not using
+Ramesh code directly .. but I will mock it.. why. so that unit testing
+is fast and over..
+
+you write unit testing for your controller clsses and service classes if
+any, in both places use chaptgpt and get the code generated most
+important observe what is mocked...
+
+class A
+{
+	B obj;
+
+}
+A needs B object.
+for some functions
+B class functions are slow
+so A will mock B object in the function and then start using it..
+because of actual B functions will never called... but A code is it working
+or not will get proven..
+
+System.out.println("hello");
+-----------------------------------------------------------------
+
+each team member can do hopefully.
+
+1. controller.
+2. model
+3. repo
+4. prove it works thru postman, swagger.
+5. consider writing unit test cases for controller, service.
+while writing please mock service in your controller.
+if you are directly calling repo int your controller, mock the repo.
+
+if you are doing a unit test in a project which uses securityconfig..
+if you are testing your controller. in this project you have
+security in pom.xml file... do ensure security-test dependency
+is included, in your ControllerUnitTest code.. do write
+@Import(SecurityConfig)
+
+
+pleae do unit testing in your final presentation..
+
+real issue real issue real issue  "Intent"
+
+
+1. tell what is concept.
+2. give an example
+3. then talk about syntax.
+talking about 3 directly means except syntax person knows nothing.
+
+
+
+1.00 to 2.00PM and 2.00PM...
+
+
+
+you have make my projects work in yoiur ystem..
+
+jPA one to many, many to one..
+project folder structure
+checklist..
+
+1. we will get security program working..
+both spring boot and react working in your system.
+
+pom.xml
+application.properties
+
+
+2. swagger working in your system.
+
+3. unit testing working in yoiur system.
+
+
+
+put the
+<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+in your project file
+
+and run the old controller it should not work because spring
+security will not block all URI's
+
+in JPa when you talk one to one or one to many or many to one
+
+it is very important for you understand
+
+what are the two tables.
+what are the two entities.
+where is the foreign key present..
+get concious about where is foreign key which instance
+variable are you referring to..
+
+a05one_to_one
+a06one_to_many
+understand the program beore you write new code..
+
+
+1. learn prompt engineering to simple code.. all code you should explain..
+2. for any topic.. which is totally new you must
+have a package in yoru project where.. you try
+get pincode if i give cityname..
+
+
+
+
+
+checklist
+1. projectchecklist.
+2. jpa... one to many, many to one be sure conscious
+about foreign key... whre it going.. understand
+each annotation.. youi must written a small example on that.
+
+push it to the last, prove earlier code is understandable.
+3. security try to get it done thru jswt..
+4. unit testing part
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
