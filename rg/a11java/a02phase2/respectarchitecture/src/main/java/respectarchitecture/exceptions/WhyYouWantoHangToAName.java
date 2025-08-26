@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @ControllerAdvice
-public class GlobalExceptionHandler {
+public class WhyYouWantoHangToAName {
 
     @ExceptionHandler(PatientNotFoundException.class)
     public ResponseEntity<Map<String, Object>> handlePatientNotFound(PatientNotFoundException ex) {
